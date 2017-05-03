@@ -1,20 +1,8 @@
-Willkommen bei der Veyon-Dokumentation
-======================================
+Veyon-Dokumentation
+===================
 
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 1
 
-	introduction
-	installation
-	configuration
-	userguide
-	faq
-	glossary
-
-
-Indizes und Tabellen
-====================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	Veyon-Administratorhandbuch <https://veyon.readthedocs.io/projects/admin-manual/de/latest>
+	Veyon-Benutzerhandbuch <https://veyon.readthedocs.io/projects/admin-manual/de/latest>
