@@ -5,4 +5,6 @@ Veyon-Benutzerhandbuch
 	:maxdepth: 2
 
 	introduction
-
+	features
+	faq
+	glossary
