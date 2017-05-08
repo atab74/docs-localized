@@ -21,7 +21,7 @@ Weiterhin können Sie mehrere Computer auswählen, indem Sie mit der Maus ein Au
 
 .. image:: images/select-computers.png
 
-Alternativ können Sie die Taste <Strg> drücken und Computer einzeln anklicken, um sie zur Auswahl hinzuzufügen.
+Alternativ können Sie die Taste :kbd:`Strg` drücken und Computer einzeln anklicken, um sie zur Auswahl hinzuzufügen.
 
 
 Beobachtungsmodus
@@ -43,11 +43,11 @@ Während einer Vollbild-Demo wird Ihr Bildschirminhalt im Vollbild angezeigt. Di
 
 Eine Fenster-Demo hingegen erlaubt des den Benutzern, zwischen dem Demo-Fenster und eigenen Anwendungen zu wechseln oder diese z. B. auch nebeneinander anzuordnen, um gezeigte Vorgänge selbst live nachzuvollziehen. Es sind daher keine Eingabegeräte gesperrt.
 
-Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläche **Vollbild-Demo** bzw. **Fenster-Demo**:
+Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläche :guilabel:`Vollbild-Demo` bzw. :guilabel:`Fenster-Demo`:
 
 .. image:: images/demo.png
 
-Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche **Beobachten**, um global wieder in den Beobachtungsmodus zu wechseln.
+Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
 
 Bildschirme sperren
@@ -55,19 +55,19 @@ Bildschirme sperren
 
 Ein weiteres Mittel zur Lenkung der Aufmerksamkeit ist die Funktion zum Sperren von Bildschirmen. Ähnlich wie während einer Vollbild-Demo werden alle Eingabegeräte an den Computern gesperrt und eine Bedienung ist nicht möglich. Zusätzlich wird ein Sperrbildschirm angezeigt, so dass keine Ablenkung durch den vorherigen Bildschirminhalt erfolgt.
 
-Um alle angezeigten Computer zu sperren, klicken Sie auf die Schaltfläche **Sperren**:
+Um alle angezeigten Computer zu sperren, klicken Sie auf die Schaltfläche :guilabel:`Sperren`:
 
 .. image:: images/screenlock.png
 
-Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche **Beobachten**, um global wieder in den Beobachtungsmodus zu wechseln.
+Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
-Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Auch hier erfolgt die Deaktivierung der Bildschirmsperre über die Auswahl der Funktion **Beobachten**. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
+Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Auch hier erfolgt die Deaktivierung der Bildschirmsperre über die Auswahl der Funktion :guilabel:`Beobachten`. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
 
 
 Fernzugriff
 -----------
 
-Die Funktionsgruppe **Fernzugriff** besteht aus den zwei sehr ähnlichen Funktionen **Fernansicht** und **Fernsteuerung**. In beiden Zugriffsarten wird der Bildschirm eines entfernten Computers herangeholt und in einem separaten Fenster in voller Größe angezeigt. Im Gegensatz zum Beobachtungsmodus im Hauptfenster können Sie so das Geschehen auf einem Computer detailliert einsehen oder auch selber eingreifen.
+Die Funktionsgruppe *Fernzugriff* besteht aus den zwei sehr ähnlichen Funktionen :guilabel:`Fernansicht` und :guilabel:`Fernsteuerung`. In beiden Zugriffsarten wird der Bildschirm eines entfernten Computers herangeholt und in einem separaten Fenster in voller Größe angezeigt. Im Gegensatz zum Beobachtungsmodus im Hauptfenster können Sie so das Geschehen auf einem Computer detailliert einsehen oder auch selber eingreifen.
 
 Die Funktionen können auf unterschiedlichen Wegen aktiviert werden. Je nach Systemkonfiguration startet eine der beiden Funktionen mit einem Doppelklick auf einen Computer. Alternativ können Sie über einen Klick mit der rechten Maustaste das Kontextmenü öffnen und die gewünschte Funktion wählen.
 
@@ -85,25 +85,25 @@ In allen Fällen öffnet sich ein neues Fenster mit der Fernzugriffsansicht:
 
 Der entfernte Bildschirm wird üblicherweise innerhalb weniger Sekunden angezeigt und in Echtzeit aktualisiert. Am oberen Fensterrand sehen Sie analog zur Hauptanwendung eine Werkzeugleiste mit Schaltflächen. Die Werkzeugleiste wird einige Sekunden nach Verbindungsaufbau automatisch ausgeblendet. Sie können sie jederzeit wieder einblenden, indem Sie den Mauszeiger an den oberen Bildschirmrand bewegen.
 
-Auch während einer laufenden Fernzugriffssitzung können Sie die Zugriffsart jederzeit wechseln. Hierzu genügt es, die Schaltfläche **Fernsteuern** bzw. **Nur beobachten** anzuklicken. Die Schaltfläche gibt nicht die aktuelle Zugriffsart wieder, sondern die Zugriffsart, in die bei Betätigung gewechselt wird.
+Auch während einer laufenden Fernzugriffssitzung können Sie die Zugriffsart jederzeit wechseln. Hierzu genügt es, die Schaltfläche :guilabel:`Fernsteuern` bzw. :guilabel:`Nur beobachten` anzuklicken. Die Schaltfläche gibt nicht die aktuelle Zugriffsart wieder, sondern die Zugriffsart, in die bei Betätigung gewechselt wird.
 
-Sobald Sie sich im Modus **Fernsteuern** befinden, werden Ihre Tastatureingaben, Mausbewegungen und -klicks an den entfernten Computer übermittelt, so dass Sie diesen wie gewohnt bedienen können. Ausnahmen können hierbei je nach Systemkonfiguration bestimmte Sondertasten bzw. Tastenkombinationen wie z. B. Strg+Alt+Entf sein. Wenn Sie diese Tastenkürzel verwenden möchten, steht Ihnen hierfür die Schaltfläche **Tastenkürzel senden** zur Verfügung. Bei Klick öffnet sich ein Menü, indem Sie das gewünschte Tastenkürzel auswählen können:
+Sobald Sie sich im Modus :guilabel:`Fernsteuern` befinden, werden Ihre Tastatureingaben, Mausbewegungen und -klicks an den entfernten Computer übermittelt, so dass Sie diesen wie gewohnt bedienen können. Ausnahmen können hierbei je nach Systemkonfiguration bestimmte Sondertasten bzw. Tastenkombinationen wie z. B. :kbd:`Strg+Alt+Entf` sein. Wenn Sie diese Tastenkürzel verwenden möchten, steht Ihnen hierfür die Schaltfläche :guilabel:`Tastenkürzel senden` zur Verfügung. Bei Klick öffnet sich ein Menü, indem Sie das gewünschte Tastenkürzel auswählen können:
 
 .. image:: images/remoteaccess-shortcutmenu.png
 
-Mit erneuter Betätigung oder der Taste ``Esc`` schließt sich das Menü ohne ausgelöste Aktion.
+Mit erneuter Betätigung oder der Taste :kbd:`Esc` schließt sich das Menü ohne ausgelöste Aktion.
 
-Möchten Sie in den Vollbildmodus wechseln, können Sie die Schaltfläche **Vollbild** nutzen. Im Vollbildmodus können Sie über die gleiche Schaltfläche -- hier mit der Beschriftung **Fenster** -- leicht wieder in den Fenstermodus zurückschalten.
+Möchten Sie in den Vollbildmodus wechseln, können Sie die Schaltfläche :guilabel:`Vollbild` nutzen. Im Vollbildmodus können Sie über die gleiche Schaltfläche -- hier mit der Beschriftung :guilabel:`Fenster` -- leicht wieder in den Fenstermodus zurückschalten.
 
-Die Funktion **Bildschirmfoto** erzeugt ein Abbild des aktuellen Bildschirminhaltes und speichert ihn in eine Datei, die später angezeigt werden kann. Nähere Beschreibungen dazu finden Sie in den Abschnitten Bildschirmfoto_ und :ref:`Bildschirmfotoverwaltung`.
+Die Funktion :guilabel:`Bildschirmfoto` erzeugt ein Abbild des aktuellen Bildschirminhaltes und speichert ihn in eine Datei, die später angezeigt werden kann. Nähere Beschreibungen dazu finden Sie in den Abschnitten Bildschirmfoto_ und :ref:`Bildschirmfotoverwaltung`.
 
-Über die Schaltfläche **Beenden** wird das Fenster geschlossen und der Fernzugriff beendet. 
+Über die Schaltfläche :guilabel:`Beenden` wird das Fenster geschlossen und der Fernzugriff beendet. 
 
 
 Computer einschalten, neustarten und herunterfahren
 ---------------------------------------------------
 
-Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen sind die Funktionen zum **Einschalten**, **Neustarten** und **Herunterfahren** von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
+Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen sind die Funktionen zum :guilabel:`Einschalten`, :guilabel:`Neustarten` und :guilabel:`Herunterfahren` von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
 
 .. image:: images/powercontrol.png
 
@@ -117,7 +117,7 @@ Bitte beachten Sie, dass weder beim Neustart noch Herunterfahren Rückfragen bei
 Benutzer abmelden
 -----------------
 
-Die Funktion **Benutzer abmelden** ergänzt die im vorherigen Abschnitt beschriebenen Möglichkeiten zur Steuerung von grundlegenden Computerzuständen. Die Schaltfläche in der Werkzeugleiste besitzt folgendes Erscheinungsbild:
+Die Funktion :guilabel:`Benutzer abmelden` ergänzt die im vorherigen Abschnitt beschriebenen Möglichkeiten zur Steuerung von grundlegenden Computerzuständen. Die Schaltfläche in der Werkzeugleiste besitzt folgendes Erscheinungsbild:
 
 .. image:: images/logout-user.png
 
