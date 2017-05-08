@@ -109,9 +109,9 @@ Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen
 
 Aktivieren Sie die jeweilige Schaltfläche, um alle angezeigten Computer einzuschalten, neuzustarten oder herunterzufahren. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
 
-Bitte beachten Sie, dass weder beim Neustart noch Herunterfahren Rückfragen beim angemeldeten Benutzer erscheinen. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
+.. attention:: Bitte beachten Sie, dass weder beim Neustart noch Herunterfahren Rückfragen beim angemeldeten Benutzer erscheinen. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
-*Hinweis:* abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen.
+.. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen.
 
 
 Benutzer abmelden
@@ -123,7 +123,7 @@ Die Funktion :guilabel:`Benutzer abmelden` ergänzt die im vorherigen Abschnitt 
 
 Ein typischer Anwendungsfall für diese Funktionen kann darin bestehen, einen Kurs für alle Teilnehmer zu einer definierten Zeit zu beenden.
 
-Bitte beachten Sie, dass der Abmeldevorgang ohne Rückfragen beim angemeldeten Benutzer durchgeführt wird. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
+.. attention:: Bitte beachten Sie, dass der Abmeldevorgang ohne Rückfragen beim angemeldeten Benutzer durchgeführt wird. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
 
 Textnachricht senden
