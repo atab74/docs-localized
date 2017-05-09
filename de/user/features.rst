@@ -17,10 +17,14 @@ Computer auswählen
 Wenn Sie eine Funktion nur auf einem einzelnen Computer aktivieren möchte, klicken Sie diesen mit der rechten Maustaste an und wählen die gewünschte Funktion über das Kontextmenü.
 
 .. image:: images/computer-context-menu.png
+   :scale: 75 %
+   :align: center
 
 Weiterhin können Sie mehrere Computer auswählen, indem Sie mit der Maus ein Auswahlrechteck ziehen und dabei alle gewünschten Computer einschließen:
 
 .. image:: images/select-computers.png
+   :scale: 75 %
+   :align: center
 
 Alternativ können Sie die Taste :kbd:`Strg` drücken und Computer einzeln anklicken, um sie zur Auswahl hinzuzufügen.
 
@@ -49,6 +53,7 @@ Eine Fenster-Demo hingegen erlaubt des den Benutzern, zwischen dem Demo-Fenster 
 Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläche :guilabel:`Vollbild-Demo` bzw. :guilabel:`Fenster-Demo`:
 
 .. image:: images/demo.png
+   :align: center
 
 Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
@@ -63,6 +68,7 @@ Ein weiteres Mittel zur Lenkung der Aufmerksamkeit ist die Funktion zum Sperren 
 Um alle angezeigten Computer zu sperren, klicken Sie auf die Schaltfläche :guilabel:`Sperren`:
 
 .. image:: images/screenlock.png
+   :align: center
 
 Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
@@ -81,14 +87,19 @@ Die Funktionen können auf unterschiedlichen Wegen aktiviert werden. Je nach Sys
 Wenn Sie auf einen Computer zugreifen möchten, der in der Arbeitsfläche nicht angezeigt wird, nutzen Sie die Schaltfläche in der Werkzeugleiste:
 
 .. image:: images/remoteaccess.png
+   :align: center
 
 Nach Betätigung öffnet sich ein Dialog, der Sie zur Eingabe des Computernamens auffordert:
 
 .. image:: images/remoteaccess-hostdialog.png
+   :scale: 75 %
+   :align: center
 
 In allen Fällen öffnet sich ein neues Fenster mit der Fernzugriffsansicht:
 
 .. image:: images/remoteaccess-connecting.png
+   :scale: 75 %
+   :align: center
 
 Der entfernte Bildschirm wird üblicherweise innerhalb weniger Sekunden angezeigt und in Echtzeit aktualisiert. Am oberen Fensterrand sehen Sie analog zur Hauptanwendung eine Werkzeugleiste mit Schaltflächen. Die Werkzeugleiste wird einige Sekunden nach Verbindungsaufbau automatisch ausgeblendet. Sie können sie jederzeit wieder einblenden, indem Sie den Mauszeiger an den oberen Bildschirmrand bewegen.
 
@@ -97,6 +108,7 @@ Auch während einer laufenden Fernzugriffssitzung können Sie die Zugriffsart je
 Sobald Sie sich im Modus :guilabel:`Fernsteuern` befinden, werden Ihre Tastatureingaben, Mausbewegungen und -klicks an den entfernten Computer übermittelt, so dass Sie diesen wie gewohnt bedienen können. Ausnahmen können hierbei je nach Systemkonfiguration bestimmte Sondertasten bzw. Tastenkombinationen wie z. B. :kbd:`Strg+Alt+Entf` sein. Wenn Sie diese Tastenkürzel verwenden möchten, steht Ihnen hierfür die Schaltfläche :guilabel:`Tastenkürzel senden` zur Verfügung. Bei Klick öffnet sich ein Menü, indem Sie das gewünschte Tastenkürzel auswählen können:
 
 .. image:: images/remoteaccess-shortcutmenu.png
+   :align: center
 
 Mit erneuter Betätigung oder der Taste :kbd:`Esc` schließt sich das Menü ohne ausgelöste Aktion.
 
@@ -115,6 +127,7 @@ Computer einschalten, neustarten und herunterfahren
 Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen sind die Funktionen zum :guilabel:`Einschalten`, :guilabel:`Neustarten` und :guilabel:`Herunterfahren` von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
 
 .. image:: images/powercontrol.png
+   :align: center
 
 Aktivieren Sie die jeweilige Schaltfläche, um alle angezeigten Computer einzuschalten, neuzustarten oder herunterzufahren. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
 
@@ -131,6 +144,7 @@ Benutzer abmelden
 Die Funktion :guilabel:`Benutzer abmelden` ergänzt die im vorherigen Abschnitt beschriebenen Möglichkeiten zur Steuerung von grundlegenden Computerzuständen. Die Schaltfläche in der Werkzeugleiste besitzt folgendes Erscheinungsbild:
 
 .. image:: images/logout-user.png
+   :align: center
 
 Aktivieren Sie die Schaltfläche, um alle Benutzer an allen angezeigten Computer abzumelden. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
 
@@ -147,10 +161,12 @@ Textnachricht senden
 Eine weitere Interaktionsmöglichkeit besteht darin, einzelnen oder allen Kursteilnehmern eine Textnachricht zu senden, die auf den Computern in Form eines Nachrichtenfensters angezeigt wird. Hierfür steht die Schaltfläche :guilabel:`Textnachricht` zur Verfügung:
 
 .. image:: images/textmessage.png
+   :align: center
 
 Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie die zu übermittelnde Nachricht eingeben können:
 
 .. image:: images/textmessage-dialog.png
+   :align: center
 
 Mit einem Klick auf :guilabel:`OK` wird die eingegebene Nachricht abgesendet.
 
@@ -165,10 +181,12 @@ Programm starten
 Soll auf allen Computern ein bestimmtes Programm geöffnet werden, steht Ihnen die Funktion :guilabel:`Programm starten` in der Werkzeugleiste zur Verfügung:
 
 .. image:: images/run-program.png
+   :align: center
 
 Ein Klick auf die Schaltfläche öffnet ein Dialogfenster, in dem Sie den Namen der Programmdatei eingeben können, z. B. ``notepad``:
 
 .. image:: images/run-program-dialog.png
+   :align: center
 
 Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`. Bitte beachten Sie, dass sich das gewünschte Programm oft nicht in der Programmpfadumgebung befindet, so dass Sie den vollständigen Pfad zum Programm angeben müssen, z. B. ``C:\Programme\VideoLAN\VLC\vlc.exe``.
 
@@ -185,10 +203,12 @@ Website öffnen
 Wenn alle Kursteilnehmer zu einer eine bestimmten Website navigieren sollen, können Sie diese Website automatisch auf allen Computern öffnen lassen. Nutzen Sie hierfür die Schaltfläche :guilabel:`Website öffnen`:
 
 .. image:: images/open-website.png
+   :align: center
 
 Anschließend öffnet sich ein Dialogfenster, in dem Sie die Adresse der zu öffnenden Website eingeben können:
 
 .. image:: images/open-website-dialog.png
+   :align: center
 
 Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`.
 
@@ -202,6 +222,7 @@ Bildschirmfoto
 Mit Veyon ist es möglich, die aktuellen Bildschirminhalte einzelner oder aller Computer in einer Bilddatei zu sichern. Mit einem Klick auf die Schaltfläche :guilabel:`Bildschirmfoto` lösen Sie die Funktion für alle angezeigten Computer aus:
 
 .. image:: images/screenshot.png
+   :align: center
 
 Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den Eintrag :guilabel:`Bildschirmfoto` im Kontextmenü wählen.
 
