@@ -11,7 +11,7 @@ Aus Wikipedia, der freien Enzyklopädie:
       .. seealso:: <https://de.wikipedia.org/wiki/Benutzername>
 
     Bildschirmfoto/Screenshot
-      Unter einem Screenshot (männlich; von engl. ['skriːnʃɔt]; selten auch Bildschirmfoto, Bildschirmkopie, Snapshot, früher auch Bildschirmabzug oder Hardcopy) versteht man in der EDV die fotoähnliche Abbildung des aktuellen grafischen Bildschirminhalts oder eines Teils davon. Das Abspeichern erfolgt typischerweise in eine Datei oder die Zwischenablage.
+      Unter einem Screenshot (selten auch Bildschirmfoto, Bildschirmkopie, Snapshot, früher auch Bildschirmabzug oder Hardcopy) versteht man in der EDV die fotoähnliche Abbildung des aktuellen grafischen Bildschirminhalts oder eines Teils davon. Das Abspeichern erfolgt typischerweise in eine Datei oder die Zwischenablage.
       
       .. seealso:: <https://de.wikipedia.org/wiki/Screenshot>
 
