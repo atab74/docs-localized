@@ -121,13 +121,24 @@ Die Funktion :guilabel:`Benutzer abmelden` ergänzt die im vorherigen Abschnitt 
 
 .. image:: images/logout-user.png
 
-Ein typischer Anwendungsfall für diese Funktionen kann darin bestehen, einen Kurs für alle Teilnehmer zu einer definierten Zeit zu beenden.
+Aktivieren Sie die Schaltfläche, um alle Benutzer an allen angezeigten Computer abzumelden. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
+
+.. tip:: Ein typischer Anwendungsfall für diese Funktionen kann darin bestehen, einen Kurs für alle Teilnehmer zu einer definierten Zeit zu beenden.
 
 .. attention:: Bitte beachten Sie, dass der Abmeldevorgang ohne Rückfragen beim angemeldeten Benutzer durchgeführt wird. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
 
 Textnachricht senden
 --------------------
+
+Eine weitere Interaktionsmöglichkeit besteht darin, einzelnen oder allen Kursteilnehmern eine Textnachricht zu senden, die auf den Computern in Form eines Nachrichtenfensters angezeigt wird. Hierfür steht die Schaltfläche :guilabel:`Textnachricht` zur Verfügung:
+
+.. image:: images/textmessage.png
+
+Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie die zu übermittelnde Nachricht eingeben können:
+
+.. image:: images/textmessage-dialog.png
+
 
 Programm starten
 ----------------
