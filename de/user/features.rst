@@ -75,7 +75,7 @@ Wenn Sie auf einen Computer zugreifen möchten, der in der Arbeitsfläche nicht 
 
 .. image:: images/remoteaccess.png
 
-Nach Betätigung öffnet sich ein Dialog, der Sie zur Eingabe des gewünschten Rechnernamens auffordert:
+Nach Betätigung öffnet sich ein Dialog, der Sie zur Eingabe des Computernamens auffordert:
 
 .. image:: images/remoteaccess-hostdialog.png
 
@@ -139,12 +139,41 @@ Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie di
 
 .. image:: images/textmessage-dialog.png
 
+Mit einem Klick auf :guilabel:`OK` wird die eingegebene Nachricht abgesendet.
+
+Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
+
 
 Programm starten
 ----------------
 
+Soll auf allen Computern ein bestimmtes Programm geöffnet werden, steht Ihnen die Funktion :guilabel:`Programm starten` in der Werkzeugleiste zur Verfügung:
+
+.. image:: images/run-program.png
+
+Ein Klick auf die Schaltfläche öffnet ein Dialogfenster, in dem Sie den Namen der Programmdatei eingeben können, z. B. ``notepad``:
+
+.. image:: images/run-program-dialog.png
+
+Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`. Bitte beachten Sie, dass sich das gewünschte Programm oft nicht in der Programmpfadumgebung befindet, so dass Sie den vollständigen Pfad zum Programm angeben müssen, z. B. ``C:\Programme\VideoLAN\VLC\vlc.exe``.
+
+.. tip:: Sie können den meisten Programmen zusätzlich ein Argument mit dem Namen einer Datei mitgeben, die automatisch geöffnet werden soll. Möchten Sie beispielsweise automatisch ein Video auf allen Computern abspielen, fügen Sie den Pfad zur Videodatei mit einem Leerzeichen getrennt an, z. B. ``C:\Programme\VideoLAN\VLC\vlc.exe X:\Videos\Beispiel.mp4``.
+
+.. attention:: Enthält der Programmpfad oder Dateiname Leerzeichen, müssen Sie den kompletten Pfad und Dateinamen in Anführungsstriche setzen, da sonst Teile der Eingabe als Argumente interpretiert werden. Beispiel: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``
+
+
 Website öffnen
 --------------
+
+Wenn alle Kursteilnehmer zu einer eine bestimmten Website navigieren sollen, können Sie diese Website automatisch auf allen Computern öffnen lassen. Nutzen Sie hierfür die Schaltfläche :guilabel:`Website öffnen`:
+
+.. image:: images/open-website.png
+
+Anschließend öffnet sich ein Dialogfenster, in dem Sie die Adresse der zu öffnenden Website eingeben können:
+
+.. image:: images/open-website-dialog.png
+
+Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`.
 
 
 .. _Bildschirmfoto:
@@ -152,4 +181,10 @@ Website öffnen
 Bildschirmfoto
 --------------
 
+Mit Veyon ist es möglich, die aktuellen Bildschirminhalte einzelner oder aller Computer in einer Bilddatei zu sichern. Mit einem Klick auf die Schaltfläche :guilabel:`Bildschirmfoto` lösen Sie die Funktion für alle angezeigten Computer aus:
 
+.. image:: images/screenshot.png
+
+Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den Eintrag :guilabel:`Bildschirmfoto` im Kontextmenü wählen.
+
+Anschließend informiert Sie eine Hinweismeldung über den Erfolg des Vorgangs. Sie können die Bilder nun in der :ref:`Bildschirmfotoverwaltung` ansehen und ggf. löschen.
