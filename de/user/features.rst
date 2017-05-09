@@ -5,10 +5,11 @@ Programmfunktionen
 
 Veyon stellt eine Vielzahl an Funktionen bereit, mit denen Sie Computer steuern und auf sie zugreifen können. Alle Funktionen sind in der Werkzeugleiste übersichtlich angeordnet und sind ebenso über das Kontextmenü erreichbar.
 
-Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein Popup mit einem kurzen Hilfstext angezeigt. Die Betätigung einer Schaltfläche aktiviert die gewählte Funktion für alle angezeigten Computer.
+Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein :index:`Tooltip` mit einem kurzen Hilfstext angezeigt. Die Betätigung einer Schaltfläche aktiviert die gewählte Funktion für alle angezeigten Computer.
 
 
 .. _Computerauswahl:
+.. index:: Computerauswahl
 
 Computer auswählen
 ------------------
@@ -34,6 +35,8 @@ Solange die Verbindung zu einem Computer unterbrochen ist, wird anstatt des Bild
 Einige der in den nächsten Abschnitten beschriebenen Funktionen schalten einen entfernten Computer in einen anderen Modus. Sie können jeden anderen Modus beenden, indem Sie wieder in den Beobachtungsmodus zurückwechseln.
 
 
+.. index:: Demonstrationsmodus, Vollbild-Demo, Fenster-Demo, Demo-Modus, Vorführung, Präsentation
+
 Demonstrationsmodus
 --------------------
 
@@ -50,6 +53,8 @@ Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläch
 Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
 
+.. index:: Bildschirmsperre, sperren, gesperrt, Eingabegeräte, Sperrbildschirm
+
 Bildschirme sperren
 -------------------
 
@@ -63,6 +68,8 @@ Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schal
 
 Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Auch hier erfolgt die Deaktivierung der Bildschirmsperre über die Auswahl der Funktion :guilabel:`Beobachten`. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
 
+
+.. index:: Fernzugriff, Fernsteuerung, Fernansicht
 
 Fernzugriff
 -----------
@@ -103,6 +110,8 @@ Die Funktion :guilabel:`Bildschirmfoto` erzeugt ein Abbild des aktuellen Bildsch
 Computer einschalten, neustarten und herunterfahren
 ---------------------------------------------------
 
+.. index:: einschalten, herunterfahren, neustarten, Neustart, WoL, Wake-on-LAN
+
 Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen sind die Funktionen zum :guilabel:`Einschalten`, :guilabel:`Neustarten` und :guilabel:`Herunterfahren` von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
 
 .. image:: images/powercontrol.png
@@ -113,6 +122,8 @@ Aktivieren Sie die jeweilige Schaltfläche, um alle angezeigten Computer einzusc
 
 .. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen.
 
+
+.. index:: abmelden, Benutzerabmeldung, Kursende
 
 Benutzer abmelden
 -----------------
@@ -128,6 +139,8 @@ Aktivieren Sie die Schaltfläche, um alle Benutzer an allen angezeigten Computer
 .. attention:: Bitte beachten Sie, dass der Abmeldevorgang ohne Rückfragen beim angemeldeten Benutzer durchgeführt wird. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
 
+.. index:: Textnachricht, Nachricht, Nachrichtenfenster
+
 Textnachricht senden
 --------------------
 
@@ -141,8 +154,10 @@ Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie di
 
 Mit einem Klick auf :guilabel:`OK` wird die eingegebene Nachricht abgesendet.
 
-Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
+Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und Eintrag :guilabel:`Textnachricht` im Kontextmenü wählen.
 
+
+.. index:: Programm starten, Programmstart, ausführen, Befehle, Dokument öffnen
 
 Programm starten
 ----------------
@@ -162,6 +177,8 @@ Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`. Bitte beachten Sie,
 .. attention:: Enthält der Programmpfad oder Dateiname Leerzeichen, müssen Sie den kompletten Pfad und Dateinamen in Anführungsstriche setzen, da sonst Teile der Eingabe als Argumente interpretiert werden. Beispiel: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``
 
 
+.. index:: Website, Website öffnen, Browser, Internetseite, URL, Webadresse
+
 Website öffnen
 --------------
 
@@ -176,6 +193,7 @@ Anschließend öffnet sich ein Dialogfenster, in dem Sie die Adresse der zu öff
 Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`.
 
 
+.. index:: Bildschirmfoto, Screenshot
 .. _Bildschirmfoto:
 
 Bildschirmfoto

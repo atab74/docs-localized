@@ -8,3 +8,6 @@ Veyon-Benutzerhandbuch
 	features
 	faq
 	glossary
+
+* :ref:`genindex`
+
