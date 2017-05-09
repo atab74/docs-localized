@@ -33,7 +33,7 @@ Aus Wikipedia, der freien Enzyklopädie:
     Kontextmenü
       Bei grafischen Benutzeroberflächen ist ein Kontextmenü ein Steuerelement, das dem Benutzer zu einem bestimmten Kontext verschiedene Aktionen zur Auswahl anbietet. Ein Kontextmenü wird hauptsächlich dadurch geöffnet, dass mit der zweiten Maustaste (üblicherweise ist das die rechte Maustaste) ein bestimmtes Objekt (Wort, Bild, Schaltfläche usw.) angeklickt wird.
       
-       .. seealso:: <https://de.wikipedia.org/wiki/Kontextmen%C3%BC>
+      .. seealso:: <https://de.wikipedia.org/wiki/Kontextmen%C3%BC>
 
     Passwort
       Ein Passwort (englisch password), auch Passphrase, Kennwort, Schlüsselwort, Codewort (auch Kodewort), Losung, Losungswort oder Parole (von italienisch la parola ‚das Wort‘) genannt, dient zur Authentifizierung. Hierzu wird eine Zeichenfolge vereinbart und benutzt, durch die sich jemand, meist eine Person, ausweist und dadurch die eigene Identität bestätigt.
