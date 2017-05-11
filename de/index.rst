@@ -1,8 +1,21 @@
 Veyon-Dokumentation
 ===================
 
+Online-Dokumentation
+--------------------
+
 .. toctree::
 	:maxdepth: 1
 
-	Veyon-Administratorhandbuch <https://veyon.readthedocs.io/projects/admin-manual/de/latest>
-	Veyon-Benutzerhandbuch <https://veyon.readthedocs.io/projects/user-manual/de/latest>
+	admin/index
+	user/index
+
+
+Handbücher als PDF
+------------------
+
+* `Veyon-Administratorhandbuch PDF`_
+* `Veyon-Benutzerhandbuch PDF`_
+
+.. _Veyon-Administratorhandbuch PDF: https://readthedocs.org/projects/veyon-admin-manual-de/downloads/pdf/latest/
+.. _Veyon-Benutzerhandbuch PDF: https://readthedocs.org/projects/veyon-user-manual-de/downloads/pdf/latest/
