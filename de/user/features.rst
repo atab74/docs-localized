@@ -74,6 +74,7 @@ Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schal
 
 Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Auch hier erfolgt die Deaktivierung der Bildschirmsperre über die Auswahl der Funktion :guilabel:`Beobachten`. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
 
+.. note:: Auf Computern, an denen kein Benutzer angemeldet ist, kann der Sperrbildschirm aufgrund von Sicherheitskonzepten im Betriebssystem nicht angezeigt werden. Die Eingabegeräte sind trotzdem gesperrt, so dass eine Anmeldung nicht möglich ist.
 
 .. index:: Fernzugriff, Fernsteuerung, Fernansicht
 
@@ -133,7 +134,7 @@ Aktivieren Sie die jeweilige Schaltfläche, um alle angezeigten Computer einzusc
 
 .. attention:: Bitte beachten Sie, dass weder beim Neustart noch Herunterfahren Rückfragen beim angemeldeten Benutzer erscheinen. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
-.. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen.
+.. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen. Gleichzeitig findet beim Einschalten keine Überprüfung der Zugriffsberechtigung statt, so dass Sie möglicherweise auch in anderen Räumen oder Gebäudeteilen Computer einschalten können. Achten Sie daher bei der Verwendung der Funktion auf die ausgewählten Computer.
 
 
 .. index:: abmelden, Benutzerabmeldung, Kursende
