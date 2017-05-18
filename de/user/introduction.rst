@@ -27,11 +27,25 @@ Nach dem Programmstart sehen Sie die :index:`Bedienoberfläche` mit :index:`Werk
 .. image:: images/master-user-interface.png
    :align: center
 
-Die Werkzeugleiste beinhaltet eine Reihe an Schaltflächen zur Aktivierung von verschiedenen Funktionen. Eine detaillierte Beschreibung der einzelnen Funktionen befindet sich im Kapitel :ref:`Programmfunktionen`.
+Die Werkzeugleiste beinhaltet eine Reihe an Schaltflächen zur Aktivierung von verschiedenen Funktionen. Eine detaillierte Beschreibung der einzelnen Funktionen befindet sich im Kapitel :ref:`Programmfunktionen`. Aussehen und Verhalten der Werkzeugleiste können wie im Abschnitt :ref:`Werkzeugleiste` angepasst werden.
 
 In der Arbeitsfläche werden alle zu beobachtenden Computer in einer :index:`Kachelansicht` dargestellt. Abhängig von der Systemkonfiguration und von vorherigen Programmstarts sehen Sie hier bereits die Computer des aktuellen Raums. Über die Computerraumverwaltung_ können Sie Computer oder ganze Computerräume ein- oder ausblenden.
 
 Die Elemente in der Statusleiste dienen der Steuerung der Programmoberfläche. So können Sie Ansichten wie die Computerraumverwaltung_ oder Bildschirmfotoverwaltung_ aktivieren. Über den Schieberegler können Sie die Größe der angezeigten Computerbildschirme steuern. Eine automatische Anpassung auf eine optimale Größe erfolgt bei der Betätigung der Schaltfläche :guilabel:`Auto`. Die Schaltfläche :guilabel:`Über` öffnet einen Dialog mit Informationen über das Programm wie z. B. Version, Hersteller und Lizenzbestimmungen.
+
+.. _Werkzeugleiste:
+
+Werkzeugleiste
+--------------
+
+Sie können das Aussehen und Verhalten der Werkzeugleiste an Ihre Wünsche anpassen. Mit einem Rechtsklick sowohl auf einen freien Bereich als auch eine Schaltfläche öffnet sich ein Kontextmenü mehreren Einträgen:
+
+.. image:: images/toolbar-contextmenu.png
+   :align: center
+
+Wenn Sie den Eintrag :guilabel:`Balloon-Tooltips deaktivieren` anklicken, werden keine Tooltips mehr angezeigt, wenn Sie mit der Maus über die Schaltflächen fahren. Sie können das Kontextmenü jederzeit erneut öffnen und den Haken mit einem Klick wieder entfernen.
+
+Die Option :guilabel:`Nur Icons anzeigen` bewirkt eine kompakte Darstellung der Schaltflächen in der Werkzeugleiste, indem die Beschriftungen ausgeblendet und nur Symbole angezeigt werden. Auf kleineren Bildschirmen ist diese Option unter Umständen notwendig, um alle Schaltflächen darstellen zu können.
 
 .. _Computerraumverwaltung:
 

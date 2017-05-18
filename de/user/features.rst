@@ -5,7 +5,7 @@ Programmfunktionen
 
 Veyon stellt eine Vielzahl an Funktionen bereit, mit denen Sie Computer steuern und auf sie zugreifen können. Alle Funktionen sind in der Werkzeugleiste übersichtlich angeordnet und sind ebenso über das Kontextmenü erreichbar.
 
-Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein :index:`Tooltip` mit einem kurzen Hilfstext angezeigt. Die Betätigung einer Schaltfläche aktiviert die gewählte Funktion für alle angezeigten Computer.
+Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein :index:`Tooltip` mit einem kurzen Hilfstext angezeigt, sofern Sie diese nicht deaktiviert haben. Die Betätigung einer Schaltfläche aktiviert die gewählte Funktion für alle angezeigten Computer.
 
 
 .. _Computerauswahl:
