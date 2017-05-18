@@ -29,7 +29,7 @@ Nach dem Programmstart sehen Sie die :index:`Bedienoberfläche` mit :index:`Werk
 
 Die Werkzeugleiste beinhaltet eine Reihe an Schaltflächen zur Aktivierung von verschiedenen Funktionen. Eine detaillierte Beschreibung der einzelnen Funktionen befindet sich im Kapitel :ref:`Programmfunktionen`.
 
-In der Arbeitsfläche werden alle zu beobachtenden Computer in einer :index:`Kachelansicht` dargestellt. Abhängig von der Systemkonfiguration und vorherigen Programmstarts sehen Sie hier bereits die Computer des aktuellen Raums. Über die Computerraumverwaltung_ können Sie Computer oder ganze Computerräume ein- oder ausblenden.
+In der Arbeitsfläche werden alle zu beobachtenden Computer in einer :index:`Kachelansicht` dargestellt. Abhängig von der Systemkonfiguration und von vorherigen Programmstarts sehen Sie hier bereits die Computer des aktuellen Raums. Über die Computerraumverwaltung_ können Sie Computer oder ganze Computerräume ein- oder ausblenden.
 
 Die Elemente in der Statusleiste dienen der Steuerung der Programmoberfläche. So können Sie Ansichten wie die Computerraumverwaltung_ oder Bildschirmfotoverwaltung_ aktivieren. Über den Schieberegler können Sie die Größe der angezeigten Computerbildschirme steuern. Eine automatische Anpassung auf eine optimale Größe erfolgt bei der Betätigung der Schaltfläche :guilabel:`Auto`. Die Schaltfläche :guilabel:`Über` öffnet einen Dialog mit Informationen über das Programm wie z. B. Version, Hersteller und Lizenzbestimmungen.
 
