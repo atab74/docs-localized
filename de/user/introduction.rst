@@ -68,7 +68,7 @@ Je nach Systemkonfiguration steht zudem die Schaltfläche :guilabel:`Raum hinzuf
 .. image:: images/room-selection.png
    :align: center
 
-Sie können die Liste über das Eingabefeld filtern, also einen Suchbegriff eingeben. In der Liste werden dann nur noch die Raumnamen angezeigt, in denen der eingegebene Suchbegriff vorkommt. Fortgeschrittene Benutzer können auch reguläre Ausdrücke für den Filter verwenden. Anschließend können Sie einen Raum auswählen und über :guilabel:`OK` bestätigen. Der gewählte Raum steht nun in der Raumliste zur Verfügung.
+Sie können die Liste über das Eingabefeld filtern, also einen Suchbegriff eingeben. In der Liste werden dann nur noch die Raumnamen angezeigt, in denen der eingegebene Suchbegriff vorkommt. Fortgeschrittene Benutzer können auch reguläre Ausdrücke für den Filter verwenden. Anschließend können Sie einen Raum auswählen und über :guilabel:`OK` bestätigen. Der gewählte Raum steht nun in der Raumliste bis zum nächsten Programmneustart zur Verfügung. Sie können einen hinzugefügten Raum auch wieder entfernen, indem Sie einen Raum anklicken und die Taste :kbd:`Entf` drücken.
 
 .. _Bildschirmfotoverwaltung:
 
