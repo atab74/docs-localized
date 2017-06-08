@@ -7,6 +7,7 @@ Veyon-Administratorhandbuch
 	introduction
 	installation
 	configuration
+	ldap
 	cli
 	troubleshooting
 	faq
