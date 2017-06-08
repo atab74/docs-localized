@@ -5,5 +5,9 @@ Veyon-Administratorhandbuch
 	:maxdepth: 2
 
 	introduction
+	installation
+	configuration
+	cli
+	troubleshooting
 	faq
 
