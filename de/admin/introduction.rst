@@ -33,6 +33,8 @@ enutzern. Die wichtigsten Funktionen von Veyon sind:
 * Programme ausführen oder Websiten öffnen
 
 
+.. _Komponenten:
+
 Komponenten
 -----------
 

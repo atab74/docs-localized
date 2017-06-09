@@ -9,6 +9,7 @@ Veyon-Administratorhandbuch
 	configuration
 	ldap
 	cli
+	reference
 	troubleshooting
 	faq
 
