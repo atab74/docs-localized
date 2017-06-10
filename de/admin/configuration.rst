@@ -40,7 +40,7 @@ Logaufzeichnung
 Logdateiverzeichnis
     Über diese Einstellung kann festgelegt werden, in welchen Ordner Logdateien abgelegt werden. Üblicherweise sollte hier eine Platzhaltervariable verwendet werden. Eine ausführliche Beschreibung möglicher Werte befindet sich in der :ref:`Konfigurationsreferenz` im Abschnitt :ref:`Platzhaltervariablen`.
 
-    **Vorgabe:** *%TEMP%*
+    **Vorgabe:** *$TEMP*
 
 Loglevel
     Der Loglevel legt fest, wie detailliert Logmeldungen aufgezeichnet werden. Bei der Fehlersuche kann es hilfreich sein, den Loglevel auf den Wert :guilabel:`Debugmeldungen und alles andere` festzulegen. Hierbei können sich allerdings schnell große Datenmengen ansammeln. Im Regelbetrieb sollten nur Warnungen und Fehler aufgezeichnet werden.
@@ -69,6 +69,8 @@ In Windows-Ereignisanzeige loggen
 
 Über die Schaltfläche :guilabel:`Alle Logdateien leeren` können alle Veyon-Logdateien sowohl im Logdateiverzeichnis des aktuellen Benutzers als des Systemdiensts gelöscht werden.
 
+
+.. _Netzwerkobjektverzeichnis:
 
 Netzwerkobjektverzeichnis
 +++++++++++++++++++++++++
@@ -127,6 +129,16 @@ Demoserver-Port
 
     **Vorgabe:** *11400*
 
+Firewall-Ausnahme aktivieren
+    Unter Windows kann ein Prozess je nach Systemkonfiguration unter Umständen nicht öffentlich auf einem Port lauschen, da Verbindungsanfragen durch die Windows-Firewall blockiert werden. Um den Zugriff auf den Dienst-Port sowie den Demoserver-Port zu ermöglichen, müssen Ausnahmen für die Windows-Firewall konfiguriert werden. Dies geschieht standardmäßig automatisch im Rahmen der Installation. Wenn dieses Verhalten nicht gewünscht ist und eine manuelle Konfiguration erfolgen soll, kann diese Option deaktiviert werden.
+
+    **Vorgabe:** *aktiviert*
+
+Nur Verbindungen vom lokalen Computer erlauben
+    Wenn der Veyon-Dienst für andere Computer nicht erreichbar sein soll, kann diese Option aktiviert werden. Für normale Rechner, auf die mit dem Veyon Master zugegriffen werden soll, darf diese Option nicht aktiviert werden. Für Lehrer-Rechner kann die Option hingegen sinnvoll sein, um unabhängig von den Zugriffskontrolleinstellungen zusätzliche Sicherheit zu schaffen. Der Zugriff auf den Demoserver wird durch diese Einstellung nicht beeinflusst.
+
+    **Vorgabe:** *deaktiviert*
+
 
 VNC-Server
 ++++++++++
@@ -141,20 +153,116 @@ Plugin
 Master
 ------
 
+Alle Einstellungen in der Konfigurationsseite "Master" betreffen ausschließlich das Verhalten und die Funktionen des Veyon Masters und gelten systemweit für alle Benutzer.
+
 Verzeichnisse
 +++++++++++++
+
+Für die Verzeichniseinstellungen sollten Platzhaltervariablen anstatt absoluter Pfade verwendet werden, damit die Konfiguration generisch ist und benutzerunabhängig funktioniert. Eine ausführliche Beschreibung möglicher Werte befindet sich in der :ref:`Konfigurationsreferenz` im Abschnitt :ref:`Platzhaltervariablen`.
+
+Benutzerkonfiguration
+     In dem hier eingestellten Verzeichnis wird die benutzerspezifische Konfiguration des Master-Programms abgelegt. Diese Konfiguration beinhaltet Einstellungen der Benutzeroberfläche sowie die Computerauswahl der letzten Sitzung.
+
+     **Vorgabe:** *$APPDATA/Config*
+
+Bildschirmfotos
+    In dem hier eingestellten Verzeichnis werden alle Bilddateien abgespeichert, die über die Bildschirmfoto-Funktion aufgenommen wurden. Wenn es beispielsweise gewünscht ist, die Dateien in einem zentralen Sammelordner abzulegen, kann hier ein anderer Verzeichnispfad eingetragen werden.
+
+    **Vorgabe:** *$APPDATA/Screenshots*
+
 
 Benutzeroberfläche & Verhalten
 ++++++++++++++++++++++++++++++
 
+Zugriffskontrolle beim Programmstart durchführen
+    Diese Einstellung legt fest, ob die ggf. konfigurierte :ref:`Computerzugriffskontrolle` auch beim Start des Veyon Masters durchgeführt werden soll. Auch wenn die Zugriffskontrolle in jedem Fall clientseitig durchgesetzt wird, kann diese zusätzliche Option dafür sorgen, dass Benutzer ohne Zugriffsrechte den Veyon Master gar nicht erst starten können und die Sicherheit damit noch sichtbarer wird.
+
+    **Vorgabe:** *deaktiviert*
+
+Beim Start automatisch zu aktuellem Raum wechseln
+    Standardmäßig werden nach Start des Veyon Masters beim vorherigen Mal ausgewählten Computer angezeigt. Wenn stattdessen alle Computer des Raums angezeigt werden sollen, in dem sich der Master-Computer befindet, kann diese Option aktiviert werden. Der Veyon Master versucht dann über das eingestellte :ref:`Netzwerkobjektverzeichnis` zu ermitteln, zu welchem Raum der lokale Computer gehört. Alle Computer dieses Raums werden dann angezeigt.
+
+    **Vorgabe:** *deaktiviert*
+
+Nur aktuellen Raum in Computerraumverwaltung anzeigen
+    Die Computerraumverwaltung listet standardmäßig alle Räume auf, die sich im eingestellten :ref:`Netzwerkobjektverzeichnis` befinden. Die Aktivierung dieser Option bewirkt hingegen, dass nur der Raum aufgeführt wird, in dem sich der Master-Computer befindet. Dies kann insbesondere in größeren Umgebungen die Übersichtlichkeit deutlich erhöhen.
+
+    **Vorgabe:** *deaktiviert*
+
+Manuelles Hinzufügen von Räumen zur Computerraumverwaltung erlauben
+    Im Zusammenspiel mit der Option *Nur aktuellen Raum in Computerraumverwaltung anzeigen* kann optional erlaubt werden, weitere Räume manuell zur Computerraumverwaltung hinzuzufügen. Wenn die Option aktiviert ist, wird eine zusätzliche Schaltfläche :guilabel:`Raum hinzufügen` angezeigt, die einen Dialog mit allen verfügbaren Räumen öffnet.
+
+    **Vorgabe:** *deaktiviert*
+
+Lokalen Computer in Computerraumverwaltung ausblenden
+    Im Regelbetrieb ist es oft nicht gewünscht, den eigenen Computer anzuzeigen und raumweit aktivierte Funktionen auch auf dem eigenen Computer zu aktivieren (z. B. Bildschirmsperre). Wenn ein solches Verhalten gewünscht ist, kann diese Option aktiviert werden.
+
+    **Vorgabe:** *deaktiviert*
+
+Leere Räume in Computerraumverwaltung ausblenden
+    Unter bestimmten Umständen befinden sich im :ref:`Netzwerkobjektverzeichnis` Räume ohne Computer, beispielsweise aufgrund von bestimmten LDAP-Filtern. Solche leeren Räume können über diese Option aus der Computerraumverwaltung ausgeblendet werden.
+
+    **Vorgabe:** *deaktiviert*
+
+Filterfeld für Computer in Computerraumverwaltung ausblenden
+    Das Filterfeld zum Suchen von Computern kann über diese Option bei Bedarf ausgeblendet werden, um in überschaubaren Umgebungen die Benutzeroberfläche möglichst einfach zu halten.
+
+    **Vorgabe:** *deaktiviert*
+
+Funktion bei Doppelklick
+    Wenn ein Computer im Veyon Master doppelt angeklickt wird, kann eine vorgegebene Funktion gestartet werden. Üblich ist hier die Verwendung der Funktionen *Fernsteuerung* oder *Fernansicht*.
+
+    **Vorgabe:** *<Keine Funktion>*
+
 Funktionen
 ++++++++++
+
+Über die zwei Listen im Abschnitt :guilabel:`Funktionen` kann voreingestellt werden, welche Funktionen im Veyon Master verfügbar sind. Einzelne Funktionen können somit bei Bedarf deaktiviert werden, so dass entsprechende Schaltflächen und Kontextmenüeinträge im Veyon Master nicht angezeigt werden. Dies kann die Übersichtlichkeit der Benutzeroberfläche erhöhen, wenn bestimmte Funktionen sowieso nicht verwendet werden sollen.
+
+Eine Funktion kann in die jeweils andere Liste verschoben werden, indem sie markiert und die jeweilige Schaltfläche mit den Pfeilsymbolen betätigt wird. Zusätzlich hat auch ein Doppelklick auf eine Funktion die gleiche Wirkung.
+
 
 Authentifizierung
 -----------------
 
+Damit auf einen Computer zugegriffen werden kann, auf dem der Veyon-Dienst läuft, muss sich der zugreifende Benutzer zunächst authentifizieren, d. h. seine Identität bzw. Nutzungsberechtigung nachweisen. Andernfalls wäre ein uneingeschränkter Zugriff von jedem Nutzer auf jeden Computer möglich, auf dem der Veyon-Dienst läuft. Ein Zugriff ohne Authentifizierung ist somit nicht möglich.
+
 Authentifizierungsmethoden
 ++++++++++++++++++++++++++
+
+Grundlegend stehen in Veyon mit der Schlüsseldatei-Authentifizierung sowie der Anmelde-Authentifizierung zwei verschiedene Authentifizierungsmethoden Verfügung, die einzeln oder ergänzend parallel eingesetzt werden können.
+
+Die **Schlüsseldatei-Authentifizierung** basiert auf einem `Public-Key-Verschlüsselungsverfahren <https://de.wikipedia.org/wiki/Public-Key-Verschl%C3%BCsselungsverfahren>`_, d. h. es kommen ein öffentlich bekannter Schlüssel und ein zugehöriger privater Schlüssel zum Einsatz, auf den nur bestimmte Benutzer Zugriff haben dürfen. Bei einer Verbindungsanfrage sendet der Veyon-Dienst eine zufällige Zeichenfolge an den Gegenüber, die dieser mit Hilfe des privaten Schlüssels kryptografisch signieren muss. Die Signatur wird an den Veyon-Dienst zurückgesendet und anhand des öffentlichen Schlüssels überprüft. Diese Überprüfung ist nur dann erfolgreich, wenn die Signatur mit dem passenden privaten Schlüssel erzeugt wird. Die Authentizität des Gegenübers ist dann sichergestellt. Schlägt die Signaturüberprüfung fehl, wird die Verbindung geschlossen.
+
+Bei der **Anmelde-Authentifizierung** sendet der Gegenüber verschlüsselt seinen Benutzername und sein Kennwort an den Veyon-Dienst. Mit diesen Zugangsdaten versucht der Veyon-Dienst anschließend eine Benutzeranmeldung am lokalen System. Schlägt diese fehl, wird die Verbindung geschlossen. Andernfalls sind Benutzername und Kennwort korrekt, so dass die Authentizität des Gegenübers sichergestellt ist.
+
+Beide Methoden haben Vor- und Nachteile, so dass die Wahl der richtigen Methode von der Umgebung, den Sicherheitsanforderungen und den Komfortwünschen abhängt.
+
+**Schlüsseldatei-Authentifizierung**
+
++-------------------------------------------------+-------------------------------------------------+
+| Vorteile                                        | Nachteile                                       |
++=================================================+=================================================+
+| * keine Anmeldung mit Benutzername und Passwort | * höherer Aufwand bei der Einrichtung           |
+|   beim Start des Veyon Masters notwendig        | * tatsächlicher Benutzer kann auch nach         |
+| * Zugriff auf Computer kann über Zugriffsrechte |   erfolgreicher Signaturprüfung nicht           |
+|   auf private Schlüsseldatei einfach und        |   zweifelsfrei sichergestellt werden            |
+|   zentral gesteuert werden                      | * Systemweiter Austausch von kompromittierten   |
+|                                                 |   Schlüsselpaaren notwendig                     |
++-------------------------------------------------+-------------------------------------------------+
+
+
+**Anmelde-Authentifizierung**
+
++-------------------------------------------------+-------------------------------------------------+
+| Vorteile                                        | Nachteile                                       |
++=================================================+=================================================+
+| * einfache und aufwandsarme Einrichtung         | * Anmeldung mit Benutzername und Passwort bei   |
+| * zweifelsfreie Sicherstellung der Identität    |   jeder Verwendung des Veyon Masters notwendig  |
+|   des Gegenübers, so dass effektive und sichere |                                                 |
+|   Computerzugriffskontrolle_ möglich ist        |                                                 |
++-------------------------------------------------+-------------------------------------------------+
+
 
 Schlüsselverwaltung
 +++++++++++++++++++
@@ -166,6 +274,8 @@ Anmelde-Authentifizierung
 
 Zugriffskontrolle
 -----------------
+
+.. _Computerzugriffskontrolle:
 
 Computerzugriffskontrolle
 +++++++++++++++++++++++++
