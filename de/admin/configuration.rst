@@ -110,22 +110,22 @@ Netzwerk
 ++++++++
 
 Primärer Dienst-Port
-    Diese Einstellung legt den primären Netzwerkport fest, auf dem der Veyon-Dienst lauscht und Verbindungen annimmt.
+    Diese Einstellung legt den primären Netzwerkport fest, auf dem der Veyon-Dienst arbeitet, d. h. auf eingehende Verbindungen lauscht und diese annimmt.
 
     **Vorgabe:** *11100*
 
 Port des internen VNC-Servers
-    Diese Einstellung legt den Netzwerkport fest, auf dem der interne VNC-Server arbeitet. Dieser Port ist nach außen nicht erreichbar und wird nur vom Veyon-Dienst verwendet, um über einen internen VNC-Server auf Bildschirmdaten zuzugreifen und diese nach außen weiterzuleiten.
+    Diese Einstellung legt den Netzwerkport fest, auf dem der interne VNC-Server arbeitet. Dieser Port ist von außen nicht erreichbar und wird nur vom Veyon-Dienst verwendet, um über einen internen VNC-Server auf Bildschirmdaten zuzugreifen und diese nach außen weiterzuleiten.
 
     **Vorgabe:** *11200*
 
 Funktionsverwalter-Port
-    Diese Einstellung legt den Netzwerkport fest, auf dem der Funktionsverwalter arbeitet. Diese interne Komponente des Veyon-Diensts stellt die Schnittstelle zwischen Veyon-Dienst und Funktionsprozessen bereit. Funktionsprozesse laufen im Gegensatz zum Veyon-Dienst im Kontext des angemeldeten Benutzers aus und müssen daher über diese Schnittstelle mit dem Veyon-Dienst kommunizieren.
+    Diese Einstellung legt den Netzwerkport fest, auf dem der Funktionsverwalter arbeitet. Diese interne Komponente des Veyon-Diensts stellt die Schnittstelle zwischen Veyon-Dienst und Funktionsprozessen bereit. Funktionsprozesse laufen im Gegensatz zum Veyon-Dienst im Kontext des angemeldeten Benutzers aus und müssen daher über diese Schnittstelle mit dem Veyon-Dienst kommunizieren. Dieser Port ist von außen nicht erreichbar.
 
     **Vorgabe:** *11300*
 
 Demoserver-Port
-    Diese Einstellung legt den Netzwerkport fest, auf dem der Demo-Server arbeitet. Der Demo-Server stellt während einer Vorführung Bildschirmdaten des Lehrer-Rechners im Netzwerk zur Verfügung.
+    Diese Einstellung legt den Netzwerkport fest, auf dem der Demoserver arbeitet. Der Demoserver stellt während einer Vorführung Bildschirmdaten des Lehrer-Computers im Netzwerk zur Verfügung.
 
     **Vorgabe:** *11400*
 
@@ -135,7 +135,7 @@ Firewall-Ausnahme aktivieren
     **Vorgabe:** *aktiviert*
 
 Nur Verbindungen vom lokalen Computer erlauben
-    Wenn der Veyon-Dienst für andere Computer nicht erreichbar sein soll, kann diese Option aktiviert werden. Für normale Rechner, auf die mit dem Veyon Master zugegriffen werden soll, darf diese Option nicht aktiviert werden. Für Lehrer-Rechner kann die Option hingegen sinnvoll sein, um unabhängig von den Zugriffskontrolleinstellungen zusätzliche Sicherheit zu schaffen. Der Zugriff auf den Demoserver wird durch diese Einstellung nicht beeinflusst.
+    Wenn der Veyon-Dienst für andere Computer im Netzwerk nicht erreichbar sein soll, kann diese Option aktiviert werden. Für normale Rechner, auf die mit dem Veyon Master zugegriffen werden soll, darf diese Option nicht aktiviert werden. Für Lehrer-Computer kann die Option hingegen sinnvoll sein, um unabhängig von den Zugriffskontrolleinstellungen zusätzliche Sicherheit zu schaffen. Der Zugriff auf den Demoserver wird durch diese Einstellung nicht beeinflusst.
 
     **Vorgabe:** *deaktiviert*
 
@@ -145,7 +145,7 @@ VNC-Server
 
 
 Plugin
-    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Rechners bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser alternativ verwendet werden, indem das Plugin "Externer VNC-Server" gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des VNC-Servers eingegeben werden.
+    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Rechners bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser anstatt des internen VNC-Servers verwendet werden, indem das Plugin "Externer VNC-Server" gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des installierten VNC-Servers eingegeben werden.
 
     **Vorgabe:** *Eingebauter VNC-Server*
 
