@@ -112,7 +112,7 @@ Netzwerk
 Primärer Dienst-Port
     Diese Einstellung legt den primären Netzwerkport fest, auf dem der Veyon-Dienst lauscht und Verbindungen annimmt.
 
-    **Vorgabe:** *11100**
+    **Vorgabe:** *11100*
 
 Port des internen VNC-Servers
     Diese Einstellung legt den Netzwerkport fest, auf dem der interne VNC-Server arbeitet. Dieser Port ist nach außen nicht erreichbar und wird nur vom Veyon-Dienst verwendet, um über einen internen VNC-Server auf Bildschirmdaten zuzugreifen und diese nach außen weiterzuleiten.
