@@ -263,17 +263,29 @@ Beide Methoden haben Vor- und Nachteile, so dass die Wahl der richtigen Methode 
 |   Computerzugriffskontrolle_ möglich ist        |                                                 |
 +-------------------------------------------------+-------------------------------------------------+
 
+Die gewünschten Authentifizierungsmethoden können über die entsprechenden Optionen aktiviert werden.
+
 
 Schlüsselverwaltung
 +++++++++++++++++++
+
+Um die Schlüsseldatei-Authentifizierung zu nutzen, muss zunächst ein Schlüsselpaar bestehend aus einem privaten und öffentlichen Schlüssel erzeugt werden. Hierfür steht ein entsprechender Assistent zur Verfügung. Starten Sie diesen und folgen den vorgeschlagenen Schritten.
+
 
 .. _Anmelde-Authentifizierung:
 
 Anmelde-Authentifizierung
 +++++++++++++++++++++++++
 
+Die Anmelde-Authentifizierung bedarf keiner weiteren Konfiguration. Nachdem sie aktiviert wurde, kann sie über die Schaltfläche :guilabel:`Testen` getestet werden.
+
 Zugriffskontrolle
 -----------------
+
+Über die Konfigurationsseite "Zugriffskontrolle" kann detailliert eingerichtet werden, welche Benutzer auf einen Computer zugreifen dürfen. Die Zugriffskontrolle wird während der Verbindungsinitialisierung nach der Authentifizierung durchgeführt. Während die Authentifizierung die Authentizität eines zugreifenden Benutzers sicherstellt, schränkt die Zugriffskontrollfunktionalität den Computerzugriff auf autorisierte Benutzer wie beispielsweise Lehrer ein.
+
+Die Konfiguration der Zugriffskontrolle ist Teil der lokalen (computerspezifischen) Veyon-Konfiguration wie alle Einstellungen in den anderen Konfigurationsseiten auch. Die Konfiguration muss daher auf alle anderen Computer übertragen werden, um ordnungsgemäß zu funktionieren.
+
 
 .. _Computerzugriffskontrolle:
 
@@ -281,8 +293,24 @@ Computerzugriffskontrolle
 +++++++++++++++++++++++++
 
 
+Datenbackend
+    Für die Zugriffskontrolle wird ein Datenbackend als Grundlage benötigt, das Benutzer und Gruppen sowie Computer und Räume zur Verfügung stellt. Hierbei können Sie zwischen dem Standard-Backend und weiteren Plugin-spezifischen Backends wie LDAP wählen. Beim Standard-Backend werden lokale Benutzer und Gruppen sowie Räume und Computer aus der lokalen Konfiguration verwendet, siehe Abschnitt :ref:`Lokale Daten`. Wenn Sie die LDAP-Anbindung verwenden, sollten Sie hier das Backend *LDAP* auswählen.
+
+Jedem authentifizierten Benutzer Zugriff erlauben (Standard)
+    Falls die eingestellte Authentifizierung genügt (z. B. bei Verwendung der Schlüsseldatei-Authentifizierung mit eingeschränktem Zugriff auf die Schlüsseldateien) kann diese Option gewählt werden. In diesem Modus wird keine weitere Zugriffskontrolle durchgeführt.
+
+Zugriff auf Mitglieder bestimmter Benutzergruppen einschränken
+    In diesem Modus wird der Zugriff auf einen Computer auf Mitglieder von bestimmten Benutzergruppen eingeschränkt. Die autorisierten Benutzergruppen werden im Abschnitt  :ref:`Autorisierte Benutzergruppen für Computerzugriff` eingestellt.
+
+Zugriffskontrollregeln abarbeiten
+    Dieser Modus erlaubt eine detaillierte Zugriffskontrolle anhand benutzerdefinierter Zugriffskontrollregeln und bietet die meiste Flexibilität. Allerdings ist dessen initiale Einrichtung etwas komplizierter und aufwändiger, so dass für erste Tests zunächst eine der beiden anderen Zugriffskontrollmodi gewählt werden sollte.    
+
+.. _Autorisierte Benutzergruppen für Computerzugriff:
+
 Autorisierte Benutzergruppen für Computerzugriff
 ++++++++++++++++++++++++++++++++++++++++++++++++
+
+Die Konfiguration dieses Zugriffskontrollmodus ist relativ einfach. Die linke Liste beinhaltet alle durch das Datenbackend bereitgestellten Benutzergruppen. Standardmäßig sind dies alle lokalen Benutzergruppen. Wenn die LDAP-/AD-Integration eingerichtet ist, werden alle LDAP-Benutzergruppen angezeigt. Sie können nun eine oder mehrere Gruppen wählen und diese anhand der entsprechenden Schaltfläche zwischen den zwei Listen in die rechte Liste übertragen. Alle Mitglieder jeder Gruppe in der rechten Liste können nun auf den Computer zugreifen. Vergessen Sie nicht, die Konfiguration auf alle Computer zu übertragen.
 
 Zugriffskontrollregeln
 ++++++++++++++++++++++
