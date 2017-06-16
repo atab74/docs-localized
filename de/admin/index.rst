@@ -7,6 +7,7 @@ Veyon-Administratorhandbuch
 	introduction
 	installation
 	configuration
+	access-control-rules
 	ldap
 	cli
 	reference

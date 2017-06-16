@@ -91,7 +91,7 @@ Aktualisierungsintervall
 Dienst
 ------
 
-Die Einstellungen auf der Konfigurationsseite "Dienst" beeinflussen die Funktionsweise des Veyon-Diensts (Veyon Service) und dienen dem Finetuning in einigen Sonderfällen. Für einen reibungslosen Betrieb sollten die Einstellungen im Regelfall nicht geändert werden.
+Die Einstellungen auf der Konfigurationsseite :guilabel:`Dienst` beeinflussen die Funktionsweise des Veyon-Diensts (Veyon Service) und dienen dem Finetuning in einigen Sonderfällen. Für einen reibungslosen Betrieb sollten die Einstellungen im Regelfall nicht geändert werden.
 
 Allgemein
 +++++++++
@@ -145,7 +145,7 @@ VNC-Server
 
 
 Plugin
-    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Rechners bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser anstatt des internen VNC-Servers verwendet werden, indem das Plugin "Externer VNC-Server" gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des installierten VNC-Servers eingegeben werden.
+    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Rechners bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser anstatt des internen VNC-Servers verwendet werden, indem das Plugin :guilabel:`Externer VNC-Server` gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des installierten VNC-Servers eingegeben werden.
 
     **Vorgabe:** *Eingebauter VNC-Server*
 
@@ -153,7 +153,7 @@ Plugin
 Master
 ------
 
-Alle Einstellungen in der Konfigurationsseite "Master" betreffen ausschließlich das Verhalten und die Funktionen des Veyon Masters und gelten systemweit für alle Benutzer.
+Alle Einstellungen in der Konfigurationsseite :guilabel:`Master` betreffen ausschließlich das Verhalten und die Funktionen des Veyon Masters und gelten systemweit für alle Benutzer.
 
 Verzeichnisse
 +++++++++++++
@@ -279,10 +279,12 @@ Anmelde-Authentifizierung
 
 Die Anmelde-Authentifizierung bedarf keiner weiteren Konfiguration. Nachdem sie aktiviert wurde, kann sie über die Schaltfläche :guilabel:`Testen` getestet werden.
 
+.. _Zugriffskontrolle:
+
 Zugriffskontrolle
 -----------------
 
-Über die Konfigurationsseite "Zugriffskontrolle" kann detailliert eingerichtet werden, welche Benutzer auf einen Computer zugreifen dürfen. Die Zugriffskontrolle wird während der Verbindungsinitialisierung nach der Authentifizierung durchgeführt. Während die Authentifizierung die Authentizität eines zugreifenden Benutzers sicherstellt, schränkt die Zugriffskontrollfunktionalität den Computerzugriff auf autorisierte Benutzer wie beispielsweise Lehrer ein.
+Über die Konfigurationsseite :guilabel:`Zugriffskontrolle` kann detailliert eingerichtet werden, welche Benutzer auf einen Computer zugreifen dürfen. Die Zugriffskontrolle wird während der Verbindungsinitialisierung nach der Authentifizierung durchgeführt. Während die Authentifizierung die Authentizität eines zugreifenden Benutzers sicherstellt, schränkt die Zugriffskontrollfunktionalität den Computerzugriff auf autorisierte Benutzer wie beispielsweise Lehrer ein.
 
 Die Konfiguration der Zugriffskontrolle ist Teil der lokalen (computerspezifischen) Veyon-Konfiguration wie alle Einstellungen in den anderen Konfigurationsseiten auch. Die Konfiguration muss daher auf alle anderen Computer übertragen werden, um ordnungsgemäß zu funktionieren.
 
@@ -312,8 +314,15 @@ Autorisierte Benutzergruppen für Computerzugriff
 
 Die Konfiguration dieses Zugriffskontrollmodus ist relativ einfach. Die linke Liste beinhaltet alle durch das Datenbackend bereitgestellten Benutzergruppen. Standardmäßig sind dies alle lokalen Benutzergruppen. Wenn die LDAP-/AD-Integration eingerichtet ist, werden alle LDAP-Benutzergruppen angezeigt. Sie können nun eine oder mehrere Gruppen wählen und diese anhand der entsprechenden Schaltfläche zwischen den zwei Listen in die rechte Liste übertragen. Alle Mitglieder jeder Gruppe in der rechten Liste können nun auf den Computer zugreifen. Vergessen Sie nicht, die Konfiguration auf alle Computer zu übertragen.
 
+Über die Schaltfläche :guilabel:`Testen` im Abschnitt :guilabel:`Computerzugriffskontrolle` kann überprüft werden, ob ein bestimmter Benutzer über die eingestellten Gruppen auf einen Computer zugreifen dürfte.
+
+
 Zugriffskontrollregeln
 ++++++++++++++++++++++
+
+Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszenarien ist im Kapitel :ref:`Regelwerk für Computerzugriff` ausführlich beschrieben.
+
+
 
 Fehlersuche
 -----------
