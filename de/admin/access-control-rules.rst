@@ -50,20 +50,18 @@ Zugreifender Benutzer hat eine oder mehrere Gruppen gemeinsam mit lokalem (angem
     Über diese Bedingung kann festlelegt werden, dass der zugreifende und lokal angemeldete Benutzer Mitglieder in mindestens gemeinsamen Gruppe sein müssen, beispielsweise einer Benutzergruppe für einen Kurs oder ein Seminar.
 
 Zugreifender Benutzer ist angemeldeter Benutzer
-    Als Alternative zur Bedingung :guilabel:`Zugreifender Computer ist localhost` kann auch der Zugriff eines Benutzers auf eigene Sitzungen erlaubt werden. Hierfür muss diese Bedingung aktiviert werden.
+    Als Alternative zur Bedingung *Zugreifender Computer ist localhost* kann auch der Zugriff eines Benutzers auf eigene Sitzungen erlaubt werden. Hierfür muss diese Bedingung aktiviert werden.
     
 Zugreifender Benutzer ist bereits verbunden
-    Im Zusammenspiel mit der Bedingung :guilabel:`Zugreifender Computer befindet sich im selben Raum wie der lokale Computer` kann ein erweitertes Regelwerk geschaffen werden, dass den Zugriff auf andere Räume unter bestimmten Bedingungen doch erlaubt. Hierzu zählt die Möglichkeit, auf einen Computer zuzugreifen, wenn der zugreifende Benutzer bereits verbunden ist. Wenn sich der Lehrer zusätzlich zu Raum A auch im Raum B auf einem Lehrer-Computer anmeldet und sich dort im Veyon-Master die Computer von Raum B anzeigen lässt, hat der Veyon-Dienst auf den Computern in Raum B eine Verbindung vom Lehrer. Dann kann der Lehrer auch von Raum A aus auf Raum B zugreifen, wenn diese Bedingung mit einer Erlauben-Aktion aktiviert ist.
+    Im Zusammenspiel mit der Bedingung *Zugreifender Computer befindet sich im selben Raum wie der lokale Computer* kann ein erweitertes Regelwerk geschaffen werden, dass den Zugriff auf andere Räume unter bestimmten Bedingungen doch erlaubt. Hierzu zählt die Möglichkeit, auf einen Computer zuzugreifen, wenn der zugreifende Benutzer bereits verbunden ist. Wenn sich der Lehrer zusätzlich zu Raum A auch im Raum B auf einem Lehrer-Computer anmeldet und sich dort im Veyon-Master die Computer von Raum B anzeigen lässt, hat der Veyon-Dienst auf den Computern in Raum B eine Verbindung vom Lehrer. Dann kann der Lehrer auch von Raum A aus auf Raum B zugreifen, wenn diese Bedingung mit einer Erlauben-Aktion aktiviert ist.
 
 Kein Benutzer angemeldet
     Über diese Bedingung kann festgelegt werden, wie auf einen Computer zugregriffen werden kann, wenn kein Benutzer angemeldet ist. Zur Unterstützung bei der Computeradministration kann es beispielsweise hilfreich sein, immer auf einen Computer zugreifen zu können, wenn kein Benutzer angemeldet ist.
 
-.. important:: Wenn mehr als eine Bedingung aktiviert wird, muss **jede** Bedingung zutreffen, damit die Regel angewendet wird (logisches UND). Wenn nur eine von mehreren Regeln zutreffen soll (logisches ODER), müssen mehrere Zugriffskontrollregeln erstellt werden.
-
 Aktion
 ++++++
 
-Wenn alle aktivierten Bedingungen einer Regel zutreffen, wird im Hinblick auf den Computerzugriff eine festgelegte Aktion ausgeführt. Diese Aktion kann im Bereich :guilabel:`Aktion` eingestellt werden:
+Wenn alle aktivierten Bedingungen einer Regel zutreffen, wird im Hinblick auf den Computerzugriff eine festgelegte Aktion ausgeführt. Diese kann im Bereich :guilabel:`Aktion` eingestellt werden:
 
 Zugriff erlauben
     Der Zugriff auf einen Computer wird erlaubt und weitere Regeln werden nicht verarbeitet. Wenn es in der Regelliste eine weiter unten angeordnete Regel gibt, die den Zugriff verweigern würde, wird der Zugriff trotzdem erlaubt. Es muss mindestens eine Regel mit dieser Aktion geben.
@@ -94,6 +92,8 @@ Logische Verknüpfung von Regeln
 Wenn mehr als eine Bedingung aktiviert wird, muss *jede* Bedingung zutreffen, damit die Regel angewendet wird (logisches UND). Wenn nur eine von mehreren Regeln zutreffen soll (logisches ODER), müssen mehrere Zugriffskontrollregeln erstellt werden.
 
 Mit Grundkenntnissen in Boolescher Algebra kann die Option *Alle Bedingungen umkehren* als Negations-Operator in Verbindung mit invertierten Aktionen genutzt werden, um erweiterte Anwendungsszenarien zu modellieren. Wenn ein Benutzer beispielsweise in zwei bestimmten Gruppen Mitglied sein muss, um den Zugriff auf einen Computer zu erlauben, können zwei einzelne Regeln erzeugt werden, die den Zugriff verbieten, wenn der Benutzer *nicht* Mitglied in einer der beiden Gruppe ist.
+
+.. note:: Wenn es bei der Abarbeitung der eingestellten Zugriffskontrollregeln keine Regel gibt, bei der alle aktivierten Bedingungen zutreffen, wird der Zugriff verweigert und die Verbindung geschlossen. Damit wird verhindert, dass einem Angreifer der Zugriff aufgrund eines unvollständigen Regelwerks aus Versehen erlaubt wird.
 
 
 Regelwerk testen
