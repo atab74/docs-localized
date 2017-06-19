@@ -3,6 +3,17 @@
 Troubleshooting (Fehleranalyse und -behebung)
 =============================================
 
+Zugriff auf einen Computer ist nicht möglich
+--------------------------------------------
+
+Wenn der Zugriff auf einen Computer über den Veyon Master nicht möglich ist, kann dies mehrere Ursachen haben.
+
+Zunächst sollte die grundlegende Erreichbarkeit des Computers über das Netzwerk überprüft werden. Nutzen Sie dafür das üblicherweise jedem Betriebssystem beiliegende Hilfsprogramm ``ping``.
+
+Wenn der Rechner anpingbar ist, muss kontrolliert werden, ob der Veyon-Dienst korrekt läuft. Öffnen Sie dazu den Veyon Configurator und öffnen die Konfigurationsseite :guilabel:`Dienst`. Im Abschnitt :guilabel:`Allgemein` wird der Status des Diensts mit dem Wert *Läuft* anzeigen. Andernfalls kann der Dienst über die Schaltfläche :guilabel:`Dienst starten` gestartet werden. Ist dies nicht erfolgreich, kann eine Neuinstallation von Veyon Abhilfe schaffen. Hilft auch eine Neuinstallation nicht, können Sie in den Logdateien des Veyon-Diensts sowie den Systemmeldungen des Betriebssystem nach Fehlermeldungen und -ursachen suchen.
+
+Läuft der Dienst, sollte sichergestellt werden, dass er auf dem korrekten Netzwerkport auf eingehende Verbindungen lauscht. Hierzu sind die :ref:`Netzwerkeinstellungen`, speziell der Primären Dienst-Port, zu überprüfen und ggf. auf ihre Vorgabewerte zurückzustellen.
+
 
 Räume und Computer aus LDAP-Verzeichnis werden im Master nicht angezeigt
 ------------------------------------------------------------------------

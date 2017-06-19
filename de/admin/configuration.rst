@@ -22,7 +22,7 @@ Benutzeroberfläche
 ++++++++++++++++++
 
 Sprache
-    Die verwendete Sprache für sowohl die grafischen Benutzeroberflächen als auch Kommandozeilenwerkzeuge kann bei Bedarf angepasst werden. Es stehen alle Sprachen zur Auswahl, für die eine teilweise oder vollständige Übersetzung vorliegt. Bitte beachten Sie, dass sich die Änderung der Sprache nach einem Programmneustart auswirkt. Beim standardmäßig eingestellten Vorgabewert passt sich Veyon an die im Betriebssystems eingestellte Sprache an, sofern die Sprache unterstützt wird. Andernfalls wird Englisch als Ausweichoption verwendet.
+    Die verwendete Sprache für sowohl die grafischen Benutzeroberflächen als auch Kommandozeilenwerkzeuge kann bei Bedarf angepasst werden. Es stehen alle Sprachen zur Auswahl, für die eine teilweise oder vollständige Übersetzung vorliegt. Es sollte beachtet werden, dass sich die Änderung der Sprache erst nach einem Programmneustart auswirkt. Beim standardmäßig eingestellten Vorgabewert passt sich Veyon an die im Betriebssystems eingestellte Sprache an, sofern die Sprache unterstützt wird. Andernfalls wird Englisch als Ausweichoption verwendet.
 
     **Vorgabe:** *Spracheinstellung des Systems verwenden*
 
@@ -105,6 +105,8 @@ SAS-Generierung in Software aktivieren (Strg+Alt+Entf)
     In der Standardkonfiguration ist es unter Windows für Anwendungsprogramme nicht möglich, die Secure-Attention-Sequence (Strg+Alt+Entf) zu generieren und somit den Druck dieser Tasten zu simulieren. Über diese Einstellung wird eine Policy in die Windows-Registry geschrieben, die dieses Verhalten ändert. Es wird empfohlen, diese Option aktiviert zu lassen, damit die Tastenkombination :kbd:`Strg+Alt+Entf` an einen ferngesteuerten Computer gesendet werden kann. Der ferngesteuerte Computer kann andernfalls z. B. nicht aus der Ferne entsperrt werden. Auch eine Nutzeranmeldung ist dann nicht möglich, da hierfür üblicherweise die Tasten :kbd:`Strg+Alt+Entf` gedrückt werden müssen.
 
     **Vorgabe:** *aktiviert*
+
+.. _Netzwerkeinstellungen:
 
 Netzwerk
 ++++++++
@@ -324,15 +326,18 @@ Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszen
 
 
 
-Fehlersuche
------------
+Fehlerbericht
+-------------
+
+In der Konfigurationsseite *Fehlerbericht* befindet sich eine Schritt-für-Schritt-Anleitung zur Erstellung eines Fehlerberichts. Diese Informationen können bei Bedarf genutzt werden, um Fehler oder Fehlverhalten an die Entwickler zu übermitteln. Bevor ein Fehlerbericht erstellt wird, sollte allerdings zunächst das Kapitel :ref:`Troubleshooting` konsultiert werden, da es sich beim Problem möglicherweise um einen Konfigurationsfehler handeln kann.
 
 LDAP
 ----
 
-Alle Informationen rund um die Anbindung von Veyon an einen LDAP-/ActiveDirectory-Server finden Sie gesondert im Kapitel :ref:`LDAP`.
+Alle Informationen rund um die Anbindung von Veyon an einen LDAP-kompatiblen Server wie *OpenLDAP* oder *Active Directory* befinden sich im Kapitel :ref:`LDAP`.
 
 .. _Lokale Daten:
 
 Lokale Daten
 ------------
+

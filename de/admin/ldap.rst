@@ -3,7 +3,7 @@
 LDAP/AD-Integration
 ===================
 
-Dieses Kapitel beschäftigt sich mit der Einbindung von LDAP-kompatiblen Servern in Veyon. Im Folgenden wird nur der Oberbegriff *LDAP* verwendet und meint damit alle LDAP-kompatiblen Produkte bzw. Technologien wie OpenLDAP, Samba und Active Directory. Über die LDAP-Integration ist es möglich, die in den meisten Umgebungen bereits bestehenden Informationen über Benutzer, Benutzergruppen, Computer sowie Räume zu nutzen, anstatt diese manuell in der Veyon-Konfiguration nachzubilden. Zum einen können LDAP-Benutzer und -Benutzergruppen als Datenbasis für die :ref:`Zugriffskontrolle` genutzt werden. Zum anderen kann der Veyon Master die anzuzeigenden Räume und Computer direkt aus dem Verzeichnisdienst laden.
+Dieses Kapitel beschäftigt sich mit der Anbindung von LDAP-kompatiblen Servern an Veyon. Im Folgenden wird nur der Oberbegriff *LDAP* verwendet und meint damit alle LDAP-kompatiblen Produkte bzw. Technologien wie *OpenLDAP*, *Samba* und *Active Directory*. Über die LDAP-Integration ist es möglich, die in den meisten Umgebungen bereits bestehenden Informationen über Benutzer, Benutzergruppen, Computer sowie Räume zu nutzen, anstatt diese manuell in der Veyon-Konfiguration nachzubilden. Zum einen können LDAP-Benutzer und -Benutzergruppen als Datenbasis für die :ref:`Zugriffskontrolle` genutzt werden. Zum anderen kann der Veyon Master die anzuzeigenden Räume und Computer direkt aus dem Verzeichnisdienst laden.
 
 Die Konfiguration der LDAP-Integration erfolgt über die Konfigurationsseite :guilabel:`LDAP` im Veyon Configurator. Diese Seite gliedert sich in verschiedene Unterseiten für :ref:`Grundeinstellungen`, :ref:`Umgebungseinstellungen`, :ref:`Erweiterte Einstellungen` sowie :ref:`Integrationstests`.
 
@@ -170,7 +170,7 @@ Verwendung von LDAP-Backends
 
 Mit der erfolgreichen Konfiguration der LDAP-Integration können nun die LDAP-Backends aktiviert werden. Hierfür müssen das :ref:`Netzwerkobjektverzeichnis` sowie das Datenbankend für die :ref:`Computerzugriffskontrolle` angepasst werden. Erst mit der Umstellung des Netzwerkobjektverzeichnisses auf *LDAP* werden im Veyon Master die Raum- und Computerinformationen aus dem LDAP-Verzeichnis verwendet.
 
-.. attention:: Nach Umstellung des Datenbankends für die Computerzugriffskontrolle sollten die konfigurierten Zugriffsregeln unbedingt überprüft werden, da sich die Gruppen- und Rauminformationen im Regelfall ändern und die Zugriffsregeln nicht mehr gültig sind oder nicht mehr korrekt verarbeitet werden.
+.. attention:: Nach Umstellung des Datenbankends für die Computerzugriffskontrolle sollten die konfigurierten Zugriffsregeln unbedingt überprüft werden, da sich die Gruppen- und Rauminformationen ändern und somit die Zugriffsregeln in den meisten Fällen nicht mehr gültig sind oder nicht mehr korrekt verarbeitet werden.
 
 .. _LDAP-CLI:
 
