@@ -3,6 +3,9 @@
 Troubleshooting (Fehleranalyse und -behebung)
 =============================================
 
+.. important:: Wenn es zu Problemen im Zusammenspiel von Master- und Client-Computern kommt, sollte zunächst immer sichergestellt werden, dass auf allen Computern eine identische Veyon-Konfiguration eingesetzt wird. Zur Fehlervermeidung ist es dabei generell empfehlenswert, die Konfiguration nicht manuell über den Veyon Configurator zu importieren, sondern diesen Vorgang über die :ref:`Installation <AutoInstall>` oder :ref:`Kommandozeilenschnittstelle` zu automatisieren.
+
+
 Zugriff auf einen Computer ist nicht möglich
 --------------------------------------------
 
