@@ -87,11 +87,14 @@ Aktualisierungsintervall
 
     **Vorgabe:** *60 Sekunden*
 
+.. _Dienstkonfiguration:
 
 Dienst
 ------
 
 Die Einstellungen auf der Konfigurationsseite :guilabel:`Dienst` beeinflussen die Funktionsweise des Veyon-Diensts (Veyon Service) und dienen dem Finetuning in einigen Sonderfällen. Für einen reibungslosen Betrieb sollten die Einstellungen im Regelfall nicht geändert werden.
+
+.. _DienstAllgemein:
 
 Allgemein
 +++++++++
