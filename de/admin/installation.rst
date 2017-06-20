@@ -41,6 +41,8 @@ Die Installation von Veyon unter Linux hängt stark von der verwendeten Distribu
 .. [#github] https://github.com/veyon/veyon/
 
 
+.. _AutoInstall:
+
 Automatische Installation (silent installation)
 ------------------------------------------------
 

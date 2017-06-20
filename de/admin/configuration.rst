@@ -226,6 +226,7 @@ Funktionen
 
 Eine Funktion kann in die jeweils andere Liste verschoben werden, indem sie markiert und die jeweilige Schaltfläche mit den Pfeilsymbolen betätigt wird. Zusätzlich hat auch ein Doppelklick auf eine Funktion die gleiche Wirkung.
 
+.. _Authentifizierung:
 
 Authentifizierung
 -----------------
@@ -339,7 +340,7 @@ Die Konfiguration dieses Zugriffskontrollmodus ist relativ einfach. Die linke Li
 
 Über die Schaltfläche :guilabel:`Testen` im Abschnitt :guilabel:`Computerzugriffskontrolle` kann überprüft werden, ob ein bestimmter Benutzer über die eingestellten Gruppen auf einen Computer zugreifen dürfte.
 
-.. Zugriffskontrollregeln:
+.. _Zugriffskontrollregeln:
 
 Zugriffskontrollregeln
 ++++++++++++++++++++++
