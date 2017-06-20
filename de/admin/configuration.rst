@@ -237,7 +237,7 @@ Authentifizierungsmethoden
 
 Grundlegend stehen in Veyon mit der Schlüsseldatei-Authentifizierung sowie der Anmelde-Authentifizierung zwei verschiedene Authentifizierungsmethoden Verfügung, die einzeln oder ergänzend parallel eingesetzt werden können.
 
-Die **Schlüsseldatei-Authentifizierung** basiert auf einem `Public-Key-Verschlüsselungsverfahren <https://de.wikipedia.org/wiki/Public-Key-Verschl%C3%BCsselungsverfahren>`_, d. h. es kommen ein öffentlich bekannter Schlüssel und ein zugehöriger privater Schlüssel zum Einsatz, auf den nur bestimmte Benutzer Zugriff haben dürfen. Bei einer Verbindungsanfrage sendet der Veyon-Dienst eine zufällige Zeichenfolge an den Gegenüber, die dieser mit Hilfe des privaten Schlüssels kryptografisch signieren muss. Die Signatur wird an den Veyon-Dienst zurückgesendet und anhand des öffentlichen Schlüssels überprüft. Diese Überprüfung ist nur dann erfolgreich, wenn die Signatur mit dem passenden privaten Schlüssel erzeugt wird. Die Authentizität des Gegenübers ist dann sichergestellt. Schlägt die Signaturüberprüfung fehl, wird die Verbindung geschlossen.
+Die **Schlüsseldatei-Authentifizierung** basiert auf einem `Public-Key-Verschlüsselungsverfahren <https://de.wikipedia.org/wiki/Public-Key-Verschl%C3%BCsselungsverfahren>`_, d. h. es kommen ein öffentlich bekannter Schlüssel sowie ein zugehöriger privater Schlüssel zum Einsatz, auf den nur bestimmte Benutzer Zugriff haben dürfen. Bei einer Verbindungsanfrage sendet der Veyon-Dienst eine zufällige Zeichenfolge an den Veyon Master, die dieser mit Hilfe des privaten Schlüssels kryptografisch signieren muss. Die Signatur wird an den Veyon-Dienst zurückgesendet und anhand des öffentlichen Schlüssels überprüft. Diese Überprüfung ist nur dann erfolgreich, wenn die Signatur mit dem passenden privaten Schlüssel erzeugt wird. Die Authentizität des Gegenübers ist dann sichergestellt. Schlägt die Signaturüberprüfung fehl, wird die Verbindung geschlossen.
 
 Bei der **Anmelde-Authentifizierung** sendet der Gegenüber verschlüsselt seinen Benutzername und sein Kennwort an den Veyon-Dienst. Mit diesen Zugangsdaten versucht der Veyon-Dienst anschließend eine Benutzeranmeldung am lokalen System. Schlägt diese fehl, wird die Verbindung geschlossen. Andernfalls sind Benutzername und Kennwort korrekt, so dass die Authentizität des Gegenübers sichergestellt ist.
 
@@ -275,6 +275,24 @@ Schlüsselverwaltung
 +++++++++++++++++++
 
 Um die Schlüsseldatei-Authentifizierung zu nutzen, muss zunächst ein Schlüsselpaar bestehend aus einem privaten und öffentlichen Schlüssel erzeugt werden. Hierfür steht ein entsprechender Assistent zur Verfügung. Starten Sie diesen und folgen den vorgeschlagenen Schritten.
+
+Sobald die Schlüsseldatei-Authentifizierung eingerichtet ist und mit einem Client-Computer funktioniert, können die Schlüssel auch auf einem gemeinsamen Netzlaufwerk abgelegt werden und die Basisverzeichnisse angepasst werden. Auf den Client-Computern muss dann nur noch die Veyon-Konfiguration importiert werden, während die Schlüsseldateien nicht manuell importiert werden müssen.
+
+.. important:: Die private Schlüsseldatei darf nur Nutzern zugänglich sein, denen der Zugriff auf andere Computer gestattet sein soll. Wenn die Datei auf einem Netzlaufwerk liegt, muss daher unbedingt darauf geachtet werden, dass der Zugriff per Datei-ACL o. ä. eingeschränkt wird!
+
+.. _Basisverzeichnisse:
+
+Für beide Basisverzeichnisse sollten Platzhaltervariablen verwendet werden. Eine ausführliche Beschreibung möglicher Werte befindet sich in der :ref:`Konfigurationsreferenz` im Abschnitt :ref:`Platzhaltervariablen`. Unter Windows können anstatt absoluter Laufwerkspfade auch `UNC-Pfade <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>` verwendet werden.
+
+Basisverzeichnis der öffentlichen Schlüsseldatei
+    In diesem Verzeichnis werden die rollenspezifischen öffentlichen Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung oder dem Import abgelegt. Gleichzeitig lädt der Veyon-Dienst die jeweilige öffentliche Schlüsseldatei zur Durchführung der Authentifizierung aus diesem Verzeichnis.
+
+    Vorgabe: *$GLOBALAPPDATA/keys/public*
+
+Basisverzeichnis der privaten Schlüsseldatei
+    In diesem Verzeichnis werden die rollenspezifischen privaten Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung. Gleichzeitig lädt der Veyon Master die jeweilige private Schlüsseldatei aus diesem Verzeichnis, um sich an Clients zu authentifizieren.
+
+    Vorgabe: *$GLOBALAPPDATA/keys/private*
 
 
 .. _Anmelde-Authentifizierung:
@@ -321,6 +339,7 @@ Die Konfiguration dieses Zugriffskontrollmodus ist relativ einfach. Die linke Li
 
 Über die Schaltfläche :guilabel:`Testen` im Abschnitt :guilabel:`Computerzugriffskontrolle` kann überprüft werden, ob ein bestimmter Benutzer über die eingestellten Gruppen auf einen Computer zugreifen dürfte.
 
+.. Zugriffskontrollregeln:
 
 Zugriffskontrollregeln
 ++++++++++++++++++++++
