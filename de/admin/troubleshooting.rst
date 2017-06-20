@@ -16,8 +16,8 @@ Netzwerkprobleme
 
 Zunächst sollte die grundlegende Erreichbarkeit des Computers über das Netzwerk überprüft werden. Nutzen Sie dafür das üblicherweise jedem Betriebssystem beiliegende Hilfsprogramm ``ping``, um Verbindungsprobleme zu diagnostizieren.
 
-Dienst
-++++++
+Probleme mit dem Veyon-Dienst
++++++++++++++++++++++++++++++
 
 Wenn der Rechner anpingbar ist, muss kontrolliert werden, ob der Veyon-Dienst korrekt läuft. Öffnen Sie dazu den Veyon Configurator und öffnen die Konfigurationsseite :ref:`Dienstkonfiguration`. Im Abschnitt :ref:`DienstAllgemein` wird der Status des Diensts mit dem Wert *Läuft* anzeigen. Andernfalls kann der Dienst über die Schaltfläche :guilabel:`Dienst starten` gestartet werden. Ist dies nicht erfolgreich, kann eine Neuinstallation von Veyon Abhilfe schaffen. Hilft auch eine Neuinstallation nicht, können Sie in den Logdateien des Veyon-Diensts sowie den Systemmeldungen des Betriebssystem nach Fehlermeldungen und -ursachen suchen. Zusätzlich ergeben sich in der Dienstverwaltung des Betriebssystem ggf. weitere Hinweise oder Einstellmöglichkeiten.
 
