@@ -84,7 +84,7 @@ Veyon-Konfiguration nach der Installation automatisch anwenden:
 
 	veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
   
-.. important:: Sie müssen einen absoluten Pfad für die Konfigurationsdatei angeben, da der intern aufgerufene *Veyon Configurator* nicht im Installationsverzeichnis als Arbeitsverzeichnis ausgeführt wird. Nutzen Sie daher entweder die vorgeschlagene ``%cd``-Variable oder ersetzen sie mit einem absoluten Pfad.
+.. important:: Sie müssen einen absoluten Pfad für die Konfigurationsdatei angeben, da das intern aufgerufene Kommandozeilenwerkzeug (*Veyon Control*) nicht im Installationsverzeichnis als Arbeitsverzeichnis ausgeführt wird. Nutzen Sie daher entweder die vorgeschlagene ``%cd``-Variable oder ersetzen sie mit einem absoluten Pfad.
 
 Automatische Installation ohne Master-Anwendung:
 
