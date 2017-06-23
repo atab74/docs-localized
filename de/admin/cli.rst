@@ -3,6 +3,8 @@
 Kommandozeilenschnittstelle
 ===========================
 
+.. _Konfigurationsverwaltung:
+
 Konfigurationsverwaltung
 ------------------------
 

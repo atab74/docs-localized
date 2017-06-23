@@ -76,6 +76,8 @@ Installationsverzeichnis bei einer automatischen Installation angeben:
 
 .. note:: Aufgrund eines Fehlers in der zugrundeliegenden Installationssoftware (NSIS) muss die Option ``/D=...`` immer als letztes Argument übergeben werden.
 
+.. _InstallationKonfigurationsimport:
+
 Veyon-Konfiguration nach der Installation automatisch anwenden:
 
 .. code-block:: none
