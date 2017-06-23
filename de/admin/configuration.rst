@@ -81,7 +81,7 @@ Um die Schlüsseldatei-Authentifizierung zu nutzen, muss zunächst ein Schlüsse
 
 Sobald die Schlüsseldatei-Authentifizierung eingerichtet ist und mit einem Client-Computer funktioniert, können die Schlüssel auch auf einem gemeinsamen Netzlaufwerk abgelegt und die :ref:`Basisverzeichnisse <Basisverzeichnisse>` angepasst werden. Auf den Client-Computern muss dann nur noch die Veyon-Konfiguration importiert werden, während die Schlüsseldateien nicht manuell importiert werden müssen.
 
-.. important:: Die private Schlüsseldatei darf nur Nutzern zugänglich sein, denen der Zugriff auf andere Computer gestattet sein soll. Wenn die Datei auf einem Netzlaufwerk liegt, muss daher unbedingt darauf geachtet werden, dass der Zugriff per Datei-ACL o. ä. eingeschränkt wird!
+.. attention:: Die private Schlüsseldatei darf nur Nutzern zugänglich sein, denen der Zugriff auf andere Computer gestattet sein soll. Wenn die Datei auf einem Netzlaufwerk liegt, muss daher unbedingt darauf geachtet werden, dass der Zugriff per Datei-ACL o. ä. eingeschränkt wird!
 
 
 .. _Zugriffskontrolle:
