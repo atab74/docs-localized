@@ -177,8 +177,18 @@ Mit der erfolgreichen Konfiguration der LDAP-Integration können nun die LDAP-Ba
 Kommandozeilenschnittstelle
 ---------------------------
 
-Über die :ref:`Kommandozeilenschnittstelle` von Veyon sind einige LDAP-spezifischen Operationen möglich. Alle Operationen stehen unter dem Modul ``ldap`` zur Verfügung. Eine Liste aller unterstützen Befehle wird über ``veyon-ctl ldap help`` ausgegeben, während befehlsspezifische Hilfetexte über ``veyon-ctl ldap help <Befehl>`` angezeigt werden können.
+Über die :ref:`Kommandozeilenschnittstelle` von Veyon sind einige LDAP-spezifischen Operationen möglich. Alle Operationen stehen im Modul ``ldap`` zur Verfügung. Eine Liste aller unterstützen Befehle wird über ``veyon-ctl ldap help`` ausgegeben, während befehlsspezifische Hilfetexte über ``veyon-ctl ldap help <Befehl>`` angezeigt werden können.
 
-Mit Hilfe des Befehls ``autoconfigurebasedn`` kann der Base-DN automatisch konfiguriert werden, indem eine LDAP-Server-URL sowie optional ein Naming-Context-Attribut angegeben wird.
+``autoconfigurebasedn``
+    Mit diesem Befehl kann der verwendete Base-DN automatisch ermittelt und in die Konfiguration fest eingetragen werden. Als Argumente müssen eine LDAP-Server-URL sowie optional ein Naming-Context-Attribut angegeben werden:
 
-Der Befehl ``query`` erlaubt die Abfrage von LDAP-Objekten (``rooms``, ``computers``, ``groups``, ``users``) und dient in erster Linie der Fehlersuche. Die Funktion kann aber auch für die Entwicklung von Scripten für die Systemintegration hilfreich sein.
+    ``veyon-ctl ldap autoconfigurebasedn ldap://192.168.1.2/ namingContexts``
+
+    ``veyon-ctl ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/``
+
+``query``
+    Dieser Befehl erlaubt die Abfrage von LDAP-Objekten (``rooms``, ``computers``, ``groups``, ``users``) und dient in erster Linie der Fehlersuche. Die Funktion kann aber auch für die Entwicklung von Scripten für die Systemintegration hilfreich sein.
+
+    ``veyon-ctl ldap query users``
+
+    ``veyon-ctl ldap query computers``
