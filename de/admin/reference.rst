@@ -303,12 +303,6 @@ LDAP
 
 Alle Optionen zur Anbindung von Veyon an einen LDAP-kompatiblen Server sind im Kapitel :ref:`LDAP` ausführlich beschrieben.
 
-.. _Lokale Daten:
-
-Lokale Daten
-------------
-
-
 .. _Platzhaltervariablen:
 
 Platzhaltervariablen für Dateipfade

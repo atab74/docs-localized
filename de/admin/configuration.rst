@@ -96,6 +96,18 @@ Die Einrichtung erfolgt über die Konfigurationsseite :guilabel:`Zugriffskontrol
 .. important:: Die Konfiguration der Zugriffskontrolle ist wie alle Einstellungen Teil der lokalen Veyon-Konfiguration. Die Konfiguration muss daher :ref:`auf alle anderen Computer übertragen werden <ImportExportKonfiguration>`, um ordnungsgemäß zu funktionieren.
 
 
+.. _Lokale Daten:
+
+Lokale Daten
+------------
+
+In der Konfigurationsseite :guilabel:`Lokale Daten` können die Räume und Computer angelegt werden, die im Veyon Master angezeigt werden. Diese Informationen werden im Gegensatz zu Backends wie LDAP in der lokalen Konfiguration gespeichert und müssen daher auf alle Computer übertragen werden.
+
+Die Konfigurationsseite besteht aus zwei Listen. In der linken Liste sind alle konfigurierten Räume aufgeführt. Über die zwei Schaltflächen unterhalb der Liste können Räume angelegt oder gelöscht werden. Bestehende Räume können per Doppelklick bearbeitet und umbenannt werden.
+
+In der rechten Liste sind alle Computer aufgeführt, die für den aktuell ausgewählten Raum hinterlegt sind. Über die zwei Schaltflächen unterhalb der Liste können Computer angelegt oder gelöscht werden. Die einzelnen Zellen in der Tabelle können per Doppelklick bearbeitet werden. Für jeden Computer muss ein Name sowie eine Computer-/IP-Adresse angegeben werden. Soll die Veyon-Funktion zum Einschalten von Rechnern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss auch die zugehörige MAC-Adresse eingetragen werden. Andernfalls kann diese Spalte leer gelassen werden.
+
+
 LDAP
 ----
 
