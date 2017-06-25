@@ -3,6 +3,8 @@
 FAQ - Häufig gestellte Fragen
 =============================
 
+.. index:: iTALC
+
 Wie kann ich eine bestehende iTALC-Installation zu Veyon migrieren?
 -------------------------------------------------------------------
 

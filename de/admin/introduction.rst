@@ -8,20 +8,19 @@ Dieses Handbuch beschreibt die Installation und Einrichtung von Veyon in einem C
 
 In weiteren Abschnitten dieses Kapitels finden Sie grundlegende Informationen über Veyon und seine Bestandteile, die für die Inbetriebnahme von elementarer Bedeutung sind.
 
-Im Kapitel :ref:`Installation` wird die Installation und Integration von Veyon auf einem Windows- oder Linux-Computer behandelt. Hier finden Sie auch Hinweise, wie Sie die Installation automatisiert durchführen können.
+Im Kapitel :ref:`Installation` wird die Installation von Veyon auf einem Windows- oder Linux-Computer behandelt. Hier finden Sie auch Hinweise, wie Sie die Installation automatisiert durchführen können.
 
-Die Einrichtung mit Hilfe des grafischen Einrichtungswerkzeugs sowie die verschiedenen Einstelloptionen sind im Kapitel :ref:`Einrichtung` detailliert beschrieben. Die Anbindung an einen LDAP-/ActiveDirectory-Server wird im Kapitel :ref:`LDAP` gesondert behandelt.
+Die Einrichtung und Integration mit Hilfe des grafischen Einrichtungswerkzeugs sind im Kapitel :ref:`Einrichtung` allgemein beschrieben, während sich die :ref:`Konfigurationsreferenz` im Detail mit den verschiedenen Einstelloptionen befasst. Die Anbindung an einen LDAP-/ActiveDirectory-Server wird im Kapitel :ref:`LDAP` ausführlich behandelt.
 
-Veyon verfügt weiterhin über eine Kommandozeilenschnittstelle (CLI), über die sich Konfigurationsanpassungen vornehmen lassen und bestimmte Programmfunktionen verwendet oder gesteuert werden können. Alle Funktionen des Kommandozeilenwerkzeugs sind im Kapitel :ref:`Kommandozeilenschnittstelle` aufgeführt und erläutert.
+Veyon verfügt weiterhin über eine Kommandozeilenschnittstelle (:index:`CLI`), über die sich Konfigurationsanpassungen vornehmen lassen und bestimmte Programmfunktionen verwendet oder gesteuert werden können. Alle Module und Befehle des Kommandozeilenwerkzeugs sind im Kapitel :ref:`Kommandozeilenschnittstelle` aufgeführt und erläutert.
 
-Bei Problemen mit Veyon können Sie das Kapitel :ref:`Troubleshooting` konsultieren. Hier finden Sie Maßnahmen zur Fehleranalyse und -behebung. Häufige Fragen werden im Kapitel :ref:`FAQ` beantwortet.
+Bei Problemen mit Veyon können Sie das Kapitel :ref:`Troubleshooting` konsultieren. Hier finden Sie Maßnahmen zur Fehleranalyse und -behebung. Häufig gestellte Fragen werden im Kapitel :ref:`FAQ` beantwortet.
 
 
 Über Veyon
 -----------
 
-Veyon ist eine quelloffene Software für Computer-Monitoring- und Klassenraumverwaltung. Sie erlaubt die Beobachtung und Steuerung von Computerräumen sowie die Interaktion mit B
-enutzern. Die wichtigsten Funktionen von Veyon sind:
+Veyon ist eine quelloffene Software für Computer-Monitoring und Klassenraumverwaltung. Sie erlaubt die Beobachtung und Steuerung von Computerräumen sowie die Interaktion mit Benutzern. Die wichtigsten Funktionen von Veyon sind:
 
 * Überblick über einen (Klassen-)Raum mit allen Bildschirminhalten in einer Kachelansicht
 * Fernsteuerung von Computern
@@ -33,34 +32,36 @@ enutzern. Die wichtigsten Funktionen von Veyon sind:
 * Programme ausführen oder Websiten öffnen
 
 
+.. index:: Lehrer-Computer, Schüler-Computer, Master-Computer, Client-Computer
+
 .. _Komponenten:
 
 Komponenten
 -----------
 
-Veyon besteht im Grundprinzip aus einer Master- und einer Service-Komponente, die das Zusammenspiel zwischen Lehrer- und Schüler-Computern realisieren:
+Veyon besteht im Grundprinzip aus einer Master- und einer Service-Komponente, die das Zusammenspiel zwischen Lehrer- und Schüler-Computern (auch *Master-Computer* und *Client-Computer*) realisieren:
 
 .. image:: images/service-master-components.png
    :scale: 50 %
    :align: center
 
-Im Detail gibt es verschiedene Programmkomponenten, die auf verschiedene Art und Weise miteinander interagieren:
+Im Detail gibt es verschiedene :index:`Programmkomponenten`, die auf verschiedene Art und Weise miteinander interagieren:
 
 .. image:: images/architecture.png
    :scale: 50 %
    :align: center
 
-Veyon Master
-    Anwendungsprogramm, mit dem andere Computer beobachtet und gesteuert und Veyon-Funktionen genutzt werden können. Das Programm wird im regulären Anwendungsfall vom Endanwender gestartet und greift auf über den Veyon Service auf die Computer zu.
+:index:`Veyon Master`
+    Anwendungsprogramm, mit dem andere Computer beobachtet und gesteuert und Veyon-Funktionen genutzt werden können. Das Programm wird im regulären Anwendungsfall vom Endanwender gestartet und greift über den Veyon Service auf die Computer zu.
 
-Veyon Service
-    Dienstprogramm, das den Zugriff auf einen Computer, Steuerungsfunktionen und Anwendungsfunktionen bereitstellt. Das Programm wird automatisch vom Betriebssystem als Dienst mit erhöhten Privilegien ausgeführt und kann vom Benutzer nicht beendet werden. Der Dienst wird auf allen Computern einschließlich Lehrer-Computern benötigt.
+:index:`Veyon Service`
+    Dienstprogramm, das den Zugriff auf einen Computer, Steuerungsfunktionen und Anwendungsfunktionen bereitstellt. Das Programm wird im Regelfall automatisch vom Betriebssystem als Dienst mit erhöhten Privilegien ausgeführt und kann vom Benutzer nicht beendet werden. Der Dienst wird auf allen Computern einschließlich Lehrer-Computern benötigt.
 
-Veyon Worker
-    Hilfsprogramm, das vom Service gestartet wird, um bestimmte Funktionen isoliert und/oder im Kontext des angemeldeten Benutzers bereitzustellen. Dazu zählen beispielsweise der Demo-Server auf dem Lehrer-Computer oder der Demo-Client auf Schüler-Computern.
+:index:`Veyon Worker`
+    Hilfsprogramm, das vom Service gestartet wird, um bestimmte Funktionen isoliert und/oder im Kontext des angemeldeten Benutzers bereitzustellen. Dazu zählen beispielsweise der Demoserver auf dem Lehrer-Computer oder der Democlient auf Schüler-Computern.
 
-Veyon Configurator
-    Konfigurationswerkzeug, welches die Einrichtung und Anpassung aller Komponenten einer lokalen Veyon-Installation über eine grafische Benutzeroberfläche ermöglicht. Das Programm wird bei Bedarf vom Administrator mit erhöhten Privilegien gestartet.
+:index:`Veyon Configurator`
+    :index:`Konfigurationswerkzeug`, welches die Einrichtung und Anpassung aller Komponenten einer lokalen Veyon-Installation über eine grafische Benutzeroberfläche ermöglicht. Das Programm wird bei Bedarf vom Administrator mit erhöhten Privilegien gestartet.
 
-Veyon Control
+:index:`Veyon Control`
     Kommandozeilenwerkzeug, das als Ergänzung zum Veyon Configurator ohne grafische Interaktion verschiedene Konfigurationsanpassungen und die Verwendung einiger Veyon-Funktionen erlaubt. Das Programm wird entweder interaktiv auf der Kommandozeile oder scriptgesteuert mit üblicherweise administrativen Privilegien ausgeführt.

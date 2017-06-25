@@ -14,3 +14,4 @@ Veyon-Administratorhandbuch
 	troubleshooting
 	faq
 
+* :ref:`genindex`
