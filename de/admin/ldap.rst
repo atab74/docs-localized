@@ -64,7 +64,7 @@ Objektbäume
     Hier muss der LDAP-Baum (ohne Base-DN) eingetragen werden, in dem sich die Benutzer(objekte) befinden. Typische Beispiele sind ``OU=Users`` oder ``CN=Users``.
 
 :index:`Gruppenbaum`
-    Hier muss der LDAP-Baum (ohne Base-DN) eingetragen werden, in dem sich die Gruppen(objekte) befinden. Typische Beispiele sind ``OU=Groups` oder ``CN=Groups``.
+    Hier muss der LDAP-Baum (ohne Base-DN) eingetragen werden, in dem sich die Gruppen(objekte) befinden. Typische Beispiele sind ``OU=Groups`` oder ``CN=Groups``.
 
 :index:`Computerbaum`
     Hier muss der LDAP-Baum (ohne Base-DN) eingetragen werden, in dem sich die Computer(objekte) befinden. Typische Beispiele sind ``OU=Computers`` oder ``CN=Computers``.
