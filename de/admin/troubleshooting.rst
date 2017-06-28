@@ -73,6 +73,16 @@ Stellen Sie sicher, dass:
 * in der Konfigurationsseite :guilabel:`Master` die Optionen zur Feineinstellung des Verhaltens auf ihren Vorgabewerten eingestellt sind
 
 
+Der automatische Wechsel zum aktuellen Raum funktioniert nicht
+--------------------------------------------------------------
+
+Wenn die :ref:`Option zum automatischen Wechsel zum aktuellem Raum <RoomAutoSwitch>` aktiviert ist, beim Start des Veyon Masters aber keine Wirkung zeigt, sollte zunächst sichergestellt werden, dass der Master-Computer auch im :ref:`Netzwerkobjektverzeichnis` für den jeweiligen Raum als Computer hinterlegt ist. Unabhängig davon kann der Master-Computer über die Option :ref:`Lokalen Computer in Computerraumverwaltung ausblenden <AutoHideLocalComputer>` in der Computerraumverwaltung ausgeblendet werden.
+
+Sind alle Einträge im Netzwerkobjektverzeichnis korrekt, liegt in aller Regel ein Problem mit der DNS-Konfiguration im Netzwerk vor. Stellen Sie sicher, dass sowohl Computernamen in IP-Adressen als auch IP-Adressen zurück in Computernamen aufgelöst werden können. Unter den meisten Betriebssystemen steht hierfür das Diagnosewerkzeug ``nslookup`` zur Verfügung. Der Aufruf des Programms mit dem lokalen Computername als Argument muss eine gültige IP-Adresse zurückliefern. Ein zweiter Aufruf mit der ermittelten IP-Adresse muss wiederum den Computername zurückgeben.
+
+Arbeitet die Funktion trotz korrektem DNS-Setup nicht wie gewünscht, kann im zweiten Schritt der :ref:`Loglevel <Loglevel>` auf den höchsten Wert (*Debug*) gesetzt werden und in der Logdatei ``VeyonMaster.log`` im :ref:`Logdateiverzeichnis <Logdateiverzeichnis>` nach Fehlerursachen gesucht werden. Hierbei geben die Meldungen *"initializing rooms"* sowie *"found local rooms"* Aufschluss über mögliche Probleme.
+
+
 Im Demo-Modus wird auf Client-Computern nur ein schwarzer Bildschirm oder ein schwarzes Fenster angezeigt
 ---------------------------------------------------------------------------------------------------------
 

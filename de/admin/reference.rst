@@ -32,10 +32,14 @@ Logaufzeichnung
 
 Über verschiedene Optionen kann das Verhalten der :index:`Logaufzeichnung` beeinflusst werden. Diese Einstellungen sind vor allem dann interessant, wenn es zu Problemen beim Einsatz von Veyon kommt. :index:`Logdateien` können hier Aufschluss über mögliche Fehlerursachen geben.
 
+.. _Logdateiverzeichnis:
+
 :index:`Logdateiverzeichnis`
     Über diese Einstellung kann festgelegt werden, in welchen Ordner Logdateien abgelegt werden. Üblicherweise sollte hier eine Platzhaltervariable verwendet werden. Eine ausführliche Beschreibung möglicher Werte befindet sich im Abschnitt :ref:`Platzhaltervariablen`.
 
     **Vorgabe:** *$TEMP*
+
+.. _Loglevel:
 
 :index:`Loglevel`
     Der Loglevel legt fest, wie detailliert Logmeldungen aufgezeichnet werden. Bei der Fehlersuche kann es hilfreich sein, den Loglevel auf den Wert :guilabel:`Debugmeldungen und alles andere` festzulegen. Hierbei können sich allerdings schnell große Datenmengen ansammeln. Im Regelbetrieb sollten nur Warnungen und Fehler aufgezeichnet werden.
@@ -171,6 +175,8 @@ Verzeichnisse
 
 Für die Verzeichniseinstellungen sollten Platzhaltervariablen anstatt absoluter Pfade verwendet werden, damit die Konfiguration generisch ist und benutzerunabhängig funktioniert. Eine ausführliche Beschreibung möglicher Werte befindet sich im Abschnitt :ref:`Platzhaltervariablen`.
 
+.. _Benutzerkonfiguration:
+
 :index:`Benutzerkonfiguration`
      In dem hier eingestellten Verzeichnis wird die benutzerspezifische Konfiguration des Master-Programms abgelegt. Diese Konfiguration beinhaltet Einstellungen der Benutzeroberfläche sowie die Computerauswahl der letzten Sitzung.
 
@@ -192,8 +198,10 @@ Zugriffskontrolle beim Programmstart durchführen
 
     **Vorgabe:** *deaktiviert*
 
+.. _RoomAutoSwitch:
+
 Beim Start automatisch zu aktuellem Raum wechseln
-    Standardmäßig werden nach Start des Veyon Masters beim vorherigen Mal ausgewählten Computer angezeigt. Wenn stattdessen alle Computer des Raums angezeigt werden sollen, in dem sich der Master-Computer befindet, kann diese Option aktiviert werden. Der Veyon Master versucht dann über das eingestellte :ref:`Netzwerkobjektverzeichnis` zu ermitteln, zu welchem Raum der lokale Computer gehört. Alle Computer dieses Raums werden dann angezeigt.
+    Standardmäßig werden nach Start des Veyon Masters beim vorherigen Mal ausgewählten Computer angezeigt. Wenn stattdessen alle Computer des Raums angezeigt werden sollen, in dem sich der Master-Computer befindet, kann diese Option aktiviert werden. Der Veyon Master versucht dann über das eingestellte :ref:`Netzwerkobjektverzeichnis` zu ermitteln, zu welchem Raum der lokale Computer gehört. Alle Computer dieses Raums werden dann angezeigt. Voraussetzung für diese Funktion ist ein korrekt arbeitendes DNS-Setup im Netzwerk, bei dem sowohl Computernamen in IP-Adressen als auch IP-Adressen zurück in Computernamen aufgelöst werden können.
 
     **Vorgabe:** *deaktiviert*
 
@@ -206,6 +214,8 @@ Manuelles Hinzufügen von Räumen zur Computerraumverwaltung erlauben
     Im Zusammenspiel mit der Option *Nur aktuellen Raum in Computerraumverwaltung anzeigen* kann optional erlaubt werden, weitere Räume manuell zur Computerraumverwaltung hinzuzufügen. Wenn die Option aktiviert ist, wird eine zusätzliche Schaltfläche :guilabel:`Raum hinzufügen` angezeigt, die einen Dialog mit allen verfügbaren Räumen öffnet.
 
     **Vorgabe:** *deaktiviert*
+
+.. _AutoHideLocalComputer:
 
 Lokalen Computer in Computerraumverwaltung ausblenden
     Im Regelbetrieb ist es oft nicht gewünscht, den eigenen Computer anzuzeigen und raumweit aktivierte Funktionen auch auf dem eigenen Computer zu aktivieren (z. B. Bildschirmsperre). Wenn ein solches Verhalten gewünscht ist, kann diese Option aktiviert werden.
