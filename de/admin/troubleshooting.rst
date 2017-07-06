@@ -83,6 +83,12 @@ Sind alle Einträge im Netzwerkobjektverzeichnis korrekt, liegt in aller Regel e
 Arbeitet die Funktion trotz korrektem DNS-Setup nicht wie gewünscht, kann im zweiten Schritt der :ref:`Loglevel <Loglevel>` auf den höchsten Wert (*Debug*) gesetzt werden und in der Logdatei ``VeyonMaster.log`` im :ref:`Logdateiverzeichnis <Logdateiverzeichnis>` nach Fehlerursachen gesucht werden. Hierbei geben die Meldungen *"initializing rooms"* sowie *"found local rooms"* Aufschluss über mögliche Probleme.
 
 
+Bildschirmsperre kann über Strg+Alt+Entf (Ctrl+Alt-Del) umgangen werden
+-----------------------------------------------------------------------
+
+Damit sämtliche Tastatureingaben und Tastenkombinationen im Modus Bildschirmsperre vollständig blockiert werden, ist nach der Veyon-Installation unter Windows ein Neustart des Computers erforderlich. Ohne Neustart ist der Veyon-spezifische Treiber für Eingabegeräte noch nicht aktiv und Tastatureingaben können somit noch nicht abgefangen werden.
+
+
 Im Demo-Modus wird auf Client-Computern nur ein schwarzer Bildschirm oder ein schwarzes Fenster angezeigt
 ---------------------------------------------------------------------------------------------------------
 
