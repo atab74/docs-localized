@@ -329,6 +329,27 @@ Zugriffskontrollregeln
 Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszenarien ist im Kapitel :ref:`Regelwerk für Computerzugriff` ausführlich beschrieben.
 
 
+Demo-Server
+-----------
+
+In der Konfigurationsseite für dem Demo-Server können einige Feineinstellungen vorgenommen werden, um die Performance des Demo-Modus zu verbessern. Diese Einstellungen sollten nur geändert werden, wenn die Performance nicht zufriedenstellend ist oder nur eine geringe Bandbreite für die Datenübertragung zur Verfügung steht.
+
+Update-Intervall:
+    Über diese Option kann das Intervall eingestellt werden, das zwischen zwei Bildschirmaktualisierungen liegt. Je kleiner das Intervall gewählt wird, desto höher die Aktualisierungsrate und flüssiger die Bildschirmübertragung. Ein niedriger Wert führt allerdings zu einer höheren CPU-Last sowie höherem Netzwerkverkehr.
+
+    **Vorgabe:** *100 ms*
+
+Key-Frame-Intervall:
+    Während einer Bildschirmübertragung werden grundlegend immer nur geänderte Bildschirmbereiche an die Clients gesendet (inkrementelle Aktualisierungen), um die Netzwerklast zu minimieren. Diese Aktualisierungen erfolgen für jeden Client individuell und asynchron, so dass die Clients nach einer Weile je nach Bandbreite und Latenz unter Umständen nicht mehr synchron laufen. Daher werden in regelmäßigen Abständen vollständige Bildschirminhalte (*Key Frames*) übertragen, so dass spätestens nach Ablauf des Key-Frame-Intervalls auf allen Clients wieder ein synchrones Bild angezeigt wird. Je niedriger der Wert gewählt wird, desto höher die Prozessor- und Netzwerklast.
+
+    **Vorgabe:** *10 s*
+
+Speicherlimit:
+    Alle Bildschirmaktualisierungsdaten werden vom Demo-Server in einem internen Puffer gespeichert, um anschließend an Clients verteilt zu werden. Damit der interne Puffer zwischen zwei Key-Frames durch zu viele inkrementelle Aktualisierungen nicht zu viel Arbeitsspeicher belegt, wird der hier festgelegte Wert als Limit verwendet. Dieses Limit ist ein Soft-Limit, so dass bei Überschreiten eine Key-Frame-Aktualisierung angestrebt wird (auch wenn das Key-Frame-Intervall noch nicht abgelaufen ist), der Puffer aber noch alle Daten behält. Erst bei Überschreiten des doppelten Wertes (Hard-Limit) wird der Puffer zurückgesetzt. Kommt es während einer Bildschirmübertragung immer wieder zu Aussetzern bzw. Verzögerungen, sollte dieser Wert erhöht werden.
+
+    **Vorgabe:** *128 MB*
+
+
 LDAP
 ----
 
