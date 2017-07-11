@@ -63,6 +63,12 @@ Werden :ref:`Autorisierte Benutzergruppen für Computerzugriff` eingesetzt, muss
 Die :ref:`Zugriffskontrollregeln` können ebenfalls Ursache dafür sein, dass ein Computerzugriff nicht möglich ist. So muss es in jedem Fall mindestens eine Regel geben, über die der Zugriff unter bestimmten Bedingungen erlaubt wird. Wenn dies sichergestellt ist, kann zur weiteren Fehlersuche eine Regel am Ende der Regelliste eingefügt werden, bei der die Option :guilabel:`Regel immer verarbeiten und Bedingungen ignorieren` aktiviert und die Aktion :guilabel:`Zugriff erlauben` ausgewählt ist. Diese Regel kann dann schrittweise so lange in der Regelliste nach oben verschoben werden, bis der Zugriff funktioniert bzw. der Test die gewünschten positiven Ergebnisse liefert. Die darunter befindliche Regel ist dann Ursache für die Zugriffsverweigerung und kann näher untersucht und entsprechend angepasst werden.
 
 
+Einstellungen werden nicht korrekt gespeichert/geladen
+------------------------------------------------------
+
+Nach dem Update von frühen Beta-Versionen von Veyon 4 kann es vorkommen, dass einige Konfigurationsschlüssel inkonsistent sind und neu erstellt werden müssen. Dies kann sich darin äußern, dass Einstellungen nicht korrekt gespeichert bzw. wieder geladen werden, beispielsweise lokale Raum- und Computerinformationen. In diesem Fall sollte die :ref:`Konfiguration vollständig zurückgesetzt <ConfigClear>` und auf Basis der Vorgabewerte neu erstellt werden.
+
+
 Räume und Computer aus LDAP-Verzeichnis werden im Master nicht angezeigt
 ------------------------------------------------------------------------
 
