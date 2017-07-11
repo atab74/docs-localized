@@ -48,8 +48,6 @@ Konfigurationsverwaltung
 
 Mit Hilfe des Moduls ``config`` lässt sich die lokale Veyon-Konfiguration verwalten. Dabei können sowohl die komplette Konfiguration als auch einzelne :index:`Konfigurationsschlüssel` gelesen oder geschrieben werden.
 
-.. index:: Konfiguration löschen
-
 ``clear``
     Mit diesem Befehl wird die lokale Konfiguration komplett zurückgesetzt, indem alle Konfigurationsschlüssel gelöscht werden. Dieser Befehl kann genutzt werden, um vor dem Import einer Konfiguration einen definierten Zustand ohne alte Einstellungen herzustellen:
 

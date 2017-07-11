@@ -147,3 +147,17 @@ Im Veyon Configurator befindet sich im Menü :guilabel:`Datei` der Eintrag :guil
 Über das Modul :ref:`Konfigurationsverwaltung` der :ref:`Kommandozeilenschnittstelle` können sowohl Konfigurationsimport als auch -export automatisiert/scriptgesteuert durchgeführt werden.
 
 Auch im Rahmen einer :ref:`automatisierten Installation <AutoInstall>` kann die Konfiguration ohne weitere Interaktion übernommen werden. Unter den Beispielen befindet sich auch ein :ref:`Beispiel <InstallationKonfigurationsimport>` für den Installer-Parameter ``/ApplyConfig``.
+
+
+.. index:: Konfiguration zurücksetzen, Einstellungen zurücksetzen, Konfiguration löschen
+
+.. _ConfigClear:
+
+Konfiguration zurücksetzen
+--------------------------
+
+In einigen Fehlersituationen kann es ratsam sein, die Veyon-Konfiguration komplett zurückzusetzen, um anschließend mit den Vorgabewerten neu zu beginnen. Hierfür befindet sich im Veyon Configurator im Menü :guilabel:`Datei` der Eintrag :guilabel:`Konfiguration zurücksetzen`.
+
+Alternativ kann die Konfiguration auch über das Modul :ref:`Konfigurationsverwaltung` der :ref:`Kommandozeilenschnittstelle` zurückgesetzt werden.
+
+Weiterhin kann die gespeicherte Konfiguration auf Betriebssystemebene zurückgesetzt werden. Unter Linux muss dazu die Datei ``/etc/xdg/Veyon Solutions/Veyon.conf`` gelöscht werden, während unter Windows der Registry-Schlüssel ``HKLM\Software\Veyon Solutions`` mit allen Unterschlüsseln gelöscht werden muss.
