@@ -198,6 +198,11 @@ Zugriffskontrolle beim Programmstart durchführen
 
     **Vorgabe:** *deaktiviert*
 
+Beim Start automatisch die Größe der Computer-Miniaturansichten anpassen
+    Soll beim Start des Veyon Masters die Größe der Computer-Miniaturansichten automatisch angepasst werden (gleicher Effekt wie Klick auf die Schaltfläche :guilabel:`Auto`), kann diese Option aktiviert werden. Die zuletzt eingestellte Größe wird dann ignoriert. Diese Funktionalität kann vor allem im Zusammenspiel mit dem :ref:`automatischen Raumwechsel <RoomAutoSwitch>` sinnvoll eingesetzt werden.
+
+    **Vorgabe:** *deaktiviert*
+
 .. _RoomAutoSwitch:
 
 Beim Start automatisch zu aktuellem Raum wechseln
