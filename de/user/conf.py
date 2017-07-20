@@ -122,12 +122,21 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
+    'preamble': r'''\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\huge}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+''',
 
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
 
     'babel' : '\\usepackage[ngerman]{babel}',
+    'maketitle': '',
+    'fontpkg': r'''
+\setmainfont{Arial}
+\setsansfont{Arial}
+''',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
