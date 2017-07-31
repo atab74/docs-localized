@@ -31,7 +31,19 @@ Die Werkzeugleiste beinhaltet eine Reihe an Schaltflächen zur Aktivierung von v
 
 In der Arbeitsfläche werden alle zu beobachtenden Computer in einer :index:`Kachelansicht` dargestellt. Abhängig von der Systemkonfiguration und von vorherigen Programmstarts sehen Sie hier bereits die Computer des aktuellen Raums. Über die Computerraumverwaltung_ können Sie Computer oder ganze Computerräume ein- oder ausblenden.
 
-Die Elemente in der Statusleiste dienen der Steuerung der Programmoberfläche. So können Sie Ansichten wie die Computerraumverwaltung_ oder Bildschirmfotoverwaltung_ aktivieren. Über den Schieberegler können Sie die Größe der angezeigten Computerbildschirme steuern. Eine automatische Anpassung auf eine optimale Größe erfolgt bei der Betätigung der Schaltfläche :guilabel:`Auto`. Die Schaltfläche :guilabel:`Über` öffnet einen Dialog mit Informationen über das Programm wie z. B. Version, Hersteller und Lizenzbestimmungen.
+Die Elemente in der Statusleiste dienen der Steuerung der Programmoberfläche. So können Sie Ansichten wie die Computerraumverwaltung_ oder Bildschirmfotoverwaltung_ aktivieren. Über den Schieberegler können Sie die Größe der angezeigten Computerbildschirme steuern.
+
+Eine automatische Anpassung auf eine optimale Größe erfolgt bei der Betätigung links daneben befindlichen Schaltfläche |zoom-fit-best| (:guilabel:`Optimale Größe einstellen`).
+
+Die Schaltfläche |help-about| (:guilabel:`Über`) öffnet einen Dialog mit Informationen über das Programm wie z. B. Version, Hersteller und Lizenzbestimmungen.
+
+.. |zoom-fit-best| image:: images/zoom-fit-best.png
+  :scale: 20%
+  :align: middle
+
+.. |help-about| image:: images/help-about.png
+  :scale: 20%
+  :align: middle
 
 .. _Werkzeugleiste:
 

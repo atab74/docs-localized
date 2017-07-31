@@ -17,4 +17,10 @@ Im Regelfall werden die Bildschirminhalte in der Arbeitsfläche im Beobachtungsm
 Was passiert, wenn ich das Hauptfenster aus Versehen schließe?
 --------------------------------------------------------------
 
-An den Computern ändert sich nichts, d. h. sie behalten ihren letzten Zustand. Sie können das Programm einfach wieder öffnen und ggf. den Modus wie gewünscht zurückwechseln.
+Eventuell aktive Funktionen wie Demo-Modus oder Bildschirmsperre werden beim Schließen des Programms beendet. Sie können das Programm aber einfach wieder öffnen und ggf. den Modus wie gewünscht wieder aktivieren.
+
+
+Wie kann ich den Bildschirm eines Schülers auf alle anderen Bildschirme übertragen?
+-----------------------------------------------------------------------------------
+
+Wenn Sie im Demo-Modus nicht Ihren eigenen Bildschirm sondern den eines Schülers übertragen möchten, aktivieren Sie zunächst den Demo-Modus für alle Computer. Anschließend beenden Sie den Demo-Modus für den vorführenden Schüler über das Kontextmenü und öffnen schließlich den Computer in der Fernansicht. Somit wird Ihr Fernansichtsfenster – und damit der Bildschirm des Schülers – an alle anderen Computer übertragen.

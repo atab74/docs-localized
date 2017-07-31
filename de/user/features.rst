@@ -14,7 +14,7 @@ Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste f
 Computer auswählen
 ------------------
 
-Wenn Sie eine Funktion nur auf einem einzelnen Computer aktivieren möchte, klicken Sie diesen mit der rechten Maustaste an und wählen die gewünschte Funktion über das Kontextmenü.
+Wenn Sie eine Funktion nur auf einem einzelnen Computer aktivieren möchte, klicken Sie diesen mit der rechten Maustaste an und wählen die gewünschte Funktion über das Kontextmenü. Die Einträge im Kontextmenü werden dynamisch je nach aktiven Funktionen angezeigt.
 
 .. image:: images/computer-context-menu.png
    :scale: 75 %
@@ -55,7 +55,7 @@ Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläch
 .. image:: images/demo.png
    :align: center
 
-Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
+Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln. Im Kontextmenü kann der Demonstrationsmodus auch für einzelne Computer wieder beendet werden.
 
 
 .. index:: Bildschirmsperre, sperren, gesperrt, Eingabegeräte, Sperrbildschirm
@@ -72,7 +72,7 @@ Um alle angezeigten Computer zu sperren, klicken Sie auf die Schaltfläche :guil
 
 Wenn Sie die Bildschirmsperre wieder aufheben möchten, betätigen Sie die Schaltfläche einfach erneut oder klicken auf die Schaltfläche :guilabel:`Beobachten`, um global wieder in den Beobachtungsmodus zu wechseln.
 
-Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Auch hier erfolgt die Deaktivierung der Bildschirmsperre über die Auswahl der Funktion :guilabel:`Beobachten`. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
+Sollen nur einzelne Computer gesperrt werden, können Sie diese wie im Abschnitt Computerauswahl_ beschrieben markieren und die Funktion im Kontextmenü auswählen. Die Deaktivierung der Bildschirmsperre erfolgt entweder über den Eintrag :guilabel:`Entsperren` oder die Funktion :guilabel:`Beobachten`. Die Bildschirmsperre kann auch zunächst global aktiviert werden und später individuell für einzelne Computer über das Kontextmenü deaktiviert werden.
 
 .. note:: Auf Computern, an denen kein Benutzer angemeldet ist, kann der Sperrbildschirm aufgrund von Sicherheitskonzepten im Betriebssystem nicht angezeigt werden. Die Eingabegeräte sind trotzdem gesperrt, so dass eine Anmeldung nicht möglich ist.
 
