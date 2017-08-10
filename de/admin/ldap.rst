@@ -2,8 +2,8 @@
 
 .. _LDAP:
 
-LDAP/AD-Integration
-===================
+LDAP-/AD-Integration
+====================
 
 Dieses Kapitel beschäftigt sich mit der Anbindung von LDAP-kompatiblen Servern an Veyon. Im Folgenden wird nur der Oberbegriff *LDAP* verwendet und meint damit alle LDAP-kompatiblen Produkte bzw. Technologien wie *OpenLDAP*, *Samba* und *Active Directory*. Über die LDAP-Integration ist es möglich, die in den meisten Umgebungen bereits bestehenden Informationen über Benutzer, Benutzergruppen, Computer sowie Räume zu nutzen, anstatt diese manuell in der Veyon-Konfiguration nachzubilden. Zum einen können LDAP-Benutzer und -Benutzergruppen als Datenbasis für die :ref:`Zugriffskontrolle` genutzt werden. Zum anderen kann der Veyon Master die anzuzeigenden Räume und Computer direkt aus dem Verzeichnisdienst laden.
 
@@ -102,6 +102,12 @@ Computernamen sind als :index:`vollqualifizierte Domainnamen` gespeichert
 Attribut Computer-:index:`MAC-Adresse`
     Zusätzlich zum Computername sind in einigen Umgebungen auch die MAC-Adressen von Computern im LDAP-Verzeichnis hinterlegt, wenn beispielsweise der DHCP-Server ebenfalls auf das LDAP-Verzeichnis zugreift. Soll die Veyon-Funktion zum Einschalten von Rechnern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss hier der entsprechende Attributname eingetragen werden, da die MAC-Adresse für diese Funktion benötigt wird. Typische Beispiele sind ``hwAddress`` oder ``dhcpAddress``.
 
+Attribut Computerraum
+    Wenn das LDAP-Schema für Computerobjekte ein spezielles Attribut für die Zuordnung zu einem Raum vorsieht, kann der Attributname an dieser Stelle eingetragen werden. Über die Schaltfläche :guilabel:`Testen` kann überprüft werden, ob die Mitglieder eines Computerraums anhand des konfigurierten Attributs korrekt abgefragt werden können. In den erweiterten Einstellungen kann im Abschnitt :ref:`Computerraeume` anschließend eingestellt werden, dass das Computerraumattribut verwendet wird.
+
+Attribut Computerraumname
+    Werden Computergruppen oder Computercontainer als Räume verwendet, kann statt des *Common Names* der Gruppen oder Objekte auch der Wert eines bestimmten Attributs für den angezeigten Raumname verwendet werden. Besitzen beispielsweise Computergruppen ein Attribut ``name`` oder ``description`` kann in diesen eine aussagekräftige Raumbezeichnung hinterlegt werden und der Attributname an dieser Stelle eingetragen werden.
+
 .. _Erweiterte Einstellungen:
 
 Erweiterte Einstellungen
@@ -130,7 +136,12 @@ Filter für Computer
 .. _Computergruppenfilter:
 
 Filter für Computergruppen
-    Hier kann ein LDAP-Filter für Computergruppen eingetragen werden, z. B. ``objectClass=room`` oder ``cn=Raum*``.
+    Hier kann ein LDAP-Filter für Computergruppen eingetragen werden, z. B. ``objectClass=room`` oder ``cn=Raum*``. Wenn Computergruppen als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
+
+.. _Computercontainerfilter:
+
+Filter für Computercontainer
+    Hier kann ein LDAP-Filter für Computercontainer eingegeben werden, z. B. ``objectClass=container`` oder ``objectClass=organizationalUnit``. Wenn Container/OUs als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
 
 
 Identifizierung von Gruppenmitgliedern
@@ -144,16 +155,22 @@ Distinguished name (Samba/AD)
 Konfiguriertes Attribut für Benutzer-Login oder Computername (OpenLDAP)
     Diese Option muss gewählt werden, wenn im :index:`member-Attribut` einer Gruppe der Benutzer-Anmeldename oder Computername hinterlegt ist. Üblicherweise arbeiten OpenLDAP-Server nach diesem Schema.
 
+.. _Computerraeume:
 
 Computerräume
 +++++++++++++
 
-Computerräume können auf zwei verschiedenen Wegen über ein LDAP-Verzeichnis abgebildet werden. Im einfacheren Fall gibt es für jeden :index:`Computerraum` eine :index:`Computergruppe`, in denen alle Computer des Raums Mitglied sind. Bei dieser Vorgehensweise ist keine Anpassung des LDAP-Schemas notwendig. Alternativ kann auch der Raumname als spezielles Attribut in jedem Computerobjekt hinterlegt sein.
+Veyon stellt verschiedene Methoden zur Verfügung, um Computerräume in einem LDAP-Verzeichnis abzubilden. Im einfachen Fall gibt es für jeden :index:`Computerraum` eine :index:`Computergruppe`, in denen alle Computer des Raums Mitglied sind. Wenn Computer in Containern oder Organizational Units (OUs) abgelegt sind, können diese übergeordneten Objekte als Räume verwendet werden. Bei beiden Vorgehensweisen ist keine Anpassung des LDAP-Schemas notwendig. Als dritte Möglichkeit kann auch der Raumname als spezielles Attribut in jedem Computerobjekt hinterlegt sein.
 
-Dedizierte Computergruppen
+Computergruppen
     Mit dieser Option wird festgelegt, dass Computerräume über Computergruppen abgebildet werden. Sämtliche Computergruppen werden dann im Veyon Master als Räume angezeigt. In jedem Raum werden alle Computer angezeigt, die Mitglied der jeweiligen Gruppe sind. Wenn alle nicht LDAP-Gruppen als Räume angezeigt werden sollen, muss entweder ein dedizierter Computergruppenbaum_ konfiguriert werden oder die Computergruppen über einen Computergruppenfilter_ eingeschränkt werden.
 
     Vorgabe: *aktiviert*
+
+Computercontainer oder OUs
+    Diese Einstellung legt fest, dass die Container/OUs, in denen sich Computerobjekte befinden, als Computerräume verwendet werden. Container sind solche Objekte, die Computerobjekten im LDAP-Baum übergeordnet sind. Wenn nicht alle Container als Räume angezeigt werden sollen, kann ein entsprechender Computercontainerfilter_ eingerichtet werden.
+
+    Vorgabe: *deaktiviert*
 
 Gemeinsames Attribut
     Wenn das LDAP-Schema für Computerobjekte ein spezielles Attribut für die Zuordnung zu einem Raum vorsieht, kann diese Option aktiviert und der Attributname eingetragen werden. Über die Schaltfläche :guilabel:`Testen` kann überprüft werden, ob die Mitglieder eines Computerraums anhand des konfigurierten Attributs korrekt abgefragt werden können.
