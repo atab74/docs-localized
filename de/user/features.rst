@@ -3,9 +3,9 @@
 Programmfunktionen
 ==================
 
-Veyon stellt eine Vielzahl an Funktionen bereit, mit denen Sie Computer steuern und auf sie zugreifen können. Alle Funktionen sind in der Werkzeugleiste übersichtlich angeordnet und sind ebenso über das Kontextmenü erreichbar.
+Veyon stellt eine Vielzahl an Funktionen bereit, mit denen Sie Computer steuern und auf sie zugreifen können. Alle Funktionen sind in der Werkzeugleiste übersichtlich angeordnet und sind ebenfalls über das Kontextmenü der Schüler-PCs erreichbar.
 
-Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein :index:`Tooltip` mit einem kurzen Hilfstext angezeigt, sofern Sie diese nicht deaktiviert haben. Die Betätigung einer Schaltfläche aktiviert die gewählte Funktion für alle angezeigten Computer.
+Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste fahren, wird ein :index:`Tooltip` mit einem kurzen Hilfstext angezeigt, sofern Sie diese nicht deaktiviert haben. Die Betätigung einer Schaltfläche aktiviert die gewünschte Funktion für alle angezeigten Computer.
 
 
 .. _Computerauswahl:
@@ -14,25 +14,25 @@ Wenn Sie mit der Maus über die einzelnen Schaltflächen in der Werkzeugleiste f
 Computer auswählen
 ------------------
 
-Wenn Sie eine Funktion nur auf einem einzelnen Computer aktivieren möchte, klicken Sie diesen mit der rechten Maustaste an und wählen die gewünschte Funktion über das Kontextmenü. Die Einträge im Kontextmenü werden dynamisch je nach aktiven Funktionen angezeigt.
+Wenn Sie eine Funktion nur auf einem einzelnen Computer anwenden möchten, klicken Sie diesen mit der rechten Maustaste an und wählen die gewünschte Funktion über das Kontextmenü. Die Einträge im Kontextmenü werden dynamisch je nach aktiven Funktionen angezeigt.
 
 .. image:: images/computer-context-menu.png
    :scale: 75 %
    :align: center
 
-Weiterhin können Sie mehrere Computer auswählen, indem Sie mit der Maus ein Auswahlrechteck ziehen und dabei alle gewünschten Computer einschließen:
+Sie können auch mehrere Computer auswählen, indem Sie mit der Maus ein Auswahlrechteck ziehen und dabei alle gewünschten Computer einschließen:
 
 .. image:: images/select-computers.png
    :scale: 75 %
    :align: center
 
-Alternativ können Sie die Taste :kbd:`Strg` drücken und Computer einzeln anklicken, um sie zur Auswahl hinzuzufügen.
+Alternativ können Sie die Taste :kbd:`Strg` drücken und Computer einzeln via Mausklick zur Auswahl hinzufügen.
 
 
 Beobachtungsmodus
 -----------------
 
-Standardmäßig befindet sich das Programm im Beobachtungsmodus. In diesem Modus haben Sie den Überblick über alle Computer und sehen die Bildschirminhalte je nach Stellung des Zoom-Schiebereglers in verkleinerter Form. Die Bildschirminhalte werden nahezu in Echtzeit aktualisiert, so dass Sie sämtliche Aktivitäten im Raum beobachten können.
+Standardmäßig befindet sich Veyon im Beobachtungsmodus. In diesem Modus haben Sie den Überblick über alle Computer und sehen die Bildschirminhalte je nach Stellung des Zoom-Schiebereglers in verkleinerter Form. Die Bildschirminhalte werden nahezu in Echtzeit aktualisiert, so dass Sie sämtliche Aktivitäten im Raum beobachten können.
 
 Solange die Verbindung zu einem Computer unterbrochen ist, wird anstatt des Bildschirminhaltes ein Computersymbol angezeigt. Nach dem Programmstart ist das Symbol zunächst grau eingefärbt. Sobald das Programm feststellt, dass der Computer nicht erreichbar ist oder der Zugriff verweigert wird, ändert sich die Farbe in rot.
 
@@ -44,11 +44,11 @@ Einige der in den nächsten Abschnitten beschriebenen Funktionen schalten einen 
 Demonstrationsmodus
 --------------------
 
-Den Demonstrationsmodus (kurz Demo-Modus) können Sie nutzen, um eine Vorführung zu starten. In diesem Modus wird Ihr Bildschirminhalt auf alle entfernten Computer in Echtzeit übertragen und angezeigt. Sie können dabei zwischen einer Vollbild- und einer Fenster-Demo wählen.
+Den Demonstrationsmodus (kurz Demo-Modus) können Sie nutzen, um eine Präsentation zu starten. In diesem Modus wird Ihr Bildschirminhalt auf alle entfernten Computer in Echtzeit übertragen und angezeigt. Sie können dabei zwischen einer Vollbild- und einer Fenster-Demo wählen.
 
-Während einer Vollbild-Demo wird Ihr Bildschirminhalt im Vollbild angezeigt. Die entfernten Computer können in diesem Modus nicht bedient werden, da alle Eingabegeräte gesperrt werden. Auf diese Weise erlangen Sie die volle Aufmerksamkeit der Kursteilnehmer.
+Während einer Vollbild-Demo wird Ihr Bildschirminhalt im Vollbild angezeigt. Die entfernten Computer können in diesem Modus nicht bedient werden, da alle Eingabegeräte gesperrt werden. Auf diese Weise erlangen Sie die volle Aufmerksamkeit Ihrer Kursteilnehmer.
 
-Eine Fenster-Demo hingegen erlaubt des den Benutzern, zwischen dem Demo-Fenster und eigenen Anwendungen zu wechseln oder diese z. B. auch nebeneinander anzuordnen, um gezeigte Vorgänge selbst live nachzuvollziehen. Es sind daher keine Eingabegeräte gesperrt.
+Eine Fenster-Demo hingegen erlaubt es den Benutzern, zwischen dem Demo-Fenster und eigenen Anwendungen zu wechseln oder diese z. B. auch nebeneinander anzuordnen, um gezeigte Vorgänge selbst live nachzuvollziehen. Es sind daher keine Eingabegeräte gesperrt.
 
 Um eine Vollbild- oder Fenster-Demo zu starten, klicken Sie auf die Schaltfläche :guilabel:`Vollbild-Demo` bzw. :guilabel:`Fenster-Demo`:
 
@@ -63,7 +63,7 @@ Wenn Sie den Demonstrationsmodus wieder verlassen möchten, betätigen Sie die S
 Bildschirme sperren
 -------------------
 
-Ein weiteres Mittel zur Lenkung der Aufmerksamkeit ist die Funktion zum Sperren von Bildschirmen. Ähnlich wie während einer Vollbild-Demo werden alle Eingabegeräte an den Computern gesperrt und eine Bedienung ist nicht möglich. Zusätzlich wird ein Sperrbildschirm angezeigt, so dass keine Ablenkung durch den vorherigen Bildschirminhalt erfolgt.
+Ein weiteres Mittel zur Erhöhung/Steuerung der Aufmerksamkeit ist die Funktion zum Sperren von Bildschirmen. Analog zur Vollbild-Demo werden hier alle Eingabegeräte an den Computern Ihrer Kursteilnehmer gesperrt und eine Bedienung ist nicht möglich. Zusätzlich wird ein Sperrbildschirm angezeigt, so dass keine Ablenkung durch den vorherigen Bildschirminhalt erfolgen kann.
 
 Um alle angezeigten Computer zu sperren, klicken Sie auf die Schaltfläche :guilabel:`Sperren`:
 
@@ -125,7 +125,7 @@ Computer einschalten, neustarten und herunterfahren
 
 .. index:: einschalten, herunterfahren, neustarten, Neustart, WoL, Wake-on-LAN
 
-Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen sind die Funktionen zum :guilabel:`Einschalten`, :guilabel:`Neustarten` und :guilabel:`Herunterfahren` von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
+Sowohl zu administrativen Zwecken als auch zur Vor- und Nachbereitung von Kursen und IT-gestützten Prüfungen sind die Funktionen zum :guilabel:`Einschalten`, :guilabel:`Neustarten` und :guilabel:`Herunterfahren` von Computern hilfreich. Die entsprechenden Schaltflächen finden Sie in der Werkzeugleiste:
 
 .. image:: images/powercontrol.png
    :align: center
@@ -134,7 +134,7 @@ Aktivieren Sie die jeweilige Schaltfläche, um alle angezeigten Computer einzusc
 
 .. attention:: Bitte beachten Sie, dass weder beim Neustart noch Herunterfahren Rückfragen beim angemeldeten Benutzer erscheinen. Stellen Sie also sicher, dass der angemeldete Benutzer keine ungespeicherten Arbeiten geöffnet hat.
 
-.. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten von nur unter bestimmten technischen Bedingungen. Gleichzeitig findet beim Einschalten keine Überprüfung der Zugriffsberechtigung statt, so dass Sie möglicherweise auch in anderen Räumen oder Gebäudeteilen Computer einschalten können. Achten Sie daher bei der Verwendung der Funktion auf die ausgewählten Computer.
+.. note:: Abhängig von der Konfiguration des Netzwerkes und den Systemeinstellungen der einzelnen Computer funktioniert das Einschalten nur unter bestimmten technischen Bedingungen. Gleichzeitig findet beim Einschalten keine Überprüfung der Zugriffsberechtigung statt, so dass Sie möglicherweise auch in anderen Räumen oder Gebäudeteilen Computer einschalten können. Achten Sie daher bei der Verwendung der Funktion auf die ausgewählten Computer.
 
 
 .. index:: abmelden, Benutzerabmeldung, Kursende
@@ -201,7 +201,7 @@ Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`. Bitte beachten Sie,
 Website öffnen
 --------------
 
-Wenn alle Kursteilnehmer zu einer eine bestimmten Website navigieren sollen, können Sie diese Website automatisch auf allen Computern öffnen lassen. Nutzen Sie hierfür die Schaltfläche :guilabel:`Website öffnen`:
+Wenn alle Kursteilnehmer zu einer bestimmten Website navigieren sollen, können Sie diese Website automatisch auf allen Computern öffnen lassen. Nutzen Sie hierfür die Schaltfläche :guilabel:`Website öffnen`:
 
 .. image:: images/open-website.png
    :align: center
