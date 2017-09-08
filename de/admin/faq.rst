@@ -3,6 +3,13 @@
 FAQ - Häufig gestellte Fragen
 =============================
 
+Wie kann ich Computer hinzufügen, so dass ich darauf zugreifen kann?
+--------------------------------------------------------------------
+
+Wenn das voreingestellte :ref:`Netzwerkobjektverzeichnis` verwendet wird, müssen lediglich auf der Konfigurationsseite :ref:`Lokale Daten` die entsprechenden Räume angelegt und Computer hinzugefügt werden. Anschließend stehen diese im Veyon Master zur Verfügung.
+
+Ist die :ref:`LDAP-/AD-Integration <LDAP>` eingerichtet, muss das Netzwerkobjektverzeichnis ebenfalls noch auf LDAP umgestellt werden, damit die Computer aus dem Verzeichnis im Veyon Master angezeigt werden.
+
 .. index:: iTALC
 
 Wie kann ich eine bestehende iTALC-Installation zu Veyon migrieren?
