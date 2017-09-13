@@ -117,7 +117,7 @@ Zusätzliche Argumente
 
     **Vorgabe:** *<leer>*
 
-    
+
 .. _Netzwerkeinstellungen:
 
 Netzwerk
@@ -190,16 +190,11 @@ Für die Verzeichniseinstellungen sollten Platzhaltervariablen anstatt absoluter
 
 .. index:: Computerraumverwaltung, Benutzeroberfläche
 
-Benutzeroberfläche & Verhalten
-++++++++++++++++++++++++++++++
+Verhalten
++++++++++
 
 Zugriffskontrolle beim Programmstart durchführen
     Diese Einstellung legt fest, ob die ggf. konfigurierte :ref:`Computerzugriffskontrolle` auch beim Start des Veyon Masters durchgeführt werden soll. Auch wenn die Zugriffskontrolle in jedem Fall clientseitig durchgesetzt wird, kann diese zusätzliche Option dafür sorgen, dass Benutzer ohne Zugriffsrechte den Veyon Master gar nicht erst starten können und die Sicherheit damit noch sichtbarer wird.
-
-    **Vorgabe:** *deaktiviert*
-
-Beim Start automatisch die Größe der Computer-Miniaturansichten anpassen
-    Soll beim Start des Veyon Masters die Größe der Computer-Miniaturansichten automatisch angepasst werden (gleicher Effekt wie Klick auf die Schaltfläche :guilabel:`Auto`), kann diese Option aktiviert werden. Die zuletzt eingestellte Größe wird dann ignoriert. Diese Funktionalität kann vor allem im Zusammenspiel mit dem :ref:`automatischen Raumwechsel <RoomAutoSwitch>` sinnvoll eingesetzt werden.
 
     **Vorgabe:** *deaktiviert*
 
@@ -210,30 +205,18 @@ Beim Start automatisch zu aktuellem Raum wechseln
 
     **Vorgabe:** *deaktiviert*
 
-Nur aktuellen Raum in Computerraumverwaltung anzeigen
-    Die Computerraumverwaltung listet standardmäßig alle Räume auf, die sich im eingestellten :ref:`Netzwerkobjektverzeichnis` befinden. Die Aktivierung dieser Option bewirkt hingegen, dass nur der Raum aufgeführt wird, in dem sich der Master-Computer befindet. Dies kann insbesondere in größeren Umgebungen die Übersichtlichkeit deutlich erhöhen.
+Beim Start automatisch die Größe der Computer-Miniaturansichten anpassen
+    Soll beim Start des Veyon Masters die Größe der Computer-Miniaturansichten automatisch angepasst werden (gleicher Effekt wie Klick auf die Schaltfläche :guilabel:`Auto`), kann diese Option aktiviert werden. Die zuletzt eingestellte Größe wird dann ignoriert. Diese Funktionalität kann vor allem im Zusammenspiel mit dem :ref:`automatischen Raumwechsel <RoomAutoSwitch>` sinnvoll eingesetzt werden.
 
     **Vorgabe:** *deaktiviert*
 
-Manuelles Hinzufügen von Räumen zur Computerraumverwaltung erlauben
-    Im Zusammenspiel mit der Option *Nur aktuellen Raum in Computerraumverwaltung anzeigen* kann optional erlaubt werden, weitere Räume manuell zur Computerraumverwaltung hinzuzufügen. Wenn die Option aktiviert ist, wird eine zusätzliche Schaltfläche :guilabel:`Raum hinzufügen` angezeigt, die einen Dialog mit allen verfügbaren Räumen öffnet.
+Gewählten Modus für Client-Computer durchsetzen
+    Einige Funktionen in Veyon wechseln den Modus eines Computers. Beispiele hierfür sind der Demo-Modus oder die Bildschirmsperre. Solche Modus-Funktionen werden standardmäßig nur einmalig aktiviert und beispielsweise im Falle eines physischen Rechnerneustarts nicht wieder hergestellt. Wenn diese Option aktiviert ist, wird der Modus auch nach einer Verbindungstrennung aktiviert/durchgesetzt.
 
     **Vorgabe:** *deaktiviert*
 
-.. _AutoHideLocalComputer:
-
-Lokalen Computer in Computerraumverwaltung ausblenden
-    Im Regelbetrieb ist es oft nicht gewünscht, den eigenen Computer anzuzeigen und raumweit aktivierte Funktionen auch auf dem eigenen Computer zu aktivieren (z. B. Bildschirmsperre). Wenn ein solches Verhalten gewünscht ist, kann diese Option aktiviert werden.
-
-    **Vorgabe:** *deaktiviert*
-
-Leere Räume in Computerraumverwaltung ausblenden
-    Unter bestimmten Umständen befinden sich im :ref:`Netzwerkobjektverzeichnis` Räume ohne Computer, beispielsweise aufgrund von bestimmten LDAP-Filtern. Solche leeren Räume können über diese Option aus der Computerraumverwaltung ausgeblendet werden.
-
-    **Vorgabe:** *deaktiviert*
-
-Filterfeld für Computer in Computerraumverwaltung ausblenden
-    Das Filterfeld zum Suchen von Computern kann über diese Option bei Bedarf ausgeblendet werden, um in überschaubaren Umgebungen die Benutzeroberfläche möglichst einfach zu halten.
+Bestätigunsdialog für potentiell gefährliche Aktionen anzeigen
+    Aktionen wie der Neustart von Computern oder das Abmelden von Benutzern können u. U. gefährlich sein, so dass eine versehentliche Aktivierung nicht gewünscht ist. Über diese Option kann somit festgelegt werden, dass solche Aktionen über einen Fragedialog bestätigt werden müssen.
 
     **Vorgabe:** *deaktiviert*
 
@@ -242,10 +225,46 @@ Funktion bei :index:`Doppelklick`
 
     **Vorgabe:** *<Keine Funktion>*
 
+Computerverwaltung
+++++++++++++++++++
+
+Beim Start immer öffnen
+    Über diese Option kann festgelegt werden, dass die Computerverwaltung nach dem Programmstart standardmäßig geöffnet werden soll.
+
+    **Vorgabe:** *deaktiviert*
+
+Nur aktuellen Raum anzeigen
+    Die Computerverwaltung listet standardmäßig alle Räume auf, die sich im eingestellten :ref:`Netzwerkobjektverzeichnis` befinden. Die Aktivierung dieser Option bewirkt hingegen, dass nur der Raum aufgeführt wird, in dem sich der Master-Computer befindet. Dies kann insbesondere in größeren Umgebungen die Übersichtlichkeit deutlich erhöhen.
+
+    **Vorgabe:** *deaktiviert*
+
+Manuelles Hinzufügen von Räumen erlauben
+    Im Zusammenspiel mit der Option *Nur aktuellen Raum anzeigen* kann optional erlaubt werden, weitere Räume manuell zur Computerverwaltung hinzuzufügen. Wenn die Option aktiviert ist, wird eine zusätzliche Schaltfläche :guilabel:`Raum hinzufügen` angezeigt, die einen Dialog mit allen verfügbaren Räumen öffnet.
+
+    **Vorgabe:** *deaktiviert*
+
+.. _AutoHideLocalComputer:
+
+Lokalen Computer ausblenden
+    Im Regelbetrieb ist es oft nicht gewünscht, den eigenen Computer anzuzeigen und raumweit aktivierte Funktionen auch auf dem eigenen Computer zu aktivieren (z. B. Bildschirmsperre). Die Ausblendung des lokalen Computers kann über diese Option aktiviert werden.
+
+    **Vorgabe:** *deaktiviert*
+
+Leere Räume ausblenden
+    Unter bestimmten Umständen befinden sich im :ref:`Netzwerkobjektverzeichnis` Räume ohne Computer, beispielsweise aufgrund von bestimmten LDAP-Filtern. Solche leeren Räume können über diese Option aus der Computerverwaltung ausgeblendet werden.
+
+    **Vorgabe:** *deaktiviert*
+
+Filterfeld für Computer ausblenden
+    Das Filterfeld zum Suchen von Computern kann über diese Option bei Bedarf ausgeblendet werden, um in überschaubaren Umgebungen die Benutzeroberfläche möglichst einfach zu halten.
+
+    **Vorgabe:** *deaktiviert*
+
+
 Funktionen
 ++++++++++
 
-Über die zwei Listen im Abschnitt :guilabel:`Funktionen` kann voreingestellt werden, welche Funktionen im Veyon Master verfügbar sind. Einzelne Funktionen können somit bei Bedarf deaktiviert werden, so dass entsprechende Schaltflächen und Kontextmenüeinträge im Veyon Master nicht angezeigt werden. Dies kann die Übersichtlichkeit der Benutzeroberfläche erhöhen, wenn bestimmte Funktionen ohnehin nicht verwendet werden sollen.
+Über die zwei Listen im Reiter :guilabel:`Funktionen` kann voreingestellt werden, welche Funktionen im Veyon Master verfügbar sind. Einzelne Funktionen können somit bei Bedarf deaktiviert werden, so dass entsprechende Schaltflächen und Kontextmenüeinträge im Veyon Master nicht angezeigt werden. Dies kann die Übersichtlichkeit der Benutzeroberfläche erhöhen, wenn bestimmte Funktionen ohnehin nicht verwendet werden sollen.
 
 Eine Funktion kann in die jeweils andere Liste verschoben werden, indem sie markiert und die jeweilige Schaltfläche mit den Pfeilsymbolen betätigt wird. Zusätzlich hat auch ein Doppelklick auf eine Funktion die gleiche Wirkung.
 
