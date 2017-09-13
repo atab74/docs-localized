@@ -72,13 +72,14 @@ Objektbäume
 .. _Computergruppenbaum:
 
 :index:`Computergruppenbaum`
-    Wenn sich Computergruppen in einem anderen Baum als die regulären (Benutzer-)Gruppen oder in einem Unterbaum befinden, kann der entsprechende LDAP-Baum hier eingetragen werden. Andernfalls wird der Gruppenbaum verwendet, um auch :index:`Computergruppen` abzufragen und ggf. über einen spezifischen Objektfilter (s.u.) zu filtern.
+    Wenn sich Computergruppen in einem anderen Baum als die regulären (Benutzer-)Gruppen oder in einem Unterbaum befinden, kann der entsprechende LDAP-Baum hier eingetragen werden. Andernfalls wird der Gruppenbaum verwendet, um auch :index:`Computergruppen` abzufragen und ggf. über einen spezifischen :ref:`Objektfilter <Objektfilter>` zu filtern.
 
 :index:`Rekursive Suchoperationen` in Objektbäumen durchführen
     Über diese Option kann gesteuert werden, ob Objekte rekursiv abgefragt werden sollen. Die Suche findet dann nicht nur im festgelegten Baum sondern auch in ggf. vorhandenen Unterbäumen statt.
 
     Vorgabe: *deaktiviert*
 
+.. tip:: Sind Objekte eines Typs in verschiedenen Objektbäume abgelegt (z. B. Benutzer sowohl in ``CN=Teachers`` als auch ``CN=Students``), kann der Parameter für den entsprechenden Objektbaum leer gelassen und die Option :guilabel:`Rekursive Suchoperationen in Objektbäumen durchführen` aktiviert werden. Es wird dann eine rekursive Suche im kompletten LDAP-Verzeichnis ausgehend vom Base-DN durchgeführt. In diesem Fall sollten jedoch unbedingt :ref:`Objektfilter <Objektfilter>` für den jeweiligen Objekttyp festgelegt werden.
 
 Objektattribute
 +++++++++++++++
@@ -116,6 +117,8 @@ Erweiterte Einstellungen
 Mit den erweiterten Einstellungen kann die LDAP-Integration und die Verwendung der Informationen aus dem LDAP-Verzeichnis an individuelle Bedürfnisse angepasst werden.
 
 .. index:: Objektfilter, LDAP-Objektfilter
+
+.. _Objektfilter:
 
 Optionale Objektfilter
 ++++++++++++++++++++++
