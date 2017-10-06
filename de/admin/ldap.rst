@@ -166,7 +166,7 @@ Computerräume
 Veyon stellt verschiedene Methoden zur Verfügung, um Computerräume in einem LDAP-Verzeichnis abzubilden. Im einfachen Fall gibt es für jeden :index:`Computerraum` eine :index:`Computergruppe`, in denen alle Computer des Raums Mitglied sind. Wenn Computer in Containern oder Organizational Units (OUs) abgelegt sind, können diese übergeordneten Objekte als Räume verwendet werden. Bei beiden Vorgehensweisen ist keine Anpassung des LDAP-Schemas notwendig. Als dritte Möglichkeit kann auch der Raumname als spezielles Attribut in jedem Computerobjekt hinterlegt sein.
 
 Computergruppen
-    Mit dieser Option wird festgelegt, dass Computerräume über Computergruppen abgebildet werden. Sämtliche Computergruppen werden dann im Veyon Master als Räume angezeigt. In jedem Raum werden alle Computer angezeigt, die Mitglied der jeweiligen Gruppe sind. Wenn alle nicht LDAP-Gruppen als Räume angezeigt werden sollen, muss entweder ein dedizierter Computergruppenbaum_ konfiguriert werden oder die Computergruppen über einen Computergruppenfilter_ eingeschränkt werden.
+    Mit dieser Option wird festgelegt, dass Computerräume über Computergruppen abgebildet werden. Sämtliche Computergruppen werden dann im Veyon Master als Räume angezeigt. In jedem Raum werden alle Computer angezeigt, die Mitglied der jeweiligen Gruppe sind. Wenn nicht alle LDAP-Gruppen als Räume angezeigt werden sollen, muss entweder ein dedizierter Computergruppenbaum_ konfiguriert werden oder die Computergruppen über einen Computergruppenfilter_ eingeschränkt werden.
 
     Vorgabe: *aktiviert*
 
@@ -186,7 +186,7 @@ Gemeinsames Attribut
 Integrationstests
 -----------------
 
-Mit Hilfe der :index:`Integrationstests` kann die LDAP-Integration als Ganzes überprüft werden. Über die Schaltflächen können verschiedene Tests durchgeführt werden. Alle Tests sollten erfolgreich sein und gültige Ergebnisse liefern.
+Mit Hilfe der :index:`Integrationstests` kann die LDAP-Integration als Ganzes überprüft werden. Über die Schaltflächen können verschiedene Tests durchgeführt werden. Alle Tests sollten erfolgreich sein und gültige Ergebnisse liefern, bevor die LDAP-Anbindung produktiv genutzt wird.
 
 
 .. index:: LDAP-Backend
