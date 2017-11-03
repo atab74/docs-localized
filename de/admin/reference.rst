@@ -149,7 +149,7 @@ Demoserver-Port
     **Vorgabe:** *aktiviert*
 
 Nur Verbindungen vom lokalen Computer erlauben
-    Wenn der Veyon-Dienst für andere Computer im Netzwerk nicht erreichbar sein soll, kann diese Option aktiviert werden. Für normale Rechner, auf die mit dem Veyon Master zugegriffen werden soll, darf diese Option nicht aktiviert werden. Für Lehrer-Computer kann die Option hingegen sinnvoll sein, um unabhängig von den Zugriffskontrolleinstellungen zusätzliche Sicherheit zu schaffen. Der Zugriff auf den Demoserver wird durch diese Einstellung nicht beeinflusst.
+    Wenn der Veyon-Dienst für andere Computer im Netzwerk nicht erreichbar sein soll, kann diese Option aktiviert werden. Für normale Computer, auf die mit dem Veyon Master zugegriffen werden soll, darf diese Option nicht aktiviert werden. Für Lehrer-Computer kann die Option hingegen sinnvoll sein, um unabhängig von den Zugriffskontrolleinstellungen zusätzliche Sicherheit zu schaffen. Der Zugriff auf den Demoserver wird durch diese Einstellung nicht beeinflusst.
 
     **Vorgabe:** *deaktiviert*
 
@@ -160,7 +160,7 @@ VNC-Server
 ++++++++++
 
 Plugin
-    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Rechners bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser anstatt des internen VNC-Servers verwendet werden, indem das Plugin :guilabel:`Externer VNC-Server` gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des installierten VNC-Servers eingegeben werden.
+    Standardmäßig verwendet Veyon eine interne plattformspezifische VNC-Server-Implementierung, um die Bildschirmdaten eines Computers bereitstellen zu können. In einigen Sonderfällen kann es gewünscht sein, ein Plugin mit einer anderen Implementierung zu verwenden. Wenn beispielsweise bereits ein separater VNC-Server auf dem Computer installiert ist, kann dieser anstatt des internen VNC-Servers verwendet werden, indem das Plugin :guilabel:`Externer VNC-Server` gewählt wird. In diesem Fall müssen das Passwort und der Netzwerkport des installierten VNC-Servers eingegeben werden.
 
     **Vorgabe:** *Eingebauter VNC-Server*
 
@@ -211,7 +211,7 @@ Beim Start automatisch die Größe der Computer-Miniaturansichten anpassen
     **Vorgabe:** *deaktiviert*
 
 Gewählten Modus für Client-Computer durchsetzen
-    Einige Funktionen in Veyon wechseln den Modus eines Computers. Beispiele hierfür sind der Demo-Modus oder die Bildschirmsperre. Solche Modus-Funktionen werden standardmäßig nur einmalig aktiviert und beispielsweise im Falle eines physischen Rechnerneustarts nicht wieder hergestellt. Wenn diese Option aktiviert ist, wird der Modus auch nach einer Verbindungstrennung aktiviert/durchgesetzt.
+    Einige Funktionen in Veyon wechseln den Modus eines Computers. Beispiele hierfür sind der Demo-Modus oder die Bildschirmsperre. Solche Modus-Funktionen werden standardmäßig nur einmalig aktiviert und beispielsweise im Falle eines physischen Computerneustarts nicht wieder hergestellt. Wenn diese Option aktiviert ist, wird der Modus auch nach einer Verbindungstrennung aktiviert/durchgesetzt.
 
     **Vorgabe:** *deaktiviert*
 

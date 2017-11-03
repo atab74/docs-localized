@@ -101,7 +101,7 @@ Computernamen sind als :index:`vollqualifizierte Domainnamen` gespeichert
     Vorgabe: *deaktiviert*
 
 Attribut Computer-:index:`MAC-Adresse`
-    Zusätzlich zum Computername sind in einigen Umgebungen auch die MAC-Adressen von Computern im LDAP-Verzeichnis hinterlegt, wenn beispielsweise der DHCP-Server ebenfalls auf das LDAP-Verzeichnis zugreift. Soll die Veyon-Funktion zum Einschalten von Rechnern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss hier der entsprechende Attributname eingetragen werden, da die MAC-Adresse für diese Funktion benötigt wird. Typische Beispiele sind ``hwAddress`` oder ``dhcpAddress``.
+    Zusätzlich zum Computername sind in einigen Umgebungen auch die MAC-Adressen von Computern im LDAP-Verzeichnis hinterlegt, wenn beispielsweise der DHCP-Server ebenfalls auf das LDAP-Verzeichnis zugreift. Soll die Veyon-Funktion zum Einschalten von Computern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss hier der entsprechende Attributname eingetragen werden, da die MAC-Adresse für diese Funktion benötigt wird. Typische Beispiele sind ``hwAddress`` oder ``dhcpAddress``.
 
 Attribut Computerraum
     Wenn das LDAP-Schema für Computerobjekte ein spezielles Attribut für die Zuordnung zu einem Raum vorsieht, kann der Attributname an dieser Stelle eingetragen werden. Über die Schaltfläche :guilabel:`Testen` kann überprüft werden, ob die Mitglieder eines Computerraums anhand des konfigurierten Attributs korrekt abgefragt werden können. In den erweiterten Einstellungen kann im Abschnitt :ref:`Computerraeume` anschließend eingestellt werden, dass das Computerraumattribut verwendet wird.

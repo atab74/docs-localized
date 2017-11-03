@@ -21,14 +21,14 @@ Zunächst sollte die grundlegende Erreichbarkeit des Computers über das Netzwer
 Probleme mit dem Veyon-Dienst
 +++++++++++++++++++++++++++++
 
-Wenn der Rechner anpingbar ist, muss kontrolliert werden, ob der Veyon-Dienst korrekt läuft. Öffnen Sie dazu den Veyon Configurator und öffnen die Konfigurationsseite :ref:`Dienstkonfiguration`. Im Abschnitt :ref:`DienstAllgemein` wird der Status des Diensts mit dem Wert *Läuft* anzeigen. Andernfalls kann der Dienst über die Schaltfläche :guilabel:`Dienst starten` gestartet werden. Ist dies nicht erfolgreich, kann eine Neuinstallation von Veyon Abhilfe schaffen. Ändert auch eine Neuinstallation nichts an der Situation, können Sie in den Logdateien des Veyon-Diensts sowie den Systemmeldungen des Betriebssystem nach Fehlermeldungen und -ursachen suchen. Zusätzlich ergeben sich in der Dienstverwaltung des Betriebssystem ggf. weitere Hinweise oder Einstellmöglichkeiten.
+Wenn der Computer anpingbar ist, muss kontrolliert werden, ob der Veyon-Dienst korrekt läuft. Öffnen Sie dazu den Veyon Configurator und öffnen die Konfigurationsseite :ref:`Dienstkonfiguration`. Im Abschnitt :ref:`DienstAllgemein` wird der Status des Diensts mit dem Wert *Läuft* anzeigen. Andernfalls kann der Dienst über die Schaltfläche :guilabel:`Dienst starten` gestartet werden. Ist dies nicht erfolgreich, kann eine Neuinstallation von Veyon Abhilfe schaffen. Ändert auch eine Neuinstallation nichts an der Situation, können Sie in den Logdateien des Veyon-Diensts sowie den Systemmeldungen des Betriebssystem nach Fehlermeldungen und -ursachen suchen. Zusätzlich ergeben sich in der Dienstverwaltung des Betriebssystem ggf. weitere Hinweise oder Einstellmöglichkeiten.
 
 .. index:: telnet, netstat
 
 Dienst- und Firewalleinstellungen
 +++++++++++++++++++++++++++++++++
 
-Läuft der Dienst, muss sichergestellt sein, dass er auf dem korrekten Netzwerkport auf eingehende Verbindungen lauscht. Dies kann auf dem lokalen Rechner mit Hilfe von ``telnet`` verifiziert werden:
+Läuft der Dienst, muss sichergestellt sein, dass er auf dem korrekten Netzwerkport auf eingehende Verbindungen lauscht. Dies kann auf dem lokalen Computer mit Hilfe von ``telnet`` verifiziert werden:
 
 .. code-block:: none
 
@@ -36,7 +36,7 @@ Läuft der Dienst, muss sichergestellt sein, dass er auf dem korrekten Netzwerkp
 
 Neben allgemeinen Programmausgaben muss die Zeichenkette ``RFB 003.008`` ausgegeben werden. Ist die Ausgabe nicht wie erwartet, sind die :ref:`Netzwerkeinstellungen <Netzwerkeinstellungen>`, speziell der Primäre Dienst-Port, zu überprüfen und ggf. auf ihre Vorgabewerte zurückzustellen.
 
-Im nächsten Schritt muss der gleiche Zugriff auch von einem anderen Rechner im Netzwerk aus möglich sein. Auch hier kann ``telnet`` zur Diagnose genutzt werden, wobei das Programmargument ``localhost`` durch den Name oder die IP-Adresse des entsprechenden Computers ersetzt werden muss. Scheitert der Zugriff, muss sichergestellt werden, dass die Option :guilabel:`Nur Verbindungen vom lokalen Computer erlauben` in den :ref:`Netzwerkeinstellungen <Netzwerkeinstellungen>` deaktiviert ist. Auch die :ref:`Computerzugriffskontrolle` sollte zunächst deaktiviert werden, da der Dienst automatisch nur auf ``localhost`` lauscht, wenn aufgrund aktuell zutreffender Regeln der Zugriff von außen ohnehin nicht erlaubt ist. Wenn beide Einstellungen in Ordnung sind, muss aus der Ausgabe von
+Im nächsten Schritt muss der gleiche Zugriff auch von einem anderen Computer im Netzwerk aus möglich sein. Auch hier kann ``telnet`` zur Diagnose genutzt werden, wobei das Programmargument ``localhost`` durch den Name oder die IP-Adresse des entsprechenden Computers ersetzt werden muss. Scheitert der Zugriff, muss sichergestellt werden, dass die Option :guilabel:`Nur Verbindungen vom lokalen Computer erlauben` in den :ref:`Netzwerkeinstellungen <Netzwerkeinstellungen>` deaktiviert ist. Auch die :ref:`Computerzugriffskontrolle` sollte zunächst deaktiviert werden, da der Dienst automatisch nur auf ``localhost`` lauscht, wenn aufgrund aktuell zutreffender Regeln der Zugriff von außen ohnehin nicht erlaubt ist. Wenn beide Einstellungen in Ordnung sind, muss aus der Ausgabe von
 
 .. code-block:: none
 
