@@ -156,6 +156,8 @@ Nur Verbindungen vom lokalen Computer erlauben
 
 .. index:: VNC-Server, interner VNC-Server, externer VNC-Server
 
+.. _VNCServer:
+
 VNC-Server
 ++++++++++
 

@@ -29,6 +29,11 @@ Ist es möglich, den Veyon Master auf mehreren Computern zu verwenden?
 
 Der Einsatz von Veyon Master auf mehreren Computern ist problemlos möglich. Hierzu muss wie auch bei den Client-Computern sichergestellt werden, dass die identische Konfiguration auf allen Master-Computern zum Einsatz kommt. Wird die Anmelde-Authentifizierung genutzt, sind keine weiteren Schritte notwendig. Für die Schlüssel-Authentifizierung muss der private Schlüssel auf alle Master-Computer verteilt werden.
 
+Wie kann ein bestehender VNC-Server gemeinsam mit Veyon verwendet werden?
+-------------------------------------------------------------------------
+
+In einigen Umgebungen ist bereits ein VNC-Server installiert (z. B. UltraVNC) oder wird systemseitig bereitgestellt (z. B. VNC-basierter Zugriff auf virtuelle Desktops in VDI-Umgebungen). Hier kann es unter Umständen zu Performanceeinbußen oder Konflikten mit dem Veyon-internen VNC-Server kommen. In solchen Fällen wird empfohlen, Veyon so einzurichten, dass der bestehende (externe) VNC-Server mitbenutzt wird, anstatt den internen VNC-Server zu starten. Die Konfiguration erfolgt im Veyon Configurator in der Konfigurationsseite :ref:`Dienstkonfiguration` im Abschnitt :ref:`VNCServer`.
+
 Kann ich eine selber generierte Datei mit Raum- und Computerinformationen importieren/verwenden?
 ------------------------------------------------------------------------------------------------
 
