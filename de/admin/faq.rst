@@ -39,6 +39,11 @@ Kann ich eine selber generierte Datei mit Raum- und Computerinformationen import
 
 Mit Veyon 4.0 ist dies leider noch nicht möglich, allerdings wird es in Veyon 4.1 eine Importmöglichkeit sowie eine Kommandozeilenschnittstelle zur Raum- und Computerverwaltung geben.
 
+Wie kann ich alle Bildschirme eines entfernten Computers einsehen oder steuern?
+-------------------------------------------------------------------------------
+
+Unter Windows kann mit Veyon standardmäßig nur auf den primären Bildschirm eines Computers zugegriffen werden. Sie können dieses Verhalten jedoch in der :ref:`VNCServer`-Konfiguration ändern. Wählen Sie dazu das VNC-Server-Plugin :guilabel:`Eingebauter VNC-Server` und aktivieren die Option :guilabel:`Dual-Monitor-Unterstützung`.
+
 Wie kann ich die Auswahl der angezeigten Computer exportieren/importieren?
 --------------------------------------------------------------------------
 
