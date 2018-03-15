@@ -322,6 +322,11 @@ Computerzugriffskontrolle
 :index:`Datenbackend`
     Für die Zugriffskontrolle wird ein Datenbackend als Grundlage benötigt, das Benutzer und Gruppen sowie Computer und Räume zur Verfügung stellt. Hierbei können Sie zwischen dem Standard-Backend und weiteren Plugin-spezifischen Backends wie LDAP wählen. Beim Standard-Backend werden lokale Benutzer und Gruppen sowie Räume und Computer aus der lokalen Konfiguration verwendet, siehe Abschnitt :ref:`Lokale Daten`. Wenn Sie die LDAP-Anbindung verwenden, sollten Sie hier das Backend *LDAP* auswählen.
 
+Verwendung von Domaingruppen aktivieren
+    In der Grundeinstellung stehen für die Computerzugriffskontrolle unter Verwendung des Datenbackends :ref:`Lokale Daten` nur die lokalen Systemgruppen zur Verfügung. Mit Hilfe dieser Option können zusätzlich auch die Gruppen der Domäne abgefragt und verwendet werden. Aus Performancegründen ist diese Option standardmäßig nicht aktiviert. In Umgebungen mit einer großen Anzahl an Domänengruppen kann die Computerzugriffskontrolle sehr lange dauern. In diesen Fällen sollte stattdessen die Einrichtung der :ref:`LDAP-/AD-Integration <LDAP>` und Verwendung des *LDAP*-Backends erwogen werden.
+
+    **Vorgabe:** *deaktiviert*
+
 Jedem authentifizierten Benutzer Zugriff erlauben (Standard)
     Falls die eingestellte Authentifizierung genügt (z. B. bei Verwendung der Schlüsseldatei-Authentifizierung mit eingeschränktem Zugriff auf die Schlüsseldateien) kann diese Option gewählt werden. In diesem Modus wird keine weitere Zugriffskontrolle durchgeführt.
 
