@@ -116,7 +116,7 @@ In der Konfigurationsseite :guilabel:`Lokale Daten` können die :index:`Räume u
 
 Die Konfigurationsseite besteht aus zwei Listen. In der linken Liste sind alle konfigurierten Räume aufgeführt. Über die zwei Schaltflächen unterhalb der Liste können Räume angelegt oder gelöscht werden. Bestehende Räume können per Doppelklick bearbeitet und umbenannt werden.
 
-In der rechten Liste sind alle Computer aufgeführt, die für den aktuell ausgewählten Raum hinterlegt sind. Über die zwei Schaltflächen unterhalb der Liste können Computer angelegt oder gelöscht werden. Die einzelnen Zellen in der Tabelle können per Doppelklick bearbeitet werden. Für jeden Computer muss ein Name sowie eine Computer-/IP-Adresse angegeben werden. Soll die Veyon-Funktion zum Einschalten von Rechnern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss auch die zugehörige MAC-Adresse eingetragen werden. Andernfalls kann diese Spalte leer gelassen werden.
+In der rechten Liste sind alle Computer aufgeführt, die für den aktuell ausgewählten Raum hinterlegt sind. Über die zwei Schaltflächen unterhalb der Liste können Computer angelegt oder gelöscht werden. Die einzelnen Zellen in der Tabelle können per Doppelklick bearbeitet werden. Für jeden Computer muss ein Name sowie eine Computer-/IP-Adresse angegeben werden. Soll die Veyon-Funktion zum Einschalten von Computern via `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ verwendet werden, muss auch die zugehörige MAC-Adresse eingetragen werden. Andernfalls kann diese Spalte leer gelassen werden.
 
 
 LDAP

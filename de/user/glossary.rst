@@ -26,7 +26,7 @@ Aus Wikipedia, der freien Enzyklopädie:
       .. seealso:: <https://de.wikipedia.org/wiki/Frequently_Asked_Questions>
 
     Grafische Benutzeroberfläche
-      Grafische Benutzeroberfläche oder auch grafische Benutzerschnittstelle (Abk. GUI von englisch graphical user interface) bezeichnet eine Form von Benutzerschnittstelle eines Computers. Sie hat die Aufgabe, Anwendungssoftware auf einem Rechner mittels grafischer Symbole, Steuerelemente oder auch Widgets genannt, bedienbar zu machen. Dies geschieht bei Computern meistens mittels einer Maus als Steuergerät, mit der die grafischen Elemente bedient oder ausgewählt werden, bei Smartphones, Tablets und Kiosksystemen in der Regel durch Berührung eines Sensorbildschirms.
+      Grafische Benutzeroberfläche oder auch grafische Benutzerschnittstelle (Abk. GUI von englisch graphical user interface) bezeichnet eine Form von Benutzerschnittstelle eines Computers. Sie hat die Aufgabe, Anwendungssoftware auf einem Computer mittels grafischer Symbole, Steuerelemente oder auch Widgets genannt, bedienbar zu machen. Dies geschieht bei Computern meistens mittels einer Maus als Steuergerät, mit der die grafischen Elemente bedient oder ausgewählt werden, bei Smartphones, Tablets und Kiosksystemen in der Regel durch Berührung eines Sensorbildschirms.
       
       .. seealso:: <https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che>
 

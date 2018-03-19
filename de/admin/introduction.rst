@@ -65,3 +65,13 @@ Im Detail gibt es verschiedene :index:`Programmkomponenten`, die auf verschieden
 
 :index:`Veyon Control`
     Kommandozeilenwerkzeug, das als Ergänzung zum Veyon Configurator ohne grafische Interaktion verschiedene Konfigurationsanpassungen und die Verwendung einiger Veyon-Funktionen erlaubt. Das Programm wird entweder interaktiv auf der Kommandozeile oder scriptgesteuert mit üblicherweise administrativen Privilegien ausgeführt.
+
+Netzwerkarchitektur
+-------------------
+
+Aus Netzwerksicht ergibt sich das in der folgenden Grafik dargestellte Zusammenspiel der einzelnen Komponenten und TCP-Ports:
+
+.. image:: images/network-architecture.png
+   :scale: 50 %
+   :align: center
+
