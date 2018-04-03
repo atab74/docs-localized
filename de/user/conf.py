@@ -125,6 +125,14 @@ latex_elements = {
     'preamble': r'''\usepackage{titlesec}
 \titleformat{\chapter}[display]{\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\huge}
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\fancypagestyle{normal}{
+	\fancyhf{}
+	\fancyfoot[LE,RO]{{\thepage}}
+	\fancyfoot[LO,RE]{{\nouppercase{M@school-Veyon\_Benutzerhandbuch\_V.4.0.3.pdf}}}
+	\fancyhead[LE]{{\nouppercase\leftmark}}
+	\fancyhead[RO]{{\nouppercase\rightmark}}
+}
+
 ''',
 
     # Latex figure (float) alignment
