@@ -59,7 +59,7 @@ author = 'Tobias Junghans'
 # built documents.
 #
 # The short X.Y version.
-version = '4.0.5'
+version = '4.0.3'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -142,8 +142,8 @@ latex_elements = {
     'babel' : '\\usepackage[ngerman]{babel}',
     'maketitle': '',
     'fontpkg': r'''
-\setmainfont{Arial}
-\setsansfont{Arial}
+\setmainfont[BoldFont={Tele-GroteskFet},ItalicFont={Tele-GroteskHal}]{Tele-GroteskNor}
+\setsansfont[BoldFont={Tele-GroteskFet},ItalicFont={Tele-GroteskHal}]{Tele-GroteskNor}
 ''',
 }
 
