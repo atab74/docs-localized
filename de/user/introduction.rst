@@ -38,11 +38,11 @@ Eine automatische Anpassung auf eine optimale Größe erfolgt bei Betätigung li
 Die Schaltfläche |help-about| (:guilabel:`Über`) öffnet einen Dialog mit Informationen über Veyon wie z. B. Version, Hersteller und Lizenzbestimmungen.
 
 .. |zoom-fit-best| image:: images/zoom-fit-best.png
-  :scale: 20%
+  :scale: 75%
   :align: middle
 
 .. |help-about| image:: images/help-about.png
-  :scale: 20%
+  :scale: 75%
   :align: middle
 
 .. _Werkzeugleiste:
