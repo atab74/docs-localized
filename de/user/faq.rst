@@ -5,7 +5,7 @@ FAQ - Häufig gestellte Fragen
 Können andere Benutzer meinen Bildschirm sehen?
 -----------------------------------------------
 
-Welcher Benutzer unter welchen Umständen auf welchen Computer zugreifen kann, hängt von den Systemeinstellungen ab, die Ihr Administrator vorgenommen hat. Üblicherweise sollte die Software so konfiguriert sein, dass Kursleiter nur auf die Computer von Kursteilnehmern zugreifen können, nicht jedoch andersherum. Andere Kursleiter können weder Ihren Bildschirm oder den Ihrer Kursteilnehmer sehen.
+Welcher Benutzer unter welchen Umständen auf welchen Computer zugreifen kann, hängt von den Systemeinstellungen ab, die Ihr Administrator vorgenommen hat. Üblicherweise sollte die Software so konfiguriert sein, dass Kursleiter nur auf die Computer von Kursteilnehmern zugreifen können, nicht jedoch andersherum. Andere Kursleiter können weder Ihren Bildschirm noch den Ihrer Kursteilnehmer sehen.
 
 
 Wie oft werden die Bildschirminhalte aktualisiert?
