@@ -33,7 +33,7 @@ In der Arbeitsfläche werden alle zu beobachtenden Computer in einer :index:`Kac
 
 Die Elemente in der Statusleiste dienen der Steuerung der Programmoberfläche. So können Sie Ansichten wie die Computerraumverwaltung_ oder Bildschirmfotoverwaltung_ aktivieren. Über den Schieberegler können Sie die Größe der angezeigten Computerbildschirme steuern. Bei gedrückter Taste :kbd:`Strg` kann die Größe ebenfalls mit Hilfe des Maus-Scrollrads geändert werden.
 
-Eine automatische Anpassung auf eine optimale Größe erfolgt bei Betätigung links hiervon befindlichen Schaltfläche |zoom-fit-best| (:guilabel:`Optimale Größe einstellen`).
+Eine automatische Anpassung auf die optimale Größe erfolgt bei Betätigung der rechts hiervon befindlichen Schaltfläche |zoom-fit-best| (:guilabel:`Optimale Größe einstellen`).
 
 Die Schaltfläche |help-about| (:guilabel:`Über`) öffnet einen Dialog mit Informationen über Veyon wie z. B. Version, Hersteller und Lizenzbestimmungen.
 

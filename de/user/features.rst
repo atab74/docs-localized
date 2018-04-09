@@ -147,7 +147,7 @@ Die Funktion :guilabel:`Benutzer abmelden` ergänzt die im vorherigen Abschnitt 
 .. image:: images/logout-user.png
    :align: center
 
-Aktivieren Sie die Schaltfläche, um alle Benutzer an allen angezeigten Computer abzumelden. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
+Aktivieren Sie die Schaltfläche, um alle Benutzer an allen angezeigten Computern abzumelden. Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den gewünschten Eintrag im Kontextmenü wählen.
 
 .. tip:: Ein typischer Anwendungsfall für diese Funktionen kann darin bestehen, einen Kurs für alle Teilnehmer zu einer definierten Zeit zu beenden.
 
@@ -171,7 +171,7 @@ Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie di
 
 Mit einem Klick auf :guilabel:`OK` wird die eingegebene Nachricht abgesendet.
 
-Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und Eintrag :guilabel:`Textnachricht` im Kontextmenü wählen.
+Möchten Sie die Funktion nur für einzelne Computer verwenden, so können Sie einzelne Computer markieren und den Eintrag :guilabel:`Textnachricht` im Kontextmenü wählen.
 
 
 .. index:: Programm starten, Programmstart, ausführen, Befehle, Dokument öffnen
