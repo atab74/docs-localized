@@ -171,7 +171,7 @@ Nach Betätigung der Schaltfläche öffnet sich ein Dialogfenster, in dem Sie di
 
 Mit einem Klick auf :guilabel:`OK` wird die eingegebene Nachricht abgesendet.
 
-Möchten Sie die Funktion nur für einzelne Computer verwenden, so können Sie einzelne Computer markieren und den Eintrag :guilabel:`Textnachricht` im Kontextmenü wählen.
+Möchten Sie die Funktion nur für einzelne Computer verwenden, so können Sie einzelne Systeme markieren und den Eintrag :guilabel:`Textnachricht` im Kontextmenü wählen.
 
 
 .. index:: Programm starten, Programmstart, ausführen, Befehle, Dokument öffnen
