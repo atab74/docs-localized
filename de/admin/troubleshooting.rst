@@ -103,3 +103,8 @@ Stellen Sie sicher, dass
 * in der Konfigurationsseite :guilabel:`Dienst` unter den :ref:`Netzwerkeinstellungen` der Demoserver-Port auf dem Vorgabewert ``11400`` eingestellt ist
 * in der Konfigurationsseite :guilabel:`Dienst` die Firewall-Ausnahmen auf dem Master-Computer aktiviert sind bzw. eine Drittanbieter-Firewall so konfiguriert ist, dass eingehende Verbindungen auf TCP-Port ``11400`` möglich sind
 * der Benutzer des Veyon Masters Zugriff auf den eigenen Computer (d. h. den lokalen Veyon-Dienst) hat. In einem Zugriffsregelwerk verbietet u. U. eine Regel den Zugriff auf einen Computer, wenn ein Lehrer angemeldet ist. In diesem Fall sollte eine möglichst weit am Anfang angeordnete Regel mit der aktivierten Bedingung *Zugreifender Computer ist localhost* erstellt werden, die den Zugriff erlaubt. Andernfalls kann der Demoserer nicht auf den Bildschirminhalt des Lehrer-PCs zugreifen und an die Client-Computer verteilen.
+
+Der Server stürzt mit XIO- oder XCB-Fehlern unter Linux ab
+--------------------------------------------------------
+
+Es gibt bekannte Probleme mit bestimmten Versionen von KDE und Qt unter Linux, die den Veyon-Server zum Absturz bringen. Das betrifft ebenso verschiedene andere VNC-Server-Implementierungen. Wenn Sie von solchen Abstürzen betroffen sind, wird empfohlen, KDE/Qt zu aktualisieren. Als letzte Notlösung können Sie die X-Damage-Erweiterung in der VNC-Server-Konfiguration deaktivieren. Dies hat jedoch negative Auswirkungen auf die Gesamtperformance.
