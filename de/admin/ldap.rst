@@ -36,6 +36,24 @@ Bind-Passwort
 
 .. tip:: Veyon führt ausschließlich lesende LDAP-Operationen durch. Es kann daher als zusätzliche Sicherheitsmaßnahme ein dedizierter Benutzer angelegt werden, der nur Lesezugriff auf das LDAP-Verzeichnis hat, z. B. "Veyon-LDAP-RO". Für diesen Benutzer kann ggf. weiterhin der Zugriff auf relevante Attribute eingeschränkt werden.
 
+Verbindungssicherheit
++++++++++++++++++++++
+
+Veyon kann eine verschlüsselte Verbindung mit dem LDAP-Server aufbauen. Hiefür stehen Einstellungen im Abschnitt :guilabel:`Verbindungssicherheit` zur Verfügung.
+
+Verschlüsselungsprotokoll
+    Es kann zwischen den Verschlüsselungsprotokollen *Keine*, *TLS* und *SSL* gewählt werden. Der Einsatz des modernen TLS-Protokolls wird empfohlen.
+
+    Vorgabe: *Keine*
+
+TLS-Zertifikatsüberprüfung
+    Diese Einstellung legt fest, wie das Zertifikat des LDAP-Servers beim Aufbau der verschlüsselten Verbindung überprüft werden soll. Mit der Voreinstellung *Systemstandard* wird abhängig vom Betriebssystem versucht, das Zertifikat anhand der systemweit installierten Stammzertifikate zu überprüfen. Der Windows-Zertifikatsspeichter wird hierbei nicht berücksichtigt, so dass ggf. eine eigene CA-Zertifikatsdatei hinterlegt werden muss. Mit der Einstellung *Nie* wird das Serverzertifikat überhaupt nicht überprüft, was jedoch Man-in-the-middle-Angriffe ermöglicht und daher nur in Ausnahmefällen verwendet werden sollte. Die Einstellung *Benutzerdefinierte CA-Zertifikatsdatei* sorgt dafür, dass die Zertifikatsüberprüfung anhand einer angegebenen CA-Zertifikatsdatei durchgeführt wird.
+
+    Vorgabe: *Systemstandard*
+
+Benutzerdefinierte CA-Zertifikatsdatei
+    Beim Einsatz einer eigenen Zertifizierungsstelle (CA) kann es notwendig sein, deren Zertifikat im Format einer PEM-Datei zu hinterlegen, damit Veyon das Zertifikat des LDAP-Servers überprüfen kann.
+
 Base-DN
 +++++++
 
@@ -127,26 +145,26 @@ Optionale Objektfilter
 
 Mit Hilfe von LDAP-Filtern können die von Veyon verwendeten LDAP-Objekte eingeschränkt werden, wenn beispielsweise Computerobjekte wie Drucker im Veyon Master nicht angezeigt werden sollen. Hinter jedem Eingabefeld steht eine Schaltfläche zum Überprüfen des jeweiligen Attributnamens zur Verfügung.
 
-.. important:: Die optionalen Filter folgen dem üblichen Schema für :index:`LDAP-Filter` (siehe z. B. `RFC 2254 <https://www.ietf.org/rfc/rfc2254.txt>`_ oder `Active Directory: LDAP Syntax Filters <https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx>`_), allerdings mit der Besonderheit, dass äußere Klammern nicht mit angegeben werden dürfen. Beispielsweise muss ein einfacher objectClass-Filter als ``objectClass=XYZ`` und nicht ``(objectClass=XYZ)`` definiert werden.
+Die optionalen Filter folgen seit Veyon 4.1 dem üblichen Schema für :index:`LDAP-Filter` (siehe z. B. `RFC 2254 <https://www.ietf.org/rfc/rfc2254.txt>`_ oder `Active Directory: LDAP Syntax Filters <https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx>`_), also z.B. ``(objectClass=XYZ)``.
  
 Filter für Benutzer
-    Hier kann ein LDAP-Filter für Benutzer eingetragen werden, z. B. ``objectClass=person`` oder ``&(objectClass=person)(objectClass=veyonUser)``.
+    Hier kann ein LDAP-Filter für Benutzer eingetragen werden, z. B. ``(objectClass=person)`` oder ``(&(objectClass=person)(objectClass=veyonUser))``.
 
 Filter für Benutzergruppen
-    Hier kann ein LDAP-Filter für Benutzergruppen eingetragen werden, z. B. ``objectClass=group`` oder ``|(cn=teachers)(cn=students)(cn=admins)``.
+    Hier kann ein LDAP-Filter für Benutzergruppen eingetragen werden, z. B. ``(objectClass=group)`` oder ``(|(cn=teachers)(cn=students)(cn=admins))``.
 
 Filter für Computer
-    Hier kann ein LDAP-Filter für Computer eingetragen werden, z. B. ``objectClass=computer`` oder ``&(!(cn=printer*))(!(cn=scanner*))``.
+    Hier kann ein LDAP-Filter für Computer eingetragen werden, z. B. ``(objectClass=computer)`` oder ``(&(!(cn=printer*))(!(cn=scanner*)))``.
 
 .. _Computergruppenfilter:
 
 Filter für Computergruppen
-    Hier kann ein LDAP-Filter für Computergruppen eingetragen werden, z. B. ``objectClass=room`` oder ``cn=Raum*``. Wenn Computergruppen als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
+    Hier kann ein LDAP-Filter für Computergruppen eingetragen werden, z. B. ``(objectClass=room)`` oder ``(cn=Raum*)``. Wenn Computergruppen als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
 
 .. _Computercontainerfilter:
 
 Filter für Computercontainer
-    Hier kann ein LDAP-Filter für Computercontainer eingegeben werden, z. B. ``objectClass=container`` oder ``objectClass=organizationalUnit``. Wenn Container/OUs als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
+    Hier kann ein LDAP-Filter für Computercontainer eingegeben werden, z. B. ``(objectClass=container)`` oder ``(objectClass=organizationalUnit)``. Wenn Container/OUs als Räume verwendet werden, können auf diese Weise die anzuzeigenden Räume eingeschränkt werden.
 
 
 Identifizierung von Gruppenmitgliedern
@@ -196,9 +214,9 @@ Mit Hilfe der :index:`Integrationstests` kann die LDAP-Integration als Ganzes ü
 Verwendung von LDAP-Backends
 ----------------------------
 
-Mit der erfolgreichen Konfiguration der LDAP-Integration können nun die LDAP-Backends aktiviert werden. Hierfür müssen das :ref:`Netzwerkobjektverzeichnis` sowie das Datenbankend für die :ref:`Computerzugriffskontrolle` angepasst werden. Erst mit der Umstellung des Netzwerkobjektverzeichnisses auf *LDAP* werden im Veyon Master die Raum- und Computerinformationen aus dem LDAP-Verzeichnis verwendet.
+Mit der erfolgreichen Konfiguration der LDAP-Integration können nun die LDAP-Backends aktiviert werden. Hierfür müssen das :ref:`Netzwerkobjektverzeichnis` sowie das Benutzergruppen-Backend für die :ref:`Computerzugriffskontrolle` angepasst werden. Erst mit der Umstellung des Netzwerkobjektverzeichnisses auf *LDAP* werden im Veyon Master die Raum- und Computerinformationen aus dem LDAP-Verzeichnis verwendet.
 
-.. attention:: Nach Umstellung des Datenbankends für die Computerzugriffskontrolle sollten die konfigurierten Zugriffsregeln unbedingt überprüft werden, da sich die Gruppen- und Rauminformationen ändern und somit die Zugriffsregeln in den meisten Fällen nicht mehr gültig sind oder nicht mehr korrekt verarbeitet werden.
+.. attention:: Nach Umstellung des Backends für die Computerzugriffskontrolle sollten die konfigurierten Zugriffsregeln unbedingt überprüft werden, da sich die Gruppen- und Rauminformationen ändern und somit die Zugriffsregeln in den meisten Fällen nicht mehr gültig sind oder nicht mehr korrekt verarbeitet werden.
 
 .. _LDAP-CLI:
 

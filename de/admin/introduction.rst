@@ -55,7 +55,10 @@ Im Detail gibt es verschiedene :index:`Programmkomponenten`, die auf verschieden
     Anwendungsprogramm, mit dem andere Computer beobachtet und gesteuert und Veyon-Funktionen genutzt werden können. Das Programm wird im regulären Anwendungsfall vom Endanwender gestartet und greift über den Veyon Service auf die Computer zu.
 
 :index:`Veyon Service`
-    Dienstprogramm, das den Zugriff auf einen Computer, Steuerungsfunktionen und Anwendungsfunktionen bereitstellt. Das Programm wird im Regelfall automatisch vom Betriebssystem als Dienst mit erhöhten Privilegien ausgeführt und kann vom Benutzer nicht beendet werden. Der Dienst wird auf allen Computern einschließlich Lehrer-Computern benötigt.
+    Ein nicht-grafisches Dienstprogramm, das Benutzersitzungen auf einem Computer überwacht und Veyon-Server-Instanzen innerhalb dieser Sitzungen startet. Der Dienst und seine Server-Unterprozesse müssen auf allen Computern einschließlich der Lehrercomputer ausgeführt werden.
+
+:index:`Veyon Server`
+    Eine Server-Anwendung, die Zugriff auf einen Computer sowie Steuerungs- und Anwendungsfunktionen bietet. Im Regelfall wird dieses Programm vom Veyon-Dienst automatisch und mit erhöhten Rechten gestartet, so dass es von den Benutzern nicht beendet werden kann.
 
 :index:`Veyon Worker`
     Hilfsprogramm, das vom Service gestartet wird, um bestimmte Funktionen isoliert und/oder im Kontext des angemeldeten Benutzers bereitzustellen. Dazu zählen beispielsweise der Demoserver auf dem Lehrer-Computer oder der Democlient auf Schüler-Computern.

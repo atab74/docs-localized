@@ -9,12 +9,13 @@ Voraussetzungen
 Veyon ist für den Betrieb auf Standard-Computern unter Windows oder Linux ausgelegt. Es gibt keine speziellen :index:`Mindestanforderungen` an die Hardware. Es muss ein aktuelles vom Hersteller bzw. der Community unterstütztes :index:`Betriebssystem` eingesetzt werden:
 
 * Windows 7, 8 oder 10 (32/64 Bit)
-* Linux mit Qt 5.6 oder neuer
-    * Debian 9
-    * Ubuntu 16.04
-    * openSUSE 42.2
-    * Fedora 24
-  
+* Linux mit Qt in mindestens Version 5.5
+    * Debian 9 oder höher
+    * Ubuntu 16.04 oder höher
+    * openSUSE 42.2 oder höher
+    * Fedora 24 oder höher
+    * CentOS 7.3 oder höher
+
 Ein :index:`Mischbetrieb` zwischen Windows- und Linux-Computern ist problemlos möglich. Die Computer müssen über ein TCP-/IP-kompatibles :index:`Netzwerk` verbunden sein, wobei die Übertragungstechnologie (drahtgebunden/kabellos) nur hinsichtlich der erreichbaren Performance eine Rolle spielt. Für den Einsatz von Veyon mit mehr als 10 Computern wird ein Gigabit-Netzwerk empfohlen, da der Demo-Modus (siehe Anwenderhandbuch) andernfalls möglicherweise nicht performant genug arbeitet. Gleiches gilt für kabellose Netzwerke (:index:`WLAN`), so dass mindestens der Funkstandard IEEE 802.11n zum Einsatz kommen sollte.
 
 
@@ -84,10 +85,10 @@ Veyon-Konfiguration nach der Installation automatisch anwenden:
 .. code-block:: none
 
 	veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
-  
+
 .. important:: Sie müssen einen absoluten Pfad für die :index:`Konfigurationsdatei` angeben, da das intern aufgerufene Kommandozeilenwerkzeug (*Veyon Control*) nicht im Installationsverzeichnis als Arbeitsverzeichnis ausgeführt wird. Nutzen Sie daher entweder die vorgeschlagene ``%cd``-Variable oder ersetzen sie mit einem absoluten Pfad.
 
-Automatische Installation ohne Master-Anwendung:
+Automatische Installation ohne Veyon Master:
 
 .. code-block:: none
 

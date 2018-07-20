@@ -74,7 +74,7 @@ In :index:`Windows-Ereignisanzeige` loggen
 Netzwerkobjektverzeichnis
 +++++++++++++++++++++++++
 
-Ein :index:`Netzwerkobjektverzeichnis` stellt in Veyon Informationen über :index:`Netzwerkobjekte` bereit. Netzwerkobjekte sind Computer sowie Räume, in denen sich Computer befinden. Die Daten aus dem Netzwerkobjektverzeichnis werden vom Veyon Master verwendet, um :index:`Computerraumverwaltung` mit Einträgen zu befüllen. Auch für die Zugriffskontrolle wird auf Daten im Netzwerkobjektverzeichnis zurückgegriffen. Standardmäßig wird ein Backend verwendet, das diese Daten in der lokalen Veyon-Konfiguration speichert und von dort ausliest, siehe Abschnitt :ref:`Lokale Daten`.
+Ein :index:`Netzwerkobjektverzeichnis` stellt in Veyon Informationen über :index:`Netzwerkobjekte` bereit. Netzwerkobjekte sind Computer sowie Räume, in denen sich Computer befinden. Die Daten aus dem Netzwerkobjektverzeichnis werden vom Veyon Master verwendet, um :index:`Computerraumverwaltung` mit Einträgen zu befüllen. Auch für die Zugriffskontrolle wird auf Daten im Netzwerkobjektverzeichnis zurückgegriffen. Standardmäßig wird ein Backend verwendet, das diese Daten in der lokalen Veyon-Konfiguration speichert und von dort ausliest, siehe Abschnitt :ref:`Raeume und Computer`.
 
 :index:`Backend`
     Über diese Einstellung kann das gewünschte Netzwerkobjektverzeichnis-Backend gewählt werden. Abhängig von der Installation stehen neben dem Standard-Backend weitere Backends beispielsweise zur :ref:`LDAP` zur Verfügung.
@@ -320,10 +320,10 @@ Computerzugriffskontrolle
 
 
 :index:`Datenbackend`
-    Für die Zugriffskontrolle wird ein Datenbackend als Grundlage benötigt, das Benutzer und Gruppen sowie Computer und Räume zur Verfügung stellt. Hierbei können Sie zwischen dem Standard-Backend und weiteren Plugin-spezifischen Backends wie LDAP wählen. Beim Standard-Backend werden lokale Benutzer und Gruppen sowie Räume und Computer aus der lokalen Konfiguration verwendet, siehe Abschnitt :ref:`Lokale Daten`. Wenn Sie die LDAP-Anbindung verwenden, sollten Sie hier das Backend *LDAP* auswählen.
+    Für die Zugriffskontrolle wird ein Datenbackend als Grundlage benötigt, das Benutzer und Gruppen sowie Computer und Räume zur Verfügung stellt. Hierbei können Sie zwischen dem Standard-Backend und weiteren Plugin-spezifischen Backends wie LDAP wählen. Beim Standard-Backend werden lokale Benutzer und Gruppen sowie Räume und Computer aus der lokalen Konfiguration verwendet, siehe Abschnitt :ref:`Raeume und Computer`. Wenn Sie die LDAP-Anbindung verwenden, sollten Sie hier das Backend *LDAP* auswählen.
 
 Verwendung von Domaingruppen aktivieren
-    In der Grundeinstellung stehen für die Computerzugriffskontrolle unter Verwendung des Datenbackends :ref:`Lokale Daten` nur die lokalen Systemgruppen zur Verfügung. Mit Hilfe dieser Option können zusätzlich auch die Gruppen der Domäne abgefragt und verwendet werden. Aus Performancegründen ist diese Option standardmäßig nicht aktiviert. In Umgebungen mit einer großen Anzahl an Domänengruppen kann die Computerzugriffskontrolle sehr lange dauern. In diesen Fällen sollte stattdessen die Einrichtung der :ref:`LDAP-/AD-Integration <LDAP>` und Verwendung des *LDAP*-Backends erwogen werden.
+    In der Grundeinstellung stehen für die Computerzugriffskontrolle unter Verwendung des Datenbackends :ref:`Raeume und Computer` nur die lokalen Systemgruppen zur Verfügung. Mit Hilfe dieser Option können zusätzlich auch die Gruppen der Domäne abgefragt und verwendet werden. Aus Performancegründen ist diese Option standardmäßig nicht aktiviert. In Umgebungen mit einer großen Anzahl an Domänengruppen kann die Computerzugriffskontrolle sehr lange dauern. In diesen Fällen sollte stattdessen die Einrichtung der :ref:`LDAP-/AD-Integration <LDAP>` und Verwendung des *LDAP*-Backends erwogen werden.
 
     **Vorgabe:** *deaktiviert*
 
