@@ -6,14 +6,14 @@ FAQ - Häufig gestellte Fragen
 Funktioniert Veyon unter Chrome OS (ChromeBooks) oder macOS?
 ------------------------------------------------------------
 
-Derzeit ist Veyon ausschließlich für Linux- oder Windows-basierte Umgebungen verfügbar. Die Weiterentwicklung ist aber u. a. darauf ausgerichtet, Veyon auf weitere Plattformen zu portieren und entsprechende Installationsdateien bereitzustellen. Hierbei ist das Veyon-Projekt auf Mithilfe von erfahrenen Software-Entwicklern angewiesen, insbesondere für die Portierung auf macOS und Android.
+Derzeit ist Veyon ausschließlich für Linux- oder Windows-basierte Umgebungen verfügbar. Die Unterstützung weiterer Plattformen befindet sich in Arbeit. Hierbei ist das Veyon-Projekt auf Mithilfe von erfahrenen Software-Entwicklern angewiesen, insbesondere für die Portierung auf macOS und Android.
 
 Wie kann ich Computer hinzufügen, so dass ich darauf zugreifen kann?
 --------------------------------------------------------------------
 
-Wenn das voreingestellte :ref:`Netzwerkobjektverzeichnis` verwendet wird, müssen lediglich auf der Konfigurationsseite :ref:`Lokale Daten` die entsprechenden Räume angelegt und Computer hinzugefügt werden. Anschließend stehen diese im Veyon Master zur Verfügung.
+Wenn das voreingestellte :ref:`Netzwerkobjektverzeichnis` verwendet wird, müssen lediglich auf der Konfigurationsseite :ref:`Raeume und Computer` die entsprechenden Räume angelegt und Computer hinzugefügt werden. Anschließend stehen diese im Veyon Master zur Verfügung.
 
-Ist die :ref:`LDAP-/AD-Integration <LDAP>` eingerichtet, muss das Netzwerkobjektverzeichnis ebenfalls noch auf LDAP umgestellt werden, damit die Computer aus dem Verzeichnis im Veyon Master angezeigt werden.
+Ist die :ref:`LDAP-/AD-Integration <LDAP>` eingerichtet, muss das Netzwerkobjektverzeichnis ebenfalls noch auf *LDAP* umgestellt werden, damit die Computer aus dem Verzeichnis im Veyon Master angezeigt werden.
 
 .. index:: iTALC
 
@@ -37,7 +37,7 @@ In einigen Umgebungen ist bereits ein VNC-Server installiert (z. B. UltraVNC) od
 Kann ich eine selber generierte Datei mit Raum- und Computerinformationen importieren/verwenden?
 ------------------------------------------------------------------------------------------------
 
-Mit Veyon 4.0 ist dies leider noch nicht möglich, allerdings wird es in Veyon 4.1 eine Importmöglichkeit sowie eine Kommandozeilenschnittstelle zur Raum- und Computerverwaltung geben.
+Seit Veyon 4.1 gibt es ein neues :ref:`Modul für die Kommandozeilenschnittstelle <NetworkObjectDirectoryCLI>`, über das Räume und Computer aus Textdateien wie z.B. CSV-Dateien in das Netzwerkobjektverzeichnis importiert werden können.
 
 Wie kann ich alle Bildschirme eines entfernten Computers einsehen oder steuern?
 -------------------------------------------------------------------------------
@@ -52,10 +52,10 @@ Die Auswahl der angezeigten Computer wird in der persönlichen :ref:`Benutzerkon
 In diesem Zusammenhang sei auch auf die Funktion zum :ref:`Automatischen Wechsel in den aktuellen Klassenraum <RoomAutoSwitch>` verwiesen, über die sich das eigentlich gewünschte Verhalten u. U. direkt realisieren lässt.
 
 
-Wie kann ich den Master-Computer in der Computerraumverwaltung ausblenden?
----------------------------------------------------------------------------
+Wie kann ich den Master-Computer aus den Computerräumen ausblenden?
+-------------------------------------------------------------------
 
-Hierfür muss lediglich die Option :ref:`Lokalen Computer in Computerraumverwaltung ausblenden <AutoHideLocalComputer>` aktiviert werden.
+Hierfür muss lediglich die Option :ref:`Lokalen Computer ausblenden <AutoHideLocalComputer>` in der Master-Konfigurationsseite aktiviert werden.
 
 
 Was passiert, wenn keine Zugriffskontrollregel zutrifft?

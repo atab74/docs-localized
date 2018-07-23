@@ -129,6 +129,7 @@ LDAP
 
 Die Befehle des Moduls ``ldap`` sind im Kapitel :ref:`LDAP` im Abschnitt :ref:`LDAP-CLI` dokumentiert.
 
+.. _NetworkObjectDirectoryCLI:
 
 Netzwerkobjektverzeichnis
 -------------------------
