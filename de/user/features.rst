@@ -115,7 +115,7 @@ Mit erneuter Betätigung oder der Taste :kbd:`Esc` schließt sich das Menü ohne
 
 Möchten Sie in den Vollbildmodus wechseln, können Sie die Schaltfläche :guilabel:`Vollbild` nutzen. Im Vollbildmodus können Sie über die gleiche Schaltfläche -- hier mit der Beschriftung :guilabel:`Fenster` -- leicht wieder in den Fenstermodus zurückschalten.
 
-Die Funktion :guilabel:`Bildschirmfoto` erzeugt ein Abbild des aktuellen Bildschirminhaltes und speichert ihn in eine Datei, die später angezeigt werden kann. Nähere Beschreibungen dazu finden Sie in den Abschnitten Bildschirmfoto_ und :ref:`Bildschirmfotoverwaltung`.
+Die Funktion :guilabel:`Bildschirmfoto` erzeugt ein Abbild des aktuellen Bildschirminhaltes und speichert ihn in eine Datei, die später angezeigt werden kann. Nähere Beschreibungen dazu finden Sie in den Abschnitten Bildschirmfoto_ und :ref:`Bildschirmfotos`.
 
 Über die Schaltfläche :guilabel:`Beenden` wird das Fenster geschlossen und der Fernzugriff beendet. 
 
@@ -179,12 +179,14 @@ Möchten Sie die Funktion nur für einzelne Computer verwenden, so können Sie e
 Programm starten
 ----------------
 
-Soll auf allen Computern ein bestimmtes Programm geöffnet werden, steht Ihnen die Funktion :guilabel:`Programm starten` in der Werkzeugleiste zur Verfügung:
+Soll auf allen Computern ein bestimmtes Programm geöffnet werden, steht Ihnen die Funktion :guilabel:`Programm starten` in der Werkzeugleiste zur Verfügung. Klicken Sie hierfür auf die abgebildete Schaltfläche:
 
 .. image:: images/run-program.png
    :align: center
 
-Ein Klick auf die Schaltfläche öffnet ein Dialogfenster, in dem Sie den Namen der Programmdatei eingeben können, z. B. ``notepad``:
+Wenn vom Administrator Programme vordefiniert wurden, öffnet sich ein Menü mit den vordefinierten Programmen. In diesem Menü können Sie das gewünschte Programm anklicken.
+
+Möchten Sie ein Programm starten, das nicht im Menü enthalten ist, klicken Sie auf den letzten Eintrag :guilabel:`Benutzerdefiniertes Programm`. Anschließend erscheint der gleiche Dialog, der auch erscheint, wenn keine Programme vordefiniert sind. In diesem Dialogfenster können Sie den Namen der gewünschten Programmdatei eingeben, z. B. ``notepad``:
 
 .. image:: images/run-program-dialog.png
    :align: center
@@ -206,13 +208,14 @@ Wenn alle Kursteilnehmer zu einer bestimmten Website navigieren sollen, können 
 .. image:: images/open-website.png
    :align: center
 
-Anschließend öffnet sich ein Dialogfenster, in dem Sie die Adresse der zu öffnenden Website eingeben können:
+Wenn vom Administrator keine Websites vordefiniert wurden, öffnet sich anschließend ein Dialogfenster, in dem Sie die Adresse der zu öffnenden Website eingeben können:
 
 .. image:: images/open-website-dialog.png
    :align: center
 
 Bestätigen Sie den Dialog anschließend mit :guilabel:`OK`.
 
+Andernfalls öffnet sich ein Menü mit den vordefinierten Websites, aus dem Sie die gewünschte Website auswählen und anklicken können. Möchten Sie eine Website öffnen, die nicht im Menü enthalten ist, wählen Sie den letzten Eintrag :guilabel:`Benutzerdefinierte Website`. Anschließend öffnet sich der oben abgebildete Dialog.
 
 .. index:: Bildschirmfoto, Screenshot
 .. _Bildschirmfoto:
@@ -227,4 +230,4 @@ Mit Veyon ist es möglich, die aktuellen Bildschirminhalte einzelner oder aller 
 
 Möchten Sie die Funktion nur für einzelne Computer verwenden, können Sie einzelne Computer markieren und den Eintrag :guilabel:`Bildschirmfoto` im Kontextmenü wählen.
 
-Anschließend informiert Sie eine Hinweismeldung über den Erfolg des Vorgangs. Sie können die Bilder nun in der :ref:`Bildschirmfotoverwaltung` ansehen und ggf. löschen.
+Anschließend informiert Sie eine Hinweismeldung über den Erfolg des Vorgangs. Sie können die Bilder nun in der :ref:`Bildschirmfotos` ansehen und ggf. löschen.
