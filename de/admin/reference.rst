@@ -86,6 +86,17 @@ Ein :index:`Netzwerkobjektverzeichnis` stellt in Veyon Informationen über :inde
 
     **Vorgabe:** *60 Sekunden*
 
+.. _Authentifizierungskonfiguration:
+
+Authentifizierung
++++++++++++++++++
+
+Im Kapitel :ref:`Einrichtung` sind die :ref:`Authentifizierungsmethoden` beschrieben, die in Veyon zur Verfügung stehen.
+
+:index:`Methode:`
+	Über diese Option kann eingestellt werden, welche Authentifizierungsmethode verwendet werden soll. Die Anmelde-Authentifizierung bedarf keiner weiteren Einrichtung und kann sofort eingesetzt werden. Für den Einsatz der :ref:`Schlüsseldatei-Authentifizierung <SchluesselAuthentifizierung>` müssen zunächst entsprechende Authentifizierungsschlüssel erstellt und verteilt werden.
+
+    **Vorgabe:** *Anmelde-Authentifizierung*
 
 .. _Dienstkonfiguration:
 
@@ -99,6 +110,16 @@ Allgemein
 
 :index:`Icon im Infobereich` verstecken
     Standardmäßig zeigt der Veyon-Dienst ein Icon im Infobereich (auch *Systemabschnitt der Kontrollleiste*) an, um den ordnungsgemäßen Betrieb sowie Informationen zur :index:`Programmversion` und belegten Netzwerkports anzuzeigen. Die Anzeige des Icons kann unterbunden werden, indem diese Option aktiviert wird.
+
+    **Vorgabe:** *deaktiviert*
+
+:index:`Benachrichtigung` bei fehlgeschlagenen Authentifizierungsversuchen anzeigen
+    Diese Option legt fest, ob eine Benachrichtigung angezeigt werden soll, wenn es einen fehlgeschlagenen Anmeldeversuch über den Veyon-Dienst gab. Diese Meldungen geben normalerweise Auskunft darüber, dass die Authentifizierungseinstellungen nicht korrekt eingerichtet sind, z.B. fehlerhafte Authentifizierungsschlüssel oder ungleiche Benutzer/Passwörter auf Computern bei Verwendung der Anmeldeauthentifizierung.
+
+    **Vorgabe:** *aktiviert*
+
+:index:`Benachrichtigung` bei Fernzugriff anzeigen
+    Soll der Benutzer darüber informiert werden, dass ein Fernzugriff auf seinen Computer stattfindet, kann er darüber benachrichtigt werden. Hierfür muss diese Option aktiviert werden. Wenn der Benutzer hingegen um Einverständnis gebeten werden soll, müssen entsprechende Zugriffskontrollregeln konfiguriert werden. Mehr Informationen dazu befinden sich im Kapitel :ref:`Regelwerk für Computerzugriff`.
 
     **Vorgabe:** *deaktiviert*
 
@@ -172,8 +193,10 @@ Plugin
 Master
 ------
 
-Verzeichnisse
-+++++++++++++
+Grundeinstellungen
+++++++++++++++++++
+
+**Verzeichnisse**
 
 Für die Verzeichniseinstellungen sollten Platzhaltervariablen anstatt absoluter Pfade verwendet werden, damit die Konfiguration generisch ist und benutzerunabhängig funktioniert. Eine ausführliche Beschreibung möglicher Werte befindet sich im Abschnitt :ref:`Platzhaltervariablen`.
 
@@ -189,11 +212,31 @@ Für die Verzeichniseinstellungen sollten Platzhaltervariablen anstatt absoluter
 
     **Vorgabe:** *$APPDATA/Screenshots*
 
+.. index:: Benutzeroberfläche
 
-.. index:: Computerraumverwaltung, Benutzeroberfläche
+**Benutzeroberfläche**
+
+Aktualisierungsintervall Vorschaubilder
+    Diese Einstellung legt fest, in welchem zeitlichen Intervall die Computerminiaturbilder im Veyon Master aktualisiert werden sollen. Je kürzer das Intervall, desto höher ist die Prozessorbelastung auf dem Master-Computer sowie die Netzwerkauslastung insgesamt.
+
+    **Vorgabe:** *1000 ms*
+
+Hintergrundfarbe
+    Mit dieser Einstellung kann die Hintergrundfarbe der Arbeitsfläche im Veyon Master geändert werden.
+
+    **Vorgabe:** *weiß*
+
+Computerminiaturbild-Beschriftung
+    Mit dieser Einstellung kann gewählt werden, wie die Computerminiaturbilder im Veyon Master beschriftet werden. Wenn beispielsweise der Computername nicht wichtig ist, kann stattdessen nur der Name des angemeldeten Benutzers angezeigt werden.
+
+    **Vorgabe:** *Benutzer- und Computername*
 
 Verhalten
 +++++++++
+
+Im Reiter :guilabel:`Verhalten` stehen Einstellungen zur Verfügung, über die das Verhalten des Veyon Masters in Bezug auf *Programmstart*, *Computerräume* sowie *Modi und Funktionen* geändert werden kann.
+
+**Programmstart**
 
 Zugriffskontrolle beim Programmstart durchführen
     Diese Einstellung legt fest, ob die ggf. konfigurierte :ref:`Computerzugriffskontrolle` auch beim Start des Veyon Masters durchgeführt werden soll. Auch wenn die Zugriffskontrolle in jedem Fall clientseitig durchgesetzt wird, kann diese zusätzliche Option dafür sorgen, dass Benutzer ohne Zugriffsrechte den Veyon Master gar nicht erst starten können und die Sicherheit damit noch sichtbarer wird.
@@ -212,28 +255,14 @@ Beim Start automatisch die Größe der Computer-Miniaturansichten anpassen
 
     **Vorgabe:** *deaktiviert*
 
-Gewählten Modus für Client-Computer durchsetzen
-    Einige Funktionen in Veyon wechseln den Modus eines Computers. Beispiele hierfür sind der Demo-Modus oder die Bildschirmsperre. Solche Modus-Funktionen werden standardmäßig nur einmalig aktiviert und beispielsweise im Falle eines physischen Computerneustarts nicht wieder hergestellt. Wenn diese Option aktiviert ist, wird der Modus auch nach einer Verbindungstrennung aktiviert/durchgesetzt.
-
-    **Vorgabe:** *deaktiviert*
-
-Bestätigunsdialog für potentiell gefährliche Aktionen anzeigen
-    Aktionen wie der Neustart von Computern oder das Abmelden von Benutzern können u. U. gefährlich sein, so dass eine versehentliche Aktivierung nicht gewünscht ist. Über diese Option kann somit festgelegt werden, dass solche Aktionen über einen Fragedialog bestätigt werden müssen.
-
-    **Vorgabe:** *deaktiviert*
-
-Funktion bei :index:`Doppelklick`
-    Wenn ein Computer im Veyon Master doppelt angeklickt wird, kann eine vorgegebene Funktion gestartet werden. Üblich ist hier die Verwendung der Funktionen *Fernsteuerung* oder *Fernansicht*.
-
-    **Vorgabe:** *<Keine Funktion>*
-
-Computerverwaltung
-++++++++++++++++++
-
 Beim Start immer öffnen
     Über diese Option kann festgelegt werden, dass die Computerverwaltung nach dem Programmstart standardmäßig geöffnet werden soll.
 
     **Vorgabe:** *deaktiviert*
+
+.. index:: Computerräume
+
+**Computerräume**
 
 Nur aktuellen Raum anzeigen
     Die Computerverwaltung listet standardmäßig alle Räume auf, die sich im eingestellten :ref:`Netzwerkobjektverzeichnis` befinden. Die Aktivierung dieser Option bewirkt hingegen, dass nur der Raum aufgeführt wird, in dem sich der Master-Computer befindet. Dies kann insbesondere in größeren Umgebungen die Übersichtlichkeit deutlich erhöhen.
@@ -263,50 +292,30 @@ Filterfeld für Computer ausblenden
     **Vorgabe:** *deaktiviert*
 
 
+**Modi und Funktionen**
+
+Gewählten Modus für Client-Computer durchsetzen
+    Einige Funktionen in Veyon wechseln den Modus eines Computers. Beispiele hierfür sind der Demo-Modus oder die Bildschirmsperre. Solche Modus-Funktionen werden standardmäßig nur einmalig aktiviert und beispielsweise im Falle eines physischen Computerneustarts nicht wieder hergestellt. Wenn diese Option aktiviert ist, wird der Modus auch nach einer Verbindungstrennung aktiviert/durchgesetzt.
+
+    **Vorgabe:** *deaktiviert*
+
+Bestätigunsdialog für potentiell gefährliche Aktionen anzeigen
+    Aktionen wie der Neustart von Computern oder das Abmelden von Benutzern können u. U. gefährlich sein, so dass eine versehentliche Aktivierung nicht gewünscht ist. Über diese Option kann somit festgelegt werden, dass solche Aktionen über einen Fragedialog bestätigt werden müssen.
+
+    **Vorgabe:** *deaktiviert*
+
+Funktion bei :index:`Doppelklick`
+    Wenn ein Computer im Veyon Master doppelt angeklickt wird, kann eine vorgegebene Funktion gestartet werden. Üblich ist hier die Verwendung der Funktionen *Fernsteuerung* oder *Fernansicht*.
+
+    **Vorgabe:** *<Keine Funktion>*
+
+
 Funktionen
 ++++++++++
 
 Über die zwei Listen im Reiter :guilabel:`Funktionen` kann voreingestellt werden, welche Funktionen im Veyon Master verfügbar sind. Einzelne Funktionen können somit bei Bedarf deaktiviert werden, so dass entsprechende Schaltflächen und Kontextmenüeinträge im Veyon Master nicht angezeigt werden. Dies kann die Übersichtlichkeit der Benutzeroberfläche erhöhen, wenn bestimmte Funktionen ohnehin nicht verwendet werden sollen.
 
 Eine Funktion kann in die jeweils andere Liste verschoben werden, indem sie markiert und die jeweilige Schaltfläche mit den Pfeilsymbolen betätigt wird. Zusätzlich hat auch ein Doppelklick auf eine Funktion die gleiche Wirkung.
-
-.. _Authentifizierungskonfiguration:
-
-Authentifizierung
------------------
-
-Authentifizierungsmethoden
-++++++++++++++++++++++++++
-
-Für die im Kapitel :ref:`Einrichtung` beschriebenen :ref:`Authentifizierungsmethoden` stehen die gleichnamigen Optionen zur Verfügung. Sobald eine Option aktiviert wurde, ist die Einrichtung der jeweiligen Authentifizierungsmethode möglich.
-
-:index:`Schlüsseldatei-Authentifizierung`
-    Über diese Option wird die :ref:`Schlüsseldatei-Authentifizierung <SchluesselAuthentifizierung>` aktiviert. Die Einrichtung erfolgt über den Schlüsseldatei-Assistent.
-
-    **Vorgabe:** *deaktiviert*
-
-:index:`Anmelde-Authentifizierung`
-    Über diese Option wird die :ref:`Anmelde-Authentifizierung <AnmeldeAuthentifizierung>` aktiviert. Sie bedarf keiner weiteren Einrichtung und kann nach Aktivierung über die Schaltfläche :guilabel:`Testen` getestet werden.
-
-    **Vorgabe:** *deaktiviert*
-
-Schlüsselverwaltung
-+++++++++++++++++++
-
-.. _Basisverzeichnisse:
-
-Für beide Basisverzeichnisse sollten Platzhaltervariablen verwendet werden. Eine ausführliche Beschreibung möglicher Werte befindet sich in der :ref:`Konfigurationsreferenz` im Abschnitt :ref:`Platzhaltervariablen`. Unter Windows können anstatt absoluter Laufwerkspfade auch `UNC-Pfade <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>`_ verwendet werden.
-
-:index:`Basisverzeichnis` der öffentlichen Schlüsseldatei
-    In diesem Verzeichnis werden die rollenspezifischen öffentlichen Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung oder dem Import abgelegt. Gleichzeitig lädt der Veyon-Dienst die jeweilige öffentliche Schlüsseldatei zur Durchführung der Authentifizierung aus diesem Verzeichnis.
-
-    **Vorgabe:** *$GLOBALAPPDATA/keys/public*
-
-Basisverzeichnis der privaten Schlüsseldatei
-    In diesem Verzeichnis werden die rollenspezifischen privaten Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung. Gleichzeitig lädt der Veyon Master die jeweilige private Schlüsseldatei aus diesem Verzeichnis, um sich an Clients zu authentifizieren.
-
-    **Vorgabe:** *$GLOBALAPPDATA/keys/private*
-
 
 .. _RefZugriffskontrolle:
 
@@ -353,6 +362,28 @@ Zugriffskontrollregeln
 ++++++++++++++++++++++
 
 Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszenarien ist im Kapitel :ref:`Regelwerk für Computerzugriff` ausführlich beschrieben.
+
+
+
+Authentifizierungsschlüssel
+---------------------------
+
+Schlüsseldateiverzeichnisse
++++++++++++++++++++++++++++
+
+.. _Basisverzeichnisse:
+
+Für beide Basisverzeichnisse sollten Platzhaltervariablen verwendet werden. Eine ausführliche Beschreibung möglicher Werte befindet sich in der :ref:`Konfigurationsreferenz` im Abschnitt :ref:`Platzhaltervariablen`. Unter Windows können anstatt absoluter Laufwerkspfade auch `UNC-Pfade <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>`_ verwendet werden.
+
+:index:`Basisverzeichnis` der öffentlichen Schlüsseldatei
+    In diesem Verzeichnis werden die rollenspezifischen öffentlichen Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung oder dem Import abgelegt. Gleichzeitig lädt der Veyon-Dienst die jeweilige öffentliche Schlüsseldatei zur Durchführung der Authentifizierung aus diesem Verzeichnis.
+
+    **Vorgabe:** *$GLOBALAPPDATA/keys/public*
+
+Basisverzeichnis der privaten Schlüsseldatei
+    In diesem Verzeichnis werden die rollenspezifischen privaten Schlüsseldateien vom Schlüsseldatei-Assistent bei der Schlüsselgenerierung. Gleichzeitig lädt der Veyon Master die jeweilige private Schlüsseldatei aus diesem Verzeichnis, um sich an Clients zu authentifizieren.
+
+    **Vorgabe:** *$GLOBALAPPDATA/keys/private*
 
 
 Demo-Server
