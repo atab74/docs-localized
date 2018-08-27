@@ -40,7 +40,7 @@ Benutzer ist Mitglied von Gruppe
     Über diese Bedingung kann festlelegt werden, dass entweder der zugreifende oder lokal angemeldete Benutzer Mitglied einer bestimmten Gruppe sein muss. Die gewünschte Gruppe kann ausgewählt werden. Wenn keine oder die falschen Gruppen zur Auswahl stehen, muss ggf. das *Datenbackend* unter den allgemeinen Einstellungen zur :ref:`Computerzugriffskontrolle` angepasst werden.
 
 Computer befindet sich im Raum
-    Über diese Bedingung kann festlelegt werden, dass sich entweder der zugreifende oder lokal Computer in einem bestimmten Raum befinden müssen. Der gewünschte Raum kann ausgewählt werden. Wenn keine oder die falschen Räume zur Auswahl stehen, muss ggf. das *Datenbackend* unter den allgemeinen Einstellungen zur :ref:`Computerzugriffskontrolle` angepasst werden.
+    Über diese Bedingung kann festlelegt werden, dass sich entweder der zugreifende oder lokal Computer in einem bestimmten Raum befinden müssen. Der gewünschte Raum kann ausgewählt werden. Wenn keine oder die falschen Räume zur Auswahl stehen, muss ggf. das :ref:`Netzwerkobjektverzeichnis` angepasst werden.
 
 Zugreifender Computer befindet sich im selben Raum wie der lokale Computer
     Über diese Bedingung kann festlelegt werden, dass sich der zugreifende und der lokal Computer im selben Raum befinden müssen. Damit kann beispielsweise unterbunden werden, dass ein Lehrer auf Computer eines anderen Kurses in einem anderen Raum zugreifen kann. 
