@@ -119,7 +119,7 @@ Allgemein
     **Vorgabe:** *aktiviert*
 
 :index:`Benachrichtigung` bei Fernzugriff anzeigen
-    Soll der Benutzer darüber informiert werden, dass ein Fernzugriff auf seinen Computer stattfindet, kann er darüber benachrichtigt werden. Hierfür muss diese Option aktiviert werden. Wenn der Benutzer hingegen um Einverständnis gebeten werden soll, müssen entsprechende Zugriffskontrollregeln konfiguriert werden. Mehr Informationen dazu befinden sich im Kapitel :ref:`Regelwerk für Computerzugriff`.
+    Soll der Benutzer darüber informiert werden, dass ein Fernzugriff auf seinen Computer stattfindet, kann er darüber benachrichtigt werden. Hierfür muss diese Option aktiviert werden. Wenn der Benutzer hingegen um Einverständnis gebeten werden soll, müssen entsprechende Zugriffskontrollregeln konfiguriert werden. Mehr Informationen dazu befinden sich im Kapitel :ref:`Zugriffskontrollregeln`.
 
     **Vorgabe:** *deaktiviert*
 
@@ -356,14 +356,15 @@ Die Konfiguration dieses Zugriffskontrollmodus ist unkompliziert. Die linke List
 
 Über die Schaltfläche :guilabel:`Testen` im Abschnitt :guilabel:`Computerzugriffskontrolle` kann überprüft werden, ob ein bestimmter Benutzer über die eingestellten Gruppen auf einen Computer zugreifen dürfte.
 
-.. _Zugriffskontrollregeln:
+.. _RefZugriffskontrollregeln:
 
 Zugriffskontrollregeln
 ++++++++++++++++++++++
 
-Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszenarien ist im Kapitel :ref:`Regelwerk für Computerzugriff` ausführlich beschrieben.
+Die Einrichtung eines Regelwerks für die Zugriffskontrolle inkl. Anwendungsszenarien ist im Kapitel :ref:`Zugriffskontrollregeln` ausführlich beschrieben.
 
 
+.. _RefAuthentifizierungsschlüssel:
 
 Authentifizierungsschlüssel
 ---------------------------

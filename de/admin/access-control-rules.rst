@@ -1,9 +1,9 @@
-.. index:: Zugriffskontrollregeln, Regelwerk, Computerzugriffsregelwerk
+.. index:: Computerzugriffskontrolle, Zugriffskontrollregeln, Regelwerk, Computerzugriffsregelwerk
 
-.. _Regelwerk für Computerzugriff:
+.. _Zugriffskontrollregeln:
 
-Regelwerk für Computerzugriff
-=============================
+Zugriffskontrollregeln
+======================
 
 Einführung
 ----------
