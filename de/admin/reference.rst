@@ -133,11 +133,6 @@ Allgemein
 
     **Vorgabe:** *aktiviert*
 
-Zusätzliche Argumente
-    Wird der Veyon-Dienst als Systemdienst registriert, können über diese Einstellung zusätzliche Programmargumente festgelegt werden, die das Betriebssystem dem Veyon-Diest beim Start übergibt. Nähere Angaben zu möglichen Optionen befinden sich im Abschnitt :ref:`ServiceArgumente`.
-
-    **Vorgabe:** *<leer>*
-
 
 .. _Netzwerkeinstellungen:
 
@@ -429,17 +424,18 @@ GLOBALAPPDATA Systemweites Verzeichnis für Programmdaten von Veyon, z. B. ``C:\
 TMP, TEMP     Benutzerspezifisches Verzeichnis für :index:`temporäre Dateien`, für den Veyon-Dienst unter Windows wird ``C:\Windows\Temp`` verwendet, unter Linux immer ``/tmp``
 ============= =================
 
+.. _RefUmgebungsvariablen:
 
-.. _ServiceArgumente:
+Umgebungsvariablen
+------------------
 
-Programmargumente für Veyon-Service
------------------------------------
+Veyon wertet verschiedene optionale Umgebungsvariablen aus, die es erlauben, die Standardeinstellungen für Laufzeiteinstellungen wie Session-ID, Log-Level und zu verwendende Authentifizierungsschlüssel zu überschreiben.
 
-Abhängig vom Betriebssystem, unter dem Veyon eingesetzt wird, können dem Veyon-Dienst verschiedene :index:`Programmargumente` übergeben werden. Die gewünschten Argumente sind bei den :ref:`allgemeinen Diensteinstellungen <DienstAllgemein>` einzutragen.
+========================= ========================
+Variable                  Description
+========================= ========================
+``VEYON_AUTH_KEY_NAME``   Diese Variable erlaubt es, den Namen des zu verwendenden Authentifizierungsschlüssels explizit anzugeben, falls mehrere Authentifizierungsschlüssel verfügbar sind. Dies kann verwendet werden, um das Standardverhalten von Veyon Master zu überschreiben, der den ersten lesbaren privaten Schlüssel verwendet, auch wenn mehrere private Schlüsseldateien verfügbar sind.
+``VEYON_LOG_LEVEL``       Diese Variable erlaubt es, den konfigurierten Log-Level zur Laufzeit zu überschreiben, z.B. für Debugging-Zwecke.
+``VEYON_SESSION_ID``      Diese Variable erlaubt die Angabe der Session-ID und wird vom Veyon Server ausgewertet. Wenn die Multi-Session-Unterstützung (mehrere grafische Sitzungen auf dem gleichen Host) aktiviert ist, muss jede Instanz des Veyon Servers unterschiedliche Netzwerkports verwenden, um nicht mit anderen Instanzen in Konflikt zu geraten. Ein Server fügt daher den numerischen Wert dieser Umgebungsvariablen zu den konfigurierten :ref:`Netzwerkports <Netzwerkeinstellungen>` hinzu, um die zu verwendenden Portnummern zu bestimmen. Normalerweise wird diese Umgebungsvariable vom Veyon Service für alle Veyon Server Instanzen automatisch gesetzt. Im :ref:`Netzwerkobjektverzeichnis` muss dann der absolute Port (Primärer Dienst-Port + Session-ID) zusammen mit der Computer-/IP-Adresse angegeben werden, z. B. ``192.168.2.3:11104``.
+========================= ========================
 
-====================== ================= =========
-Parameter              Betriebssystem    Bedeutung
-====================== ================= =========
-``-session <ID>``      *<alle>*          Eine Ganzzahl zwischen ``0`` und ``99`` kann als optionale :index:`Session-ID` genutzt werden, um mehrere Instanzen des Veyon-Dienstes in verschiedenen Benutzersitzungen auf dem gleichen Computer zu betreiben. Die Session-ID wird auf die in den :ref:`Netzwerkeinstellungen` konfigurierten Ports addiert, so dass jede Veyon-Dienst-Instanz auf unterschiedlichen Ports arbeitet. Im :ref:`Netzwerkobjektverzeichnis` muss der absolute Port (Primärer Dienst-Port + Session-ID) zusammen mit der Computer-/IP-Adresse angegeben werden, z. B. ``192.168.2.3:11104``.
-``<x11vnc-Parameter>`` Linux             Dem Veyon-Dienst können alle vom ``x11vnc``-Programm unterstützten Parameter übergeben werden. Nähere Informationen dazu befinden sich im `x11vnc-Handbuch <http://....>`_.
-====================== ================= =========
