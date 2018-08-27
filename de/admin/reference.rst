@@ -20,11 +20,6 @@ Benutzeroberfläche
 
     **Vorgabe:** *Spracheinstellung des Systems verwenden*
 
-:index:`High-DPI-Skalierung`
-    Beim Einsatz von Veyon auf hochaufgelösten Bildschirmen mit hoher Pixeldichte (DPI>150) sollte diese Option aktiviert werden. Sofern aktiviert werden die Benutzeroberflächen größer dargestellt, so dass vor allem visuelle Elemente mit Textbeschriftungen besser lesbar sind.
-
-    **Vorgabe:** *deaktiviert*
-
 .. _Logaufzeichnung:
 
 Logaufzeichnung
